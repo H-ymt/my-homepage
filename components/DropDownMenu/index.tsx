@@ -6,8 +6,8 @@ import { FiMenu } from 'react-icons/Fi';
 
 export default function DropDownMenu() {
   return (
-    <Menu as="div" className="relative md:hidden">
-      <Menu.Button className="">
+    <Menu as="div" className="md:hidden">
+      <Menu.Button>
         <FiMenu size="2em" />
       </Menu.Button>
 
@@ -21,7 +21,7 @@ export default function DropDownMenu() {
       >
         <Menu.Items
           as="ul"
-          className="flex flex-col gap-2 absolute right-0 w-32 mt-6 py-2 px-2 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2"
+          className="flex flex-col gap-2 absolute right-0 w-32 mt-0 py-2 px-2 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 bg-[#F7F7F7]"
         >
           <Menu.Item as="li">
             {({ active }) => (
