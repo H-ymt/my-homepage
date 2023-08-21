@@ -3,6 +3,7 @@ import { AiFillGithub } from 'react-icons/Ai';
 import { SiZenn } from 'react-icons/Si';
 import { IoMdHome } from 'react-icons/Io';
 import { FiMenu } from 'react-icons/Fi';
+import { PiCodeFill } from 'react-icons/Pi';
 
 export default function DropDownMenu() {
   return (
@@ -33,6 +34,19 @@ export default function DropDownMenu() {
               >
                 <IoMdHome color="#3c456c" size="1.2em" />
                 Home
+              </a>
+            )}
+          </Menu.Item>
+          <Menu.Item as="li">
+            {({ active }) => (
+              <a
+                className={`py-1 pl-1.5 ${
+                  active ? 'text-white bg-blue-200 rounded-md' : ''
+                }`}
+                href="/products"
+              >
+                <PiCodeFill color="#3c456c" size="1.2em" />
+                Products
               </a>
             )}
           </Menu.Item>

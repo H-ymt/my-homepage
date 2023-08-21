@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import { AiFillGithub } from 'react-icons/Ai';
 import { SiZenn } from 'react-icons/Si';
 import { IoMdHome } from 'react-icons/Io';
+import { PiCodeFill } from 'react-icons/Pi';
 import DropDownMenu from '../DropDownMenu';
 
 export default function Header() {
@@ -44,6 +45,16 @@ export default function Header() {
               <Link href="/">
                 <IoMdHome color="#3c456c" size="1.4em" />
                 Home
+              </Link>
+            </li>
+            <li
+              className={`py-1 px-2.5 ${
+                pathname === '/products' ? 'bg-blue-200 rounded-md' : ''
+              }`}
+            >
+              <Link href="/products">
+                <PiCodeFill color="#3c456c" size="1.4em" />
+                Products
               </Link>
             </li>
             <li
