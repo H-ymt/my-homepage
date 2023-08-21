@@ -7,11 +7,9 @@ module.exports = {
   ],
   theme: {
     colors: {
-      text: {
-        primary: '#27272A',
-        muted: '#52525B',
-        extra: '#a1a1aa',
-      },
+      primary: '#27272A',
+      muted: '#52525B',
+      extra: '#a1a1aa',
       blue: {
         50: '#f4f7fa',
         100: '#e5eaf4',
@@ -27,5 +25,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-clip-path')],
 };

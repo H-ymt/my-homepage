@@ -1,5 +1,9 @@
 import Header from '@/components/Header';
 import './globals.css';
+import FadeUpMotion from '@/components/FadeUpMotion';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata = {
   title: {
@@ -16,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="color-primary">
+      <body className={`text-primary ${montserrat.className}`}>
         <Header />
-        {children}
+        <FadeUpMotion>{children}</FadeUpMotion>
       </body>
     </html>
   );
