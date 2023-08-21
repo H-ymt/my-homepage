@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { AiFillGithub } from 'react-icons/Ai';
-import { SiZenn } from 'react-icons/Si';
-import { IoMdHome } from 'react-icons/Io';
-import { PiCodeDuotone } from 'react-icons/Pi';
+import { AiFillGithub } from 'react-icons/ai';
+import { SiZenn } from 'react-icons/si';
+import { IoMdHome } from 'react-icons/io';
+import { PiCodeDuotone } from 'react-icons/pi';
 import DropDownMenu from '../DropDownMenu';
 
 export default function Header() {

@@ -1,9 +1,9 @@
 import { Menu, Transition } from '@headlessui/react';
-import { AiFillGithub } from 'react-icons/Ai';
-import { SiZenn } from 'react-icons/Si';
-import { IoMdHome } from 'react-icons/Io';
-import { FiMenu } from 'react-icons/Fi';
-import { PiCodeDuotone } from 'react-icons/Pi';
+import { AiFillGithub } from 'react-icons/ai';
+import { SiZenn } from 'react-icons/si';
+import { IoMdHome } from 'react-icons/io';
+import { FiMenu } from 'react-icons/fi';
+import { PiCodeDuotone } from 'react-icons/pi';
 
 export default function DropDownMenu() {
   return (
