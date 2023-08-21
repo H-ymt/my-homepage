@@ -8,7 +8,7 @@ import { PiCodeDuotone } from 'react-icons/pi';
 export default function DropDownMenu() {
   return (
     <Menu as="div" className="md:hidden">
-      <Menu.Button>
+      <Menu.Button className="outline-none">
         <FiMenu size="2em" />
       </Menu.Button>
 
