@@ -3,7 +3,7 @@ import { AiFillGithub } from 'react-icons/Ai';
 import { SiZenn } from 'react-icons/Si';
 import { IoMdHome } from 'react-icons/Io';
 import { FiMenu } from 'react-icons/Fi';
-import { PiCodeFill } from 'react-icons/Pi';
+import { PiCodeDuotone } from 'react-icons/Pi';
 
 export default function DropDownMenu() {
   return (
@@ -45,7 +45,7 @@ export default function DropDownMenu() {
                 }`}
                 href="/products"
               >
-                <PiCodeFill color="#3c456c" size="1.2em" />
+                <PiCodeDuotone color="#3c456c" size="1.2em" />
                 Products
               </a>
             )}
