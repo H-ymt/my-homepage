@@ -5,7 +5,6 @@ import { SiZenn } from 'react-icons/si';
 import { IoMdHome } from 'react-icons/io';
 import { FiMenu } from 'react-icons/fi';
 import { PiCodeDuotone } from 'react-icons/pi';
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 type Props = {
@@ -33,11 +32,23 @@ export default function DropDownMenu() {
               <FiMenu size="2em" />
             </NavigationMenu.Trigger>
 
-            <NavigationMenu.Content className="flex flex-col gap-2 absolute top-10 left-[-112px] w-[9rem] py-2 px-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 bg-[#F7F7F7]">
-              <Link href="/">Home</Link>
-              <Link href="/products">Products</Link>
-              <Link href="/blog">Blog</Link>
-              <Link href="https://github.com/H-ymt/my-portfolio/">Source</Link>
+            <NavigationMenu.Content className="flex flex-col gap-2 absolute top-10 left-[-112px] w-[9rem] py-2 px-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none [&>a]:flex [&>a]:items-center [&>a]:gap-2 bg-[#F7F7F7]">
+              <Link href="/">
+                <IoMdHome />
+                Home
+              </Link>
+              <Link href="/products">
+                <PiCodeDuotone />
+                Products
+              </Link>
+              <Link href="/blog">
+                <SiZenn />
+                Blog
+              </Link>
+              <Link href="https://github.com/H-ymt/my-portfolio/">
+                <AiFillGithub />
+                Source
+              </Link>
             </NavigationMenu.Content>
           </NavigationMenu.Item>
         </NavigationMenu.List>
