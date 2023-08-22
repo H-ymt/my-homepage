@@ -14,12 +14,12 @@ export default function Home() {
             alt=""
             width={140}
             height={140}
-            className="[clip-path: circle(50% at 50% 50%);]"
+            className="clip-path"
           />
           <p>
             高校卒業後に農林水産省で5年間勤務したのち、コンサル会社のコーダーとしてWeb制作業務に携わっています。
             <br />
-            最近はアクセシビリティ（a11y）に考慮したコーディングや、Astro・Next.jsなどのモダンな技術を用いたWeb制作に興味があります。
+            最近はWebアクセシビリティ（a11y）に配慮したコーディング方法や、Astro・Next.jsなどのモダンな技術を用いたWeb制作に興味があります。
             <br />
           </p>
         </div>
