@@ -20,6 +20,7 @@ export default function Header() {
       initial={{ opacity: 0, translateY: -15 }}
       animate={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
     >
       <div className="flex justify-between items-center container mx-auto h-full px-4 lg:px-0">
         <Link href="/" className="flex items-center text-xl font-bold">
