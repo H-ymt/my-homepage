@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import './globals.css';
-import FadeUpMotion from '@/components/FadeUpMotion';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
@@ -22,7 +21,7 @@ export default function RootLayout({
     <html lang="ja">
       <body className={`text-primary ${montserrat.className}`}>
         <Header />
-        <FadeUpMotion>{children}</FadeUpMotion>
+        {children}
       </body>
     </html>
   );
