@@ -34,19 +34,19 @@ export default function DropDownMenu() {
 
             <NavigationMenu.Content className="flex flex-col gap-2 absolute top-10 left-[-112px] w-[9rem] py-2 px-4 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none [&>a]:flex [&>a]:items-center [&>a]:gap-2 bg-[#F7F7F7]">
               <Link href="/">
-                <IoMdHome />
+                <IoMdHome size="1.2em" />
                 Home
               </Link>
               <Link href="/products">
-                <PiCodeDuotone />
+                <PiCodeDuotone size="1.2em" />
                 Products
               </Link>
               <Link href="/blog">
-                <SiZenn />
+                <SiZenn size="1.2em" />
                 Blog
               </Link>
               <Link href="https://github.com/H-ymt/my-portfolio/">
-                <AiFillGithub />
+                <AiFillGithub size="1.2em" />
                 Source
               </Link>
             </NavigationMenu.Content>
