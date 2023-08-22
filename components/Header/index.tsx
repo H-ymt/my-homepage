@@ -18,7 +18,7 @@ export default function Header() {
       role="banner"
       className="h-[72px] border-b border-b-[#e4e4e7] shadow-blue-50 bg-opacity-50 backdrop-blur-md backdrop-filter"
       initial={{ opacity: 0, translateY: -15 }}
-      whileInView={{ opacity: 1, translateY: 0 }}
+      animate={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.4 }}
       viewport={{ once: true }}
     >
