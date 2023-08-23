@@ -20,7 +20,6 @@
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.16.0",
     "next": "13.4.19",
-    "nextjs-progressbar": "^0.0.16",
     "postcss": "8.4.28",
     "prettier": "^3.0.2",
     "react": "18.2.0",
