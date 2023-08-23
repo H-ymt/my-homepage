@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <motion.header
       role="banner"
-      className="h-[72px] border-b border-b-[#e4e4e7] shadow-blue-50 bg-opacity-50 backdrop-blur-md backdrop-filter"
+      className="h-[72px] border-b border-b-[#d5d5da] shadow-blue-50 bg-opacity-50 backdrop-blur-md backdrop-filter"
       initial={{ opacity: 0, translateY: -15 }}
       animate={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.4 }}
@@ -40,7 +40,7 @@ export default function Header() {
           <ul className="flex items-center gap-3.5 font-semibold [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2">
             <li
               className={`py-1 px-2.5 ${
-                pathname === '/' ? 'bg-blue-200 rounded-md' : ''
+                pathname === '/' ? 'bg-blue-300 rounded-md' : ''
               }`}
             >
               <Link href="/">
@@ -50,7 +50,7 @@ export default function Header() {
             </li>
             <li
               className={`py-1 px-2.5 ${
-                pathname === '/products' ? 'bg-blue-200 rounded-md' : ''
+                pathname === '/products' ? 'bg-blue-300 rounded-md' : ''
               }`}
             >
               <Link href="/products">
@@ -60,7 +60,7 @@ export default function Header() {
             </li>
             <li
               className={`py-1 px-2.5 ${
-                pathname === '/blog' ? 'bg-blue-200 rounded-md' : ''
+                pathname === '/blog' ? 'bg-blue-300 rounded-md' : ''
               }`}
             >
               <Link href="/blog">
