@@ -24,7 +24,7 @@ const Link = ({ href, children, ...props }: Props) => {
 
 export default function DropDownMenu() {
   return (
-    <div className="md:hidden">
+    <div className="md:hidden h-[32px]">
       <NavigationMenu.Root orientation="vertical">
         <NavigationMenu.List>
           <NavigationMenu.Item className="relative">
