@@ -22,16 +22,26 @@
 html,
 body {
   width: 100%;
-  height: 100%;
 }
 
 body {
   text-align: justify;
   color: var(--color-text-primary);
-  container-type: inline-size;
+}
+
+section {
+  padding: 24px 0;
 }
 
 h2 {
-  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
   font-weight: 500;
+}
+
+p {
+  line-height: 1.6;
 }

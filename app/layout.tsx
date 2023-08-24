@@ -18,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="">
       <body
-        className={`text-blue-950 bg-gradient-to-t from-[white] to-blue-200  ${montserrat.className}`}
+        className={`text-blue-950 bg-gradient-to-t from-[white] to-blue-200 bg-no-repeat ${montserrat.className}`}
       >
         <Header />
         {children}

@@ -6,6 +6,9 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    clipPath: {
+      perfectCircle: 'circle(50% at 50% 50%)',
+    },
     colors: {
       primary: '#27272A',
       muted: '#52525B',
