@@ -15,7 +15,20 @@ export default function Home() {
   return (
     <FadeUpMotion>
       <Sheet>
-        <div className="max-w-[960px] mx-auto">
+        <div className="max-w-[900px] mx-auto">
+          <div className="h-[calc(100dvh-72px)] grid items-center content-center">
+            <h1>Yamato{`'`}s Portfolio</h1>
+            <p className="mt-6 text-center text-md lg:text-lg font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <br />
+              Praesentium deserunt magnam ratione vero adipisci rem laborum
+              debitis id mollitia.
+              <br />
+              Nobis delectus provident ratione, nam sed sequi accusantium cumque
+              illo tenetur.
+            </p>
+          </div>
+
           <section>
             <SectionTitle eng="私について">About me</SectionTitle>
             <div className="flex flex-col md:flex-row items-center gap-6">
@@ -60,7 +73,7 @@ export default function Home() {
                           </div>
                         </div>
                         <div className="text-mauve12 m-0 text-sm leading-[1.5]">
-                          アクセシビリティ（WCAG）を意識したコーディングで良質なUI/UXを意識したサイト作りを心がけています。
+                          アクセシビリティ（WCAG）を意識して、良質なUI/UXを意識したサイト作りを心がけています。
                         </div>
                       </div>
                     </div>
