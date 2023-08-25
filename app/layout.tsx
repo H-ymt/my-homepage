@@ -19,9 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className="">
-      <body
-        className={`text-blue-950 bg-gradient-to-t from-[white] to-blue-200 bg-no-repeat ${montserrat.className}`}
-      >
+      <body className={`text-blue-950 ${montserrat.className}`}>
         <Header />
         {children}
       </body>

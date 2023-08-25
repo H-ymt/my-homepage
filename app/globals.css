@@ -28,6 +28,20 @@ body {
   overflow-x: hidden;
   text-align: justify;
   color: var(--color-text-primary);
+  background: linear-gradient(90deg, #f4f7fa, #d1dbec, #d1dbec);
+  background-size: 300% 300%;
+  animation: gradient 4s alternate infinite;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
 
 section {
