@@ -26,12 +26,11 @@ export default function Header() {
         <Link href="/" className="flex items-center text-xl font-bold">
           <Image
             src="/logo.webp"
-            width={40}
-            height={43}
+            width={48}
+            height={50}
             alt="トップページに戻る"
-            className="rotate-[10deg]"
+            className="rotate-[5deg]"
           />
-          <span className="italic">Portfolio</span>
         </Link>
 
         <DropDownMenu />
