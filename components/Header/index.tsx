@@ -44,7 +44,7 @@ export default function Header() {
               }`}
             >
               <Link href="/">
-                <IoMdHome color="#3c456c" size="1.4em" />
+                <IoMdHome color="#3c456c" size="1em" />
                 Home
               </Link>
             </li>
@@ -54,7 +54,7 @@ export default function Header() {
               }`}
             >
               <Link href="/products">
-                <PiCodeDuotone color="#3c456c" size="1.4em" />
+                <PiCodeDuotone color="#3c456c" size="1.1em" />
                 Products
               </Link>
             </li>
@@ -64,7 +64,7 @@ export default function Header() {
               }`}
             >
               <Link href="/blog">
-                <SiZenn color="#3c456c" size="1em" />
+                <SiZenn color="#3c456c" size="0.9em" />
                 Blog
               </Link>
             </li>
@@ -74,8 +74,7 @@ export default function Header() {
                 target="blank"
                 className="px-2.5"
               >
-                <AiFillGithub color="#3c456c" size="1.4em" />
-                Source
+                <AiFillGithub color="#3c456c" size="1.2em" />
               </Link>
             </li>
           </ul>
