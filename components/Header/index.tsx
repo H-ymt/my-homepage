@@ -39,7 +39,7 @@ export default function Header() {
         <nav role="navigation" className="hidden md:inline-block">
           <ul className="flex items-center gap-3.5 text-sm font-medium [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2">
             <li
-              className={`py-[2.5px] px-[8px] rounded-md  ${
+              className={`py-[4px] px-[8px] rounded-md  ${
                 pathname === '/'
                   ? 'bg-blue-400'
                   : 'hover:bg-blue-100 duration-200'
