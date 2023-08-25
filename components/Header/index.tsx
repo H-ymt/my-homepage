@@ -40,7 +40,9 @@ export default function Header() {
           <ul className="flex items-center gap-3.5 text-sm font-medium [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2">
             <li
               className={`py-[2.5px] px-[8px] rounded-md  ${
-                pathname === '/' ? 'bg-blue-300 ' : 'hover:bg-blue-100'
+                pathname === '/'
+                  ? 'bg-blue-400'
+                  : 'hover:bg-blue-100 duration-200'
               }`}
             >
               <Link href="/">
@@ -50,7 +52,9 @@ export default function Header() {
             </li>
             <li
               className={`py-[2.5px] px-[8px] rounded-md ${
-                pathname === '/products' ? 'bg-blue-300 ' : 'hover:bg-blue-100'
+                pathname === '/products'
+                  ? 'bg-blue-400'
+                  : 'hover:bg-blue-100 duration-200'
               }`}
             >
               <Link href="/products">
@@ -60,7 +64,9 @@ export default function Header() {
             </li>
             <li
               className={`py-[2.5px] px-[8px] rounded-md ${
-                pathname === '/blog' ? 'bg-blue-300 ' : 'hover:bg-blue-100'
+                pathname === '/blog'
+                  ? 'bg-blue-400'
+                  : 'hover:bg-blue-100 duration-200'
               }`}
             >
               <Link href="/blog">
@@ -73,7 +79,7 @@ export default function Header() {
         <Link
           href="https://github.com/H-ymt/my-portfolio"
           target="blank"
-          className="hidden md:inline-block px-2.5"
+          className="hidden md:inline-block px-2.5 hover:-translate-y-1 duration-300 ease"
         >
           <AiFillGithub color="#3c456c" size="1.8em" />
         </Link>
