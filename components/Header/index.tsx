@@ -68,17 +68,15 @@ export default function Header() {
                 Blog
               </Link>
             </li>
-            <li>
-              <Link
-                href="https://github.com/H-ymt/my-portfolio"
-                target="blank"
-                className="px-2.5"
-              >
-                <AiFillGithub color="#3c456c" size="1.2em" />
-              </Link>
-            </li>
           </ul>
         </nav>
+        <Link
+          href="https://github.com/H-ymt/my-portfolio"
+          target="blank"
+          className="hidden md:inline-block px-2.5"
+        >
+          <AiFillGithub color="#3c456c" size="1.8em" />
+        </Link>
       </div>
     </motion.header>
   );
