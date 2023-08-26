@@ -7,13 +7,12 @@ import FadeUpMotion from '@/components/FadeUpMotion';
 import SectionTitle from '@/components/SectionTitle';
 import { Button } from '@radix-ui/themes';
 import * as Dialog from '@radix-ui/react-dialog';
-import { FaHtml5 } from 'react-icons/fa';
-import { FaCss3 } from 'react-icons/fa';
-import { IoLogoJavascript } from 'react-icons/io';
+import { BiSolidFileHtml } from 'react-icons/bi';
+import { BiSolidFileCss } from 'react-icons/bi';
+import { BiLogoJavascript } from 'react-icons/bi';
 import { SiAstro } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
-import { SiGulp } from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -83,7 +82,7 @@ export default function Home() {
                 <Dialog.Root>
                   <Dialog.Trigger asChild>
                     <button type="button">
-                      <FaHtml5 size="40px" />
+                      <BiSolidFileHtml size="48px" />
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
@@ -105,7 +104,7 @@ export default function Home() {
                 <Dialog.Root>
                   <Dialog.Trigger asChild>
                     <button type="button">
-                      <FaCss3 size="40px" />
+                      <BiSolidFileCss size="48px" />
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
@@ -130,7 +129,7 @@ export default function Home() {
                 <Dialog.Root>
                   <Dialog.Trigger asChild>
                     <button type="button">
-                      <IoLogoJavascript size="40px" />
+                      <BiLogoJavascript size="48px" />
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
