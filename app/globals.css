@@ -28,9 +28,9 @@ body {
   overflow-x: hidden;
   text-align: justify;
   color: #27272a;
-  background: linear-gradient(90deg, #e5eaf4, #d1dbec, #d1dbec);
+  background: linear-gradient(90deg, #e5eaf4, #d1dbec, #b1c4df);
   background-size: 300% 300%;
-  animation: gradient 6s alternate infinite;
+  animation: gradient 5s alternate infinite;
   height: 100%;
   width: 100%;
 }
