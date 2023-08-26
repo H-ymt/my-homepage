@@ -1,6 +1,8 @@
 import Header from '@/components/Header';
 import './globals.css';
 import { Montserrat } from 'next/font/google';
+import { Theme } from '@radix-ui/themes';
+import '@radix-ui/themes/styles.css';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -19,9 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className="">
-      <body className={`text-blue-950 ${montserrat.className}`}>
-        <Header />
-        {children}
+      <body className={`${montserrat.className}`}>
+        <Theme>
+          <Header />
+          {children}
+        </Theme>
       </body>
     </html>
   );
