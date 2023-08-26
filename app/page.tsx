@@ -96,7 +96,7 @@ export default function Home() {
                         </span>
                       </Dialog.Title>
                       <Dialog.Description className="mt-2 text-sm">
-                        Webアクセシビリティ（a11y）を考慮したコーディングを心がけています。その他EJSを用いたコーディングの知識があります。
+                        Webアクセシビリティ（a11y）を考慮したコーディングやEJSの知識があります。
                       </Dialog.Description>
                     </Dialog.Content>
                   </Dialog.Portal>
@@ -118,7 +118,7 @@ export default function Home() {
                         </span>
                       </Dialog.Title>
                       <Dialog.Description className="mt-2 text-sm">
-                        Sass（SCSS）利用したスタイリング、BEMやFLOCSSなどを用いた保守性・拡張性の高いCSS設計の知識があります。
+                        Sass（SCSS）を利用したスタイリング、BEMやFLOCSSなどを用いた保守性・拡張性の高いCSS設計の知識があります。
                         <br />
                         最近はAstroやNext.jsなどを用いたコンポーネントベースのWeb制作にハマっているのでTailwind
                         CSSを使用する機会も増えました。
