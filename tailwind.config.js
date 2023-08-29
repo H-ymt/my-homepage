@@ -16,6 +16,7 @@ module.exports = {
         primaryLight: '#f4f4f4',
         mutedGray: '#f2f4ffcc',
         mutedBlack: '#414145',
+        twitter: '#1DA1F2',
         orange: {
           50: '#fff4e5',
           100: '#ffeed5',

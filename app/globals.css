@@ -3,18 +3,6 @@
 @tailwind utilities;
 
 :root {
-  --blue-50: #f5f6fa;
-  --blue-100: #eaecf4;
-  --blue-200: #d0d6e7;
-  --blue-300: #a7b3d2;
-  --blue-400: #778bb9;
-  --blue-500: #566ca1;
-  --blue-600: #425387;
-  --blue-700: #37446d;
-  --blue-800: #303b5c;
-  --blue-900: #2c344e;
-  --blue-950: #1a1e2e;
-
   --orange-50: #fff4e5;
   --orange-100: #ffeed5;
   --orange-200: #fed9aa;

@@ -11,8 +11,8 @@ import { BiSolidFileCss } from 'react-icons/bi';
 import { BiLogoJavascript } from 'react-icons/bi';
 import { SiAstro } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
-import { AiFillGithub } from 'react-icons/ai';
 import { PiArrowSquareInLight } from 'react-icons/pi';
+import { AiOutlineTwitter } from 'react-icons/ai';
 
 export default function Home() {
   return (
@@ -139,22 +139,97 @@ export default function Home() {
 
             <div className="py-8">
               <h3 className="pb-6 text-center">Frameworks</h3>
-              <p className="text-center">
-                React{`(`}Next.js{`)`}&ensp;/&ensp;Astro
-              </p>
+
+              <div className="flex justify-center gap-6 md:gap-10 mt-8">
+                <Dialog.Root>
+                  <Dialog.Trigger asChild>
+                    <button type="button" className="flex items-center gap-1">
+                      <SiNextdotjs size="22px" />
+                      React(Next.js)
+                      <PiArrowSquareInLight size="16px" />
+                    </button>
+                  </Dialog.Trigger>
+                  <Dialog.Portal>
+                    <Dialog.Overlay className="bg-gray-900/30 data-[state=open]:animate-overlayShow fixed inset-0" />
+                    <Dialog.Content className="dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                      <Dialog.Title>
+                        React(Next.js)
+                        <span className="block mt-1 text-xs text-muted font-light">
+                          実務経験:なし（独学のみ）
+                        </span>
+                      </Dialog.Title>
+                      <Dialog.Description className="mt-2 text-sm">
+                        microCMSなどのヘッドレスCMSをつかったWebサイトの制作ができます。
+                        <br />
+                        WordPressでつくられた自社サイトのコーポレートサイトを、趣味で勝手にリニューアルしてみたり、作りたいものを気ままに作っています。
+                      </Dialog.Description>
+                    </Dialog.Content>
+                  </Dialog.Portal>
+                </Dialog.Root>
+
+                <Dialog.Root>
+                  <Dialog.Trigger asChild>
+                    <button type="button" className="flex items-center gap-1">
+                      <SiAstro size="22px" />
+                      Astro
+                      <PiArrowSquareInLight size="16px" />
+                    </button>
+                  </Dialog.Trigger>
+                  <Dialog.Portal>
+                    <Dialog.Overlay className="bg-gray-900/30 data-[state=open]:animate-overlayShow fixed inset-0" />
+                    <Dialog.Content className="dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                      <Dialog.Title>
+                        Astro
+                        <span className="block mt-1 text-xs text-muted font-light">
+                          実務経験:なし（独学のみ）
+                        </span>
+                      </Dialog.Title>
+                      <Dialog.Description className="mt-2 text-sm">
+                        microCMS、WordPressをヘッドレスCMSとして利用したWebサイトの制作ができます。
+                      </Dialog.Description>
+                    </Dialog.Content>
+                  </Dialog.Portal>
+                </Dialog.Root>
+              </div>
             </div>
 
             <div className="py-8">
               <h3 className="pb-6 text-center">Others</h3>
               <p className="text-center">
                 Git{`(`}GitHub{`)`}
-                &ensp;/&ensp;Vercel&ensp;/&ensp;Netlify&ensp;/&ensp;microCMS&ensp;/&ensp;Wordpress
+                &ensp;/&ensp;Vercel&ensp;/&ensp;Netlify&ensp;/&ensp;Cloudflare&ensp;/&ensp;microCMS&ensp;/&ensp;Wordpress&ensp;/&ensp;Newt&ensp;/&ensp;Kuroco
               </p>
             </div>
           </section>
 
-          <section>
+          <section className="text-center">
             <SectionTitle eng="お問い合せ">Contact</SectionTitle>
+            <p className="inline-block text-justify">
+              <span className="inline-block">
+                ご用の方は以下よりご連絡ください。
+              </span>
+              TwitterのDMからでもお受けしています。
+            </p>
+
+            <div className="flex items-center justify-center gap-4 pt-6">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1 bg-orange-500 text-white rounded-md"
+              >
+                <button type="button">Contact</button>
+              </Link>
+
+              <Link
+                href="https://twitter.com/Hy1272"
+                target="blank"
+                className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1 bg-twitter text-white rounded-md"
+              >
+                <AiOutlineTwitter />
+                <button type="button" className="">
+                  Twitter
+                </button>
+              </Link>
+            </div>
           </section>
         </div>
       </Sheet>
