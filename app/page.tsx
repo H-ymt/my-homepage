@@ -12,6 +12,7 @@ import { BiLogoJavascript } from 'react-icons/bi';
 import { SiAstro } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
+import { PiArrowSquareInLight } from 'react-icons/pi';
 
 export default function Home() {
   return (
@@ -58,11 +59,13 @@ export default function Home() {
 
             <div className="py-8">
               <h3 className="text-center">Markup</h3>
-              <div className="flex justify-center gap-6 mt-8">
+              <div className="flex justify-center gap-6 md:gap-10 mt-8">
                 <Dialog.Root>
                   <Dialog.Trigger asChild>
-                    <button type="button" className="relative">
-                      <BiSolidFileHtml size="48px" />
+                    <button type="button" className="flex items-center gap-1">
+                      <BiSolidFileHtml size="22px" />
+                      HTML
+                      <PiArrowSquareInLight size="16px" />
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
@@ -83,8 +86,10 @@ export default function Home() {
 
                 <Dialog.Root>
                   <Dialog.Trigger asChild>
-                    <button type="button">
-                      <BiSolidFileCss size="48px" />
+                    <button type="button" className="flex items-center gap-1">
+                      <BiSolidFileCss size="22px" />
+                      CSS
+                      <PiArrowSquareInLight size="16px" />
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
@@ -108,8 +113,10 @@ export default function Home() {
 
                 <Dialog.Root>
                   <Dialog.Trigger asChild>
-                    <button type="button">
-                      <BiLogoJavascript size="48px" />
+                    <button type="button" className="flex items-center gap-1">
+                      <BiLogoJavascript size="22px" />
+                      JavaScript
+                      <PiArrowSquareInLight size="16px" />
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
@@ -133,7 +140,15 @@ export default function Home() {
             <div className="py-8">
               <h3 className="pb-6 text-center">Frameworks</h3>
               <p className="text-center">
-                React&ensp;/&ensp;Next.js&ensp;/&ensp;Astro
+                React{`(`}Next.js{`)`}&ensp;/&ensp;Astro
+              </p>
+            </div>
+
+            <div className="py-8">
+              <h3 className="pb-6 text-center">Others</h3>
+              <p className="text-center">
+                Git{`(`}GitHub{`)`}
+                &ensp;/&ensp;Vercel&ensp;/&ensp;Netlify&ensp;/&ensp;microCMS&ensp;/&ensp;Wordpress
               </p>
             </div>
           </section>
