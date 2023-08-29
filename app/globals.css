@@ -3,20 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --color-text-primary: #27272a;
-  --color-bg-base: #f7f7f7;
+  --blue-50: #f5f6fa;
+  --blue-100: #eaecf4;
+  --blue-200: #d0d6e7;
+  --blue-300: #a7b3d2;
+  --blue-400: #778bb9;
+  --blue-500: #566ca1;
+  --blue-600: #425387;
+  --blue-700: #37446d;
+  --blue-800: #303b5c;
+  --blue-900: #2c344e;
+  --blue-950: #1a1e2e;
 
-  --blue-50: #f4f7fa;
-  --blue-100: #e5eaf4;
-  --blue-200: #d1dbec;
-  --blue-300: #b1c4df;
-  --blue-400: #8ba5cf;
-  --blue-500: #7089c1;
-  --blue-600: #5d72b3;
-  --blue-700: #5565aa;
-  --blue-800: #475186;
-  --blue-900: #3c456c;
-  --blue-950: #282c43;
+  --orange-50: #fff4e5;
+  --orange-100: #ffeed5;
+  --orange-200: #fed9aa;
+  --orange-300: #fdbd74;
+  --orange-400: #fb963c;
+  --orange-500: #f97816;
+  --orange-600: #ea5d0c;
+  --orange-700: #c2450c;
+  --orange-800: #9a3712;
+  --orange-900: #7c2f12;
+  --orange-950: #431507;
+}
+
+:root.dark {
+  --color-text-primary: #f4f4f4;
+  --color-bg: #1a1e2e;
+}
+
+:root.light {
+  --color-text-primary: #27272a;
+  --color-bg: #fdedd7;
 }
 
 html,
@@ -27,10 +46,8 @@ body {
 body {
   overflow-x: hidden;
   text-align: justify;
-  color: #27272a;
-  background: linear-gradient(90deg, #e5eaf4, #d1dbec, #b1c4df);
-  background-size: 300% 300%;
-  animation: gradient 5s alternate infinite;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
   height: 100%;
   width: 100%;
 }
