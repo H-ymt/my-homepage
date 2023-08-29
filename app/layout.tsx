@@ -1,8 +1,7 @@
-import Header from '@/components/Header';
-import './globals.css';
 import { Montserrat } from 'next/font/google';
-import { Theme } from '@radix-ui/themes';
-import '@radix-ui/themes/styles.css';
+import Header from '@/components/Header';
+import { Providers } from './utils/providers';
+import './globals.css';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -21,12 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className="bg-blue-100">
+    <html lang="ja" suppressHydrationWarning>
       <body className={`${montserrat.className}`}>
-        <Theme>
+        <Providers>
           <Header />
           {children}
-        </Theme>
+        </Providers>
       </body>
     </html>
   );
