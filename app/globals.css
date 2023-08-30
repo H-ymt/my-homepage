@@ -51,12 +51,12 @@ body {
 
 section {
   padding-top: 48px;
-  padding-bottom: 72px;
+  padding-bottom: 56px;
 }
 
 @media screen and (min-width: 1024px) {
   section {
-    padding-bottom: 96px;
+    padding-bottom: 72px;
   }
 }
 
