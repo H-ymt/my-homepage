@@ -6,5 +6,6 @@ type Props = {
 
 export default function ConvertDate({ convertDate }: Props) {
   const publishedAt = dayjs(convertDate).format('YYYY/MM/DD/');
+
   return <time dateTime={convertDate.toString()}>{publishedAt}</time>;
 }

@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import ConvertDate from '../ConvertDate';
 
 interface Post {
   id: number;
   path: string;
   emoji: string;
   title: string;
+  published_at: string;
 }
 
 export default async function BlogList() {
@@ -12,23 +14,25 @@ export default async function BlogList() {
     'https://zenn.dev/api/articles?username=h_ymt&order=latest',
   );
   const data = await res.json();
-  const posts: Post[] = data.articles.slice(0, 20);
+  const posts: Post[] = data.articles.slice(0, 10);
 
   return (
     <>
-      <ul className="grid gap-2 sm:grid-cols-2 place-items-center items-center justify-center">
+      <ul className="grid gap-7 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] place-items-center">
         {posts.map((post) => (
-          <li
-            key={post.id}
-            className="max-w-xs p-4 border-2 border-orange-400 dark:border-blue-400 rounded-md"
-          >
+          <li key={post.id}>
             <Link
               href={`https://zenn.dev/${post.path}`}
               target="blank"
-              className="flex flex-col items-center justify-center gap-3"
+              className="inline-flex flex-col items-center justify-center gap-4 min-h-[220px] max-w-[320px] p-6 border-2 bg-orange-200 dark:bg-blue-200/30 border-none rounded-3xl hover:scale-[1.02] duration-200 transition-all"
             >
               <span className="text-6xl">{post.emoji}</span>
-              <h2>{post.title}</h2>
+              <p className="text-left line-clamp-2 overflow-hidden break-all">
+                {post.title}
+              </p>
+              <p className="mt-2 text-xs text-mutedBlack dark:text-mutedGray tracking-widest">
+                <ConvertDate convertDate={post.published_at} />
+              </p>
             </Link>
           </li>
         ))}

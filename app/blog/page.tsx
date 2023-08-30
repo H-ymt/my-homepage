@@ -5,7 +5,9 @@ export default function Page() {
     <>
       <section>
         <h1>Tech Blog</h1>
-        <BlogList />
+        <div className="max-w-[960px] mx-auto pt-12">
+          <BlogList />
+        </div>
       </section>
     </>
   );
