@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <motion.header
       role="banner"
-      className="sticky z-20 top-0 h-[72px] shadow-blue-20 bg-opacity-20 backdrop-blur-md backdrop-filter"
+      className="sticky z-20 top-0 h-[72px] shadow-blue-20 bg-opacity-20 backdrop-blur-xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a]"
       initial={{ opacity: 0, translateY: -15 }}
       animate={{ opacity: 1, translateY: 0 }}
       transition={{ duration: 0.4 }}
