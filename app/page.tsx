@@ -55,7 +55,7 @@ export default function Home() {
           </section>
 
           <section>
-            <SectionTitle eng="技術">Skills</SectionTitle>
+            <SectionTitle eng="使用技術">Skills</SectionTitle>
 
             <div className="py-8">
               <h3 className="text-center">Markup</h3>
@@ -204,17 +204,12 @@ export default function Home() {
 
           <section className="text-center">
             <SectionTitle eng="お問い合せ">Contact</SectionTitle>
-            <p className="inline-block text-justify">
-              <span className="inline-block">
-                ご用の方は以下よりご連絡ください。
-              </span>
-              TwitterのDMからでもお受けしています。
-            </p>
+            <p className="inline-block">ご用の方は以下よりご連絡ください。</p>
 
             <div className="flex items-center justify-center gap-4 pt-6">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1 bg-orange-500 text-white rounded-md"
+                className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1 bg-orange-500 dark:bg-blue-700 text-white rounded-md"
               >
                 <button type="button">Contact</button>
               </Link>
