@@ -20,7 +20,7 @@ export default function Home() {
       <Sheet>
         <div className="max-w-[900px] mx-auto">
           <div className="h-[calc(100dvh-72px)] grid place-items-center">
-            <div className="flex flex-col items-center justify-center gap-6 p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/20 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-2xl">
+            <div className="flex flex-col items-center justify-center gap-6 p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-2xl">
               <h1>Yamato{`'`}s Portfolio</h1>
               <p className="text-center text-md lg:text-lg font-medium">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -48,7 +48,7 @@ export default function Home() {
                 className="clip-path-perfectCircle"
               />
               <p>
-                高校卒業後に農林水産省で5年間勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。最近は、Astro・Next.jsなどのモダンな技術を用いたWeb制作が好きです。
+                高校卒業後に公務員として5年間勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。最近は、Astro・Next.jsなどのモダンな技術を用いたWeb制作が好きです。
                 <br />
               </p>
             </div>
