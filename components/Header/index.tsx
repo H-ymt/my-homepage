@@ -81,7 +81,7 @@ export default function Header() {
             target="blank"
             className="hidden md:inline-block hover:-translate-y-0.5 duration-300 ease"
           >
-            <AiFillGithub color="" size="1.4em" />
+            <AiFillGithub color="" size="1.6em" />
           </Link>
           <ThemeChanger />
           <DropDownMenu />

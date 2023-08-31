@@ -25,9 +25,9 @@ export default function ThemeChanger() {
     : null;
 
   return (
-    <div className="inline-block h-[1.4em]">
+    <div className="inline-block h-[1.6em]">
       <button type="button" onClick={toggleTheme}>
-        {Icon && <Icon size="1.4em" />}
+        {Icon && <Icon size="1.6em" />}
       </button>
     </div>
   );
