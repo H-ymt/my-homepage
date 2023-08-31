@@ -60,7 +60,12 @@ export default function Form() {
 
   return (
     <>
-      <form method="POST" data-netlify="true" onSubmit={handleSubmit}>
+      <form
+        id="contact"
+        method="POST"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
         <div>
           <label htmlFor="name">Name:</label>
           <input
@@ -97,7 +102,9 @@ export default function Form() {
           {errors.message && <p>{errors.message}</p>}
         </div>
       </form>
-      <button type="submit">送信する</button>
+      <button type="submit" form="contact">
+        送信する
+      </button>
     </>
   );
 }
