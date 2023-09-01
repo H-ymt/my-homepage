@@ -20,7 +20,7 @@ export default function Home() {
     <FadeUpMotion>
       <Sheet>
         <div className="max-w-[900px] mx-auto">
-          <div className="h-[calc(100dvh-72px)] grid place-items-center">
+          <div className="py-10">
             <div className="flex flex-col items-center justify-center gap-6 p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
               <h1>Yamato{`'`}s Portfolio</h1>
 
