@@ -27,7 +27,7 @@ export default async function BlogList() {
               className="inline-flex flex-col items-center justify-center gap-4 min-h-[220px] max-w-[320px] p-6 border-2 bg-orange-200 dark:bg-blue-200/30 border-none rounded-3xl hover:scale-[1.02] duration-200 transition-all"
             >
               <span className="text-6xl">{post.emoji}</span>
-              <p className="text-left line-clamp-2 overflow-hidden break-all">
+              <p className="text-left font-medium line-clamp-2 overflow-hidden break-all">
                 {post.title}
               </p>
               <p className="mt-2 text-xs text-mutedBlack dark:text-mutedGray tracking-widest">
