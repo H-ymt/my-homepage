@@ -15,13 +15,9 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <motion.header
+    <header
       role="banner"
       className="sticky z-20 top-0 h-[72px] shadow-blue-20 bg-opacity-20 backdrop-blur-xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a]"
-      initial={{ opacity: 0, translateY: -15 }}
-      animate={{ opacity: 1, translateY: 0 }}
-      transition={{ duration: 0.4 }}
-      viewport={{ once: true }}
     >
       <div className="flex justify-between items-center container mx-auto h-full px-4 lg:px-0">
         <Link href="/" className="flex items-center text-xl font-bold">
@@ -87,6 +83,6 @@ export default function Header() {
           <DropDownMenu />
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 }
