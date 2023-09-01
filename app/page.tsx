@@ -13,6 +13,7 @@ import { SiAstro } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
 import { PiArrowSquareInLight } from 'react-icons/pi';
 import { AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineMail } from 'react-icons/ai';
 
 export default function Home() {
   return (
@@ -20,39 +21,30 @@ export default function Home() {
       <Sheet>
         <div className="max-w-[900px] mx-auto">
           <div className="h-[calc(100dvh-72px)] grid place-items-center">
-            <div className="flex flex-col items-center justify-center gap-6 p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-2xl">
+            <div className="flex flex-col items-center justify-center gap-6 p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
               <h1>Yamato{`'`}s Portfolio</h1>
-              <p className="text-center text-md lg:text-lg font-medium">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <br />
-                Nobis delectus provident ratione, nam sed sequi accusantium
-                cumque illo.
-              </p>
 
-              <div className="flex flex-col md:flex-row gap-4">
-                <Link href="/products"></Link>
-
-                <Link href="https://github.com/H-ymt" target="_blank"></Link>
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <Image
+                  src="/icon.webp"
+                  alt=""
+                  width={180}
+                  height={180}
+                  className="clip-path-perfectCircle"
+                />
+                <p className="font-semibold">
+                  はじめまして。
+                  <br />
+                  <br />
+                  私は高校卒業後に公務員として5年勤務したのち、今はコンサル会社のコーダーとしてWeb制作業務に携わっています。
+                  <br />
+                  <br />
+                  最近は、Astro・Next.jsなどの技術を用いたJamstackサイトの制作が好きです。夢はWebアプリ開発に携わる仕事をすることです。
+                  <br />
+                </p>
               </div>
             </div>
           </div>
-
-          <section>
-            <SectionTitle eng="私について">About me</SectionTitle>
-            <div className="flex flex-col md:flex-row items-center gap-6">
-              <Image
-                src="/icon.webp"
-                alt=""
-                width={180}
-                height={180}
-                className="clip-path-perfectCircle"
-              />
-              <p>
-                高校卒業後に公務員として5年間勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。最近は、Astro・Next.jsなどのモダンな技術を用いたWeb制作が好きです。
-                <br />
-              </p>
-            </div>
-          </section>
 
           <section>
             <SectionTitle eng="使用技術">Skills</SectionTitle>
@@ -208,18 +200,24 @@ export default function Home() {
 
             <div className="flex items-center justify-center gap-4 pt-6">
               <Link
-                href="/contact"
+                href="mailto:y.handai1272@gmail.com"
                 className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1 bg-orange-500 dark:bg-blue-700 text-white rounded-md"
               >
-                <button type="button">Contact</button>
+                <button
+                  type="button"
+                  className="inline-flex items-center gap-2"
+                >
+                  <AiOutlineMail size="14px" />
+                  Email
+                </button>
               </Link>
 
               <Link
                 href="https://twitter.com/Hy1272"
                 target="blank"
-                className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1 bg-twitter text-white rounded-md"
+                className="inline-flex items-center justify-center gap-2 w-[120px] py-1 bg-twitter text-white rounded-md"
               >
-                <AiOutlineTwitter />
+                <AiOutlineTwitter size="14px" />
                 <button type="button" className="">
                   Twitter
                 </button>
