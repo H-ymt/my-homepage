@@ -24,9 +24,10 @@ export default function Header() {
           <Image
             src="/logo.webp"
             width={48}
-            height={20}
+            height={50}
             alt="トップページに戻る"
             className="rotate-[5deg]"
+            priority
           />
         </Link>
 
