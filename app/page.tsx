@@ -130,7 +130,7 @@ export default function Home() {
             </div>
 
             <div className="py-8">
-              <h3 className="pb-6 text-center">Frameworks</h3>
+              <h3 className="text-center">Frameworks</h3>
 
               <div className="flex justify-center gap-6 md:gap-10 mt-8">
                 <Dialog.Root>
@@ -186,8 +186,8 @@ export default function Home() {
             </div>
 
             <div className="py-8">
-              <h3 className="pb-6 text-center">Others</h3>
-              <p className="text-center">
+              <h3 className="text-center">Others</h3>
+              <p className="text-center mt-8">
                 Git{`(`}GitHub{`)`}
                 &ensp;/&ensp;Vercel&ensp;/&ensp;Netlify&ensp;/&ensp;Cloudflare&ensp;/&ensp;microCMS&ensp;/&ensp;Wordpress&ensp;/&ensp;Newt&ensp;/&ensp;Kuroco
               </p>
