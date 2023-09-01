@@ -21,14 +21,19 @@ export default function Header() {
     >
       <div className="flex justify-between items-center container mx-auto h-full px-4 lg:px-0">
         <Link href="/" className="flex items-center text-xl font-bold">
-          <Image
-            src="/logo.webp"
-            width={48}
-            height={50}
-            alt="トップページに戻る"
-            className="rotate-[5deg]"
-            priority
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            viewBox="0 0 100 100"
+            className="stroke-primaryDark dark:stroke-primaryLight hover:rotate-[8deg] duration-300"
+          >
+            <path
+              d="M50,0 L50,100 L0,50 L100,50 Z"
+              stroke-width="7"
+              fill="none"
+            />
+          </svg>
         </Link>
 
         <nav role="navigation" className="hidden md:inline-block">
