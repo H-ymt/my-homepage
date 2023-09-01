@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <FadeUpMotion>
       <Sheet>
-        <div className="py-10">
+        <section>
           <div className="flex flex-col items-center justify-center gap-10 md:gap-14 p-8 md:p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
             <h1 className="text-2xl md:text-[40px]">Yamato{`'`}s Portfolio</h1>
 
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
         <div className="max-w-[900px] mx-auto">
           <section>
