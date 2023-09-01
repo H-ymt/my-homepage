@@ -46,7 +46,7 @@ export default function Home() {
         </section>
 
         <div className="max-w-[900px] mx-auto">
-          <section>
+          <section className="text-lg">
             <SectionTitle eng="使用技術">Skills</SectionTitle>
 
             <div className="py-8">
@@ -61,8 +61,8 @@ export default function Home() {
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
-                    <Dialog.Overlay className="bg-gray-900/30 data-[state=open]:animate-overlayShow fixed inset-0" />
-                    <Dialog.Content className="dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                    <Dialog.Overlay className="z-30 bg-gray-900/30 dark:bg-gray-900/80 data-[state=open]:animate-overlayShow fixed inset-0" />
+                    <Dialog.Content className="z-40 dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
                       <Dialog.Title>
                         HTML
                         <span className="block mt-1 text-xs text-muted font-light">
@@ -85,8 +85,8 @@ export default function Home() {
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
-                    <Dialog.Overlay className="bg-gray-900/30 data-[state=open]:animate-overlayShow fixed inset-0" />
-                    <Dialog.Content className="dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                    <Dialog.Overlay className="z-30 bg-gray-900/30 dark:bg-gray-900/80 data-[state=open]:animate-overlayShow fixed inset-0" />
+                    <Dialog.Content className="z-40 dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
                       <Dialog.Title>
                         CSS
                         <span className="block mt-1 text-xs text-muted font-light">
@@ -112,8 +112,8 @@ export default function Home() {
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
-                    <Dialog.Overlay className="bg-gray-900/30 data-[state=open]:animate-overlayShow fixed inset-0" />
-                    <Dialog.Content className="dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                    <Dialog.Overlay className="z-30 bg-gray-900/30 dark:bg-gray-900/80 data-[state=open]:animate-overlayShow fixed inset-0" />
+                    <Dialog.Content className="z-40 dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
                       <Dialog.Title>
                         JavaScript
                         <span className="block mt-1 text-xs text-muted font-light">
@@ -142,8 +142,8 @@ export default function Home() {
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
-                    <Dialog.Overlay className="bg-gray-900/30 data-[state=open]:animate-overlayShow fixed inset-0" />
-                    <Dialog.Content className="dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                    <Dialog.Overlay className="z-30 bg-gray-900/30 dark:bg-gray-900/80 data-[state=open]:animate-overlayShow fixed inset-0" />
+                    <Dialog.Content className="z-40 dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
                       <Dialog.Title>
                         React(Next.js)
                         <span className="block mt-1 text-xs text-muted font-light">
@@ -168,8 +168,8 @@ export default function Home() {
                     </button>
                   </Dialog.Trigger>
                   <Dialog.Portal>
-                    <Dialog.Overlay className="bg-gray-900/30 data-[state=open]:animate-overlayShow fixed inset-0" />
-                    <Dialog.Content className="dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
+                    <Dialog.Overlay className="z-30 bg-gray-900/30 dark:bg-gray-900/80 data-[state=open]:animate-overlayShow fixed inset-0" />
+                    <Dialog.Content className="z-40 dark:text-primaryDark data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-[6px] bg-white p-[25px] shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,_hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] focus:outline-none">
                       <Dialog.Title>
                         Astro
                         <span className="block mt-1 text-xs text-muted font-light">
