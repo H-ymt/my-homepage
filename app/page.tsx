@@ -20,7 +20,7 @@ export default function Home() {
     <FadeUpMotion>
       <Sheet>
         <section className="max-w-5xl mx-auto">
-          <div className="flex flex-col items-center justify-center gap-10 md:gap-14 p-8 md:p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
+          <div className="flex flex-col items-center justify-center gap-10 md:gap-12 p-8 md:p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
             <h1 className="text-2xl md:text-[40px]">Yamato{`'`}s Portfolio</h1>
 
             <div className="flex flex-col md:flex-row items-center gap-8">
