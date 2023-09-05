@@ -57,9 +57,9 @@ export default function Header() {
                   : 'hover:bg-orange-200 dark:hover:bg-blue-300/20  duration-400'
               }`}
             >
-              <Link href="/products">
+              <Link href="/works">
                 <PiCodeDuotone color="" size="1em" />
-                Products
+                Works
               </Link>
             </li>
             <li

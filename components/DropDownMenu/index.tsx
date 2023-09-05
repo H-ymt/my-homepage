@@ -37,9 +37,9 @@ export default function DropDownMenu() {
                 <IoMdHome size="1.2em" />
                 Home
               </Link>
-              <Link href="/products">
+              <Link href="/works">
                 <PiCodeDuotone size="1.2em" />
-                Products
+                Works
               </Link>
               <Link href="/blog">
                 <SiZenn size="1.2em" />
