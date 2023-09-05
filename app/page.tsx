@@ -20,8 +20,8 @@ export default function Home() {
     <FadeUpMotion>
       <Sheet>
         <section className="max-w-5xl mx-auto">
-          <div className="flex flex-col items-center justify-center gap-10 md:gap-14 p-8 md:p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
-            <h1 className="text-2xl md:text-[40px]">Yamato{`'`}s Portfolio</h1>
+          <div className="flex flex-col items-center justify-center gap-10 md:gap-12 px-6 py-12 sm:p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
+            <h1 className="text-4xl md:text-[40px] tracking-wider">Portfolio</h1>
 
             <div className="flex flex-col md:flex-row items-center gap-8">
               <Image
@@ -31,7 +31,7 @@ export default function Home() {
                 height={180}
                 className="clip-path-perfectCircle"
               />
-              <p className="font-semibold">
+              <p className="text-md md:text-lg font-semibold">
                 はじめまして。
                 <br />
                 私は高校卒業後に公務員として5年勤務したのち、今はコンサル会社のコーダーとしてWeb制作業務に携わっています。
