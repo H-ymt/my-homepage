@@ -9,7 +9,7 @@ import { SiZenn } from 'react-icons/si';
 import { IoMdHome } from 'react-icons/io';
 import { PiCodeDuotone } from 'react-icons/pi';
 import DropDownMenu from '../DropDownMenu';
-import ThemeChanger from '../ThemeChanger';
+import ThemeChanger from '../ThemeChanger/ThemeChanger';
 
 export default function Header() {
   const pathname = usePathname();
