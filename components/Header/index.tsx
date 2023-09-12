@@ -20,7 +20,10 @@ export default function Header() {
       className="sticky z-20 top-0 h-[72px] shadow-blue-20 bg-opacity-20 backdrop-blur-xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a]"
     >
       <div className="flex justify-between items-center container mx-auto h-full px-4 lg:px-0">
-        <Link href="/" className="flex items-center text-xl font-bold">
+        <Link
+          href="/"
+          className="flex items-center text-xl font-bold stroke-[5]"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -28,11 +31,7 @@ export default function Header() {
             viewBox="0 0 100 100"
             className="stroke-primaryDark dark:stroke-primaryLight hover:rotate-[8deg] duration-300"
           >
-            <path
-              d="M50,0 L50,100 L0,50 L100,50 Z"
-              stroke-width="7"
-              fill="none"
-            />
+            <path d="M50,0 L50,100 L0,50 L100,50 Z" fill="none" />
           </svg>
         </Link>
 
