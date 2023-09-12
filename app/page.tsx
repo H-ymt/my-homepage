@@ -29,7 +29,7 @@ export default function Home() {
               height={180}
               className="clip-path-perfectCircle"
             />
-            <p className="text-md md:text-lg font-semibold">
+            <p className="text-md md:text-lg font-medium max-w-xl">
               新卒で公務員として5年勤務したのち、今はコンサル会社のコーダーとしてWeb制作業務に携わっています。
               <br />
               最近は、Astro・Next.jsなどの技術を用いたJamstackサイトの制作が好きです。夢はWebアプリ開発に携わる仕事をすることです。
