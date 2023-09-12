@@ -38,37 +38,37 @@ export default function Header() {
         <nav role="navigation" className="hidden md:inline-block">
           <ul className="flex items-center gap-3.5 text-sm font-medium [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-1">
             <li
-              className={`py-[5px] px-[12px] rounded-md  ${
+              className={`rounded-md  ${
                 pathname === '/'
                   ? 'bg-orange-300 dark:bg-blue-600/60'
                   : 'hover:bg-orange-200 dark:hover:bg-blue-300/20  duration-400'
               }`}
             >
-              <Link href="/">
+              <Link href="/" className="py-[5px] px-[12px]">
                 <IoMdHome color="" size="1em" />
                 Home
               </Link>
             </li>
             <li
-              className={`py-[5px] px-[12px] rounded-md ${
+              className={`rounded-md ${
                 pathname === '/works'
                   ? 'bg-orange-300 dark:bg-blue-600/60'
                   : 'hover:bg-orange-200 dark:hover:bg-blue-300/20  duration-400'
               }`}
             >
-              <Link href="/works">
+              <Link href="/works" className="py-[5px] px-[12px]">
                 <PiCodeDuotone color="" size="1em" />
                 Works
               </Link>
             </li>
             <li
-              className={`py-[5px] px-[12px] rounded-md ${
+              className={`rounded-md ${
                 pathname === '/blog'
                   ? 'bg-orange-300 dark:bg-blue-600/60'
                   : 'hover:bg-orange-200 dark:hover:bg-blue-300/20 duration-400'
               }`}
             >
-              <Link href="/blog">
+              <Link href="/blog" className="py-[5px] px-[12px]">
                 <SiZenn color="" size="1em" />
                 Blog
               </Link>
