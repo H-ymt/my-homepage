@@ -1,12 +1,25 @@
 'use client';
 
-export const fadeUp = {
-  hidden: { opacity: 0, translateY: 15 },
+export const pageTransition = {
+  hidden: {
+    opacity: 0,
+    y: '15px',
+    transition: {
+      duration: 0.5,
+    },
+  },
   visible: {
     opacity: 1,
-    translateY: 0,
+    y: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.5,
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: '-15px',
+    transition: {
+      duration: 0.5,
     },
   },
 };
