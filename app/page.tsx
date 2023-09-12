@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Sheet from '@/components/Sheet';
-import FadeUpMotion from '@/components/FadeUpMotion';
 import SectionTitle from '@/components/SectionTitle';
 import * as Dialog from '@radix-ui/react-dialog';
 import { BiSolidFileHtml } from 'react-icons/bi';
@@ -31,7 +30,7 @@ export default function Home() {
               className="clip-path-perfectCircle"
             />
             <p className="text-md md:text-lg font-semibold">
-              私は新卒で公務員として5年勤務したのち、今はコンサル会社のコーダーとしてWeb制作業務に携わっています。
+              新卒で公務員として5年勤務したのち、今はコンサル会社のコーダーとしてWeb制作業務に携わっています。
               <br />
               最近は、Astro・Next.jsなどの技術を用いたJamstackサイトの制作が好きです。夢はWebアプリ開発に携わる仕事をすることです。
               <br />
