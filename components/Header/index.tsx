@@ -19,7 +19,7 @@ export default function Header() {
       role="banner"
       className="sticky z-20 top-0 h-[72px] shadow-blue-20 bg-opacity-20 backdrop-blur-xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a]"
     >
-      <div className="flex justify-between items-center container mx-auto h-full px-4 lg:px-0">
+      <div className="flex justify-between items-center max-w-[1024px] mx-auto h-full px-4 lg:px-0">
         <Link
           href="/"
           className="flex items-center text-xl font-bold stroke-[5]"
