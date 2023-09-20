@@ -182,20 +182,20 @@ export default function Home() {
           <div className="py-8">
             <h3 className="text-center">Others</h3>
 
-            <div className="flex flex-col gap-6 mt-8">
-              <div className="flex flex-col gap-1 p-3 border border-orange-400 dark:border-white rounded-lg">
+            <div className="grid sm:grid-cols-2 gap-6 mt-8">
+              <div className="flex flex-col gap-1 p-3 border-2 border-orange-400 dark:border-white rounded-lg">
                 <h4 className="font-semibold">ソースコード管理</h4>
                 <p className="text-base">
                   Git{`(`}GitHub{`)`}
                 </p>
               </div>
-              <div className="flex flex-col gap-1 p-3 border border-orange-400 dark:border-white rounded-lg">
+              <div className="flex flex-col gap-1 p-3 border-2 border-orange-400 dark:border-white rounded-lg">
                 <h4 className="font-semibold">CMS</h4>
                 <p className="text-base">
                   microCMS,&ensp;Wordpress,&ensp;Newt,&ensp;Kuroco
                 </p>
               </div>
-              <div className="flex flex-col gap-1 p-3 border border-orange-400 dark:border-white rounded-lg">
+              <div className="flex flex-col gap-1 p-3 border-2 border-orange-400 dark:border-white rounded-lg">
                 <h4 className="font-semibold">Cloud&ensp;Service</h4>
                 <p className="text-base">
                   Vercel,&ensp;Netlify,&ensp;Cloudflare&ensp;
