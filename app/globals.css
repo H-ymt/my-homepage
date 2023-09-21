@@ -61,6 +61,7 @@ section {
 }
 
 h1 {
+  padding-bottom: 48px;
   font-weight: 700;
   font-size: 32px;
   text-align: center;
