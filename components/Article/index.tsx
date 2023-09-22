@@ -56,6 +56,13 @@ export default function Article({ data }: Props) {
             </div>
           </li>
         </ul>
+
+        <Link
+          href="/works"
+          className="inline-flex items-center w-fit ml-auto py-1.5 px-2.5 bg-orange-400/70 hover:bg-orange-400 rounded-md transition-all duration-300"
+        >
+          一覧へ戻る
+        </Link>
       </div>
     </main>
   );
