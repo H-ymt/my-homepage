@@ -23,6 +23,7 @@ export type Works = {
   thumbnail?: MicroCMSImage;
   title: string;
   content: string;
+  url: string;
   created: string;
   category: Category[];
 };
@@ -86,6 +87,8 @@ export const getWorksDetail = async (
     contentId,
     queries,
   });
+
+  return detailData;
 };
 
 // カテゴリーの詳細を取得
