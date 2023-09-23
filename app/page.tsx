@@ -17,11 +17,11 @@ import { AiOutlineMail } from 'react-icons/ai';
 export default function Home() {
   return (
     <Sheet>
-      <section className="max-w-4xl mx-auto">
+      <div className="pb-16">
         <div className="flex flex-col items-center justify-center px-6 py-12 sm:p-12 lg:p-20 bg-orange-200/60 dark:bg-blue-200/30 bg-opacity-40 backdrop-blur-xl shadow-sm rounded-3xl">
           <h1 className="text-4xl md:text-[40px] tracking-wider">Portfolio</h1>
 
-          <div className="flex flex-col md:flex-row items-center gap-8">
+          <div className="flex flex-col items-center gap-8">
             <Image
               src="/icon.webp"
               alt=""
@@ -37,9 +37,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <div className="max-w-[900px] mx-auto">
+      <div className="max-w-[800px] mx-auto">
         <section className="text-lg">
           <SectionTitle eng="使用技術">Skills</SectionTitle>
 

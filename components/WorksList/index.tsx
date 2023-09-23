@@ -14,7 +14,7 @@ export default function WorksList({ articles }: Props) {
     return <p>準備中です</p>;
   }
   return (
-    <ul className="grid sm:grid-cols-2 place-items-center max-w-[600px] mx-auto gap-12">
+    <ul className="grid sm:grid-cols-2 place-items-center mx-auto gap-12">
       {articles.map((article) => (
         <WorksListItem key={article.id} works={article} />
       ))}
