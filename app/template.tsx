@@ -17,7 +17,6 @@ export default function RootTemplate({ children }: Props) {
         variants={fadeUp}
         initial="hidden"
         animate="visible"
-        exit="hidden"
         key={pathname}
       >
         {children}

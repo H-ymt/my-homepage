@@ -3,14 +3,14 @@ export const fadeUp = {
     opacity: 0,
     y: '45px',
     transition: {
-      duration: 0.5,
+      duration: 0.7,
     },
   },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.7,
     },
   },
 };
