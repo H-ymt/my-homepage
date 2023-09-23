@@ -1,7 +1,7 @@
 export const fadeUp = {
   hidden: {
     opacity: 0,
-    y: '45px',
+    y: '25px',
     transition: {
       duration: 0.7,
     },
