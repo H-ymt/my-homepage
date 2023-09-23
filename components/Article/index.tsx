@@ -59,7 +59,7 @@ export default function Article({ data }: Props) {
 
         <Link
           href="/works"
-          className="inline-flex items-center w-fit ml-auto py-1.5 px-2.5 bg-orange-400/70 hover:bg-orange-400 dark:bg-slate-600 dark:hover:bg-slate-700 rounded-md transition-all duration-300"
+          className="inline-flex items-center w-fit mt-6 ml-auto py-2 px-4 text-sm bg-orange-400/70 hover:bg-orange-400 dark:bg-slate-600 dark:hover:bg-slate-700 rounded-md transition-all duration-300"
         >
           一覧へ戻る
         </Link>
