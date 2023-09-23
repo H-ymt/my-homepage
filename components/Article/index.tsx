@@ -22,7 +22,7 @@ export default function Article({ data }: Props) {
         />
       )}
 
-      <div className="flex flex-col gap-3 p-4">
+      <div className="flex flex-col gap-3 p-3">
         <div
           dangerouslySetInnerHTML={{
             __html: `${formatRichText(data.content)}`,
