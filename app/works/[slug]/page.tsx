@@ -1,7 +1,6 @@
 import { getWorksDetail } from '@/app/libs/microcms';
 import { Metadata } from 'next';
 import Article from '@/components/Article';
-import Sheet from '@/components/Sheet';
 
 type Props = {
   params: {
@@ -11,6 +10,8 @@ type Props = {
     dk: string;
   };
 };
+
+export const revalidate = 60;
 
 export async function generateMetadata({
   params,
