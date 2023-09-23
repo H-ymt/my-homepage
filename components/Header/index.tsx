@@ -34,7 +34,7 @@ export default function Header() {
         </Link>
 
         <nav role="navigation" className="hidden md:inline-block">
-          <ul className="flex items-center gap-3.5 text-sm font-medium [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-1">
+          <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-1">
             <li
               className={`rounded-md  ${
                 pathname === '/'
@@ -43,7 +43,7 @@ export default function Header() {
               }`}
             >
               <Link href="/" className="py-[5px] px-[12px]">
-                <IoMdHome color="" size="1em" />
+                <IoMdHome color="" size="1.2em" />
                 Home
               </Link>
             </li>
@@ -55,7 +55,7 @@ export default function Header() {
               }`}
             >
               <Link href="/works" className="py-[5px] px-[12px]">
-                <PiCodeDuotone color="" size="1em" />
+                <PiCodeDuotone color="" size="1.2em" />
                 Works
               </Link>
             </li>
