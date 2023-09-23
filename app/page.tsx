@@ -182,7 +182,7 @@ export default function Home() {
           <div className="py-8">
             <h3 className="text-center">Others</h3>
 
-            <div className="grid sm:grid-cols-2 gap-6 mt-8">
+            <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 mt-8">
               <div className="flex flex-col gap-1 p-4 border-2 border-primaryDark dark:border-white rounded-lg">
                 <h4 className="font-semibold">ソースコード管理</h4>
                 <p className="text-base">
