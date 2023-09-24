@@ -22,7 +22,7 @@ const Link = ({ href, children, ...props }: Props) => {
   );
 };
 
-export default function DropDownMenu() {
+export default function HamburgerMenu() {
   return (
     <div className="md:hidden h-[32px]">
       <NavigationMenu.Root orientation="vertical">
