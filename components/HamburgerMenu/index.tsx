@@ -28,7 +28,10 @@ export default function HamburgerMenu() {
       <NavigationMenu.Root orientation="vertical">
         <NavigationMenu.List>
           <NavigationMenu.Item className="relative">
-            <NavigationMenu.Trigger className="outline-none">
+            <NavigationMenu.Trigger
+              className="outline-none"
+              aria-label="メニューを開く"
+            >
               <FiMenu size="32px" />
             </NavigationMenu.Trigger>
 

@@ -6,7 +6,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { SiZenn } from 'react-icons/si';
 import { IoMdHome } from 'react-icons/io';
 import { PiCodeDuotone } from 'react-icons/pi';
-import DropDownMenu from '../DropDownMenu';
+import DropDownMenu from '../HamburgerMenu';
 import ThemeChanger from '../ThemeChanger/ThemeChanger';
 
 export default function Header() {
@@ -21,6 +21,7 @@ export default function Header() {
         <Link
           href="/"
           className="flex items-center text-xl font-bold stroke-[5]"
+          aria-label="トップへ戻る"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

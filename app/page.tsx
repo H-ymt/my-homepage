@@ -212,7 +212,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-4 pt-6">
             <Link
               href="mailto:y.handai1272@gmail.com"
-              className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1 bg-orange-500 dark:bg-blue-700 text-white rounded-md"
+              className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1.5 bg-orange-500 hover:bg-orange-600 checked:bg-orange-600 dark:bg-blue-700 dark:hover:bg-blue-800 dark:checked:bg-blue-800 text-gray-100 rounded-md transition-all duration-300"
             >
               <button type="button" className="inline-flex items-center gap-2">
                 <AiOutlineMail size="14px" />
@@ -223,7 +223,7 @@ export default function Home() {
             <Link
               href="https://twitter.com/Hy1272"
               target="blank"
-              className="inline-flex items-center justify-center gap-2 w-[120px] py-1 bg-twitter text-white rounded-md"
+              className="inline-flex items-center justify-center gap-2 w-[120px] py-1.5 bg-twitter/80 hover:bg-twitter/100 checked:bg-twitter/100 text-gray-100 rounded-md transition-all duration-300"
             >
               <AiOutlineTwitter size="14px" />
               <button type="button" className="">
