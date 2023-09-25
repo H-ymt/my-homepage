@@ -184,10 +184,8 @@ export default function Home() {
 
             <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 mt-8">
               <div className="flex flex-col gap-1 p-4 border-2 border-primaryDark dark:border-white rounded-lg">
-                <h4 className="font-semibold">ソースコード管理</h4>
-                <p className="text-base">
-                  Git{`(`}GitHub{`)`}
-                </p>
+                <h4 className="font-semibold">バージョン管理</h4>
+                <p className="text-base">Git/GitHub</p>
               </div>
               <div className="flex flex-col gap-1 p-4 border-2 border-primaryDark dark:border-white rounded-lg">
                 <h4 className="font-semibold">CMS</h4>
