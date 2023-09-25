@@ -24,6 +24,7 @@ export type Works = {
   title: string;
   content: string;
   url: string;
+  source: string;
   created: string;
   category: Category[];
 };

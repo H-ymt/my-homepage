@@ -2,7 +2,6 @@ import { type Article } from '@/app/libs/microcms';
 import { formatRichText } from '@/app/utils/formatRichText';
 import Image from 'next/image';
 import Link from 'next/link';
-import { PiArrowSquareInLight } from 'react-icons/pi';
 
 type Props = {
   data: Article;
@@ -32,21 +31,21 @@ export default function Article({ data }: Props) {
 
         <ul className="flex flex-col gap-2 text-xs">
           <li className="flex gap-2 items-center">
-            <span className="py-1.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
+            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
               WEBSITE
             </span>
             <Link
               href={data.url}
-              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2"
+              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2 break-keep"
+              target="blank"
             >
               {data.url}
-              <PiArrowSquareInLight size="20px" />
             </Link>
           </li>
 
           <li className="flex gap-2 items-center">
-            <span className="py-1.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
-              Stack
+            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
+              STACK
             </span>
 
             <div className="flex flex-wrap gap-1.5 items-start">
@@ -54,6 +53,19 @@ export default function Article({ data }: Props) {
                 <span key={data.id}>{data.name},</span>
               ))}
             </div>
+          </li>
+
+          <li className="flex gap-2 items-center">
+            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
+              SOURCE
+            </span>
+            <Link
+              href={data.source}
+              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2"
+              target="blank"
+            >
+              {data.source}
+            </Link>
           </li>
         </ul>
 
