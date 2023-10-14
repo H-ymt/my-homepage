@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { fadeUp } from './utils/motion';
 import { usePathname } from 'next/navigation';
 
@@ -12,15 +12,13 @@ export default function RootTemplate({ children }: Props) {
   const pathname = usePathname();
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        variants={fadeUp}
-        initial="hidden"
-        animate="visible"
-        key={pathname}
-      >
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      variants={fadeUp}
+      initial="hidden"
+      animate="visible"
+      key={pathname}
+    >
+      {children}
+    </motion.div>
   );
 }
