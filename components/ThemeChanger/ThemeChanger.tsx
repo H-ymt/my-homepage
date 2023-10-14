@@ -26,7 +26,12 @@ export default function ThemeChanger() {
 
   return (
     <div className="inline-block h-[1.6em]">
-      <button type="button" onClick={toggleTheme} aria-label="テーマを変更する">
+      <button
+        className="hover:-translate-y-0.5 duration-300 ease"
+        type="button"
+        onClick={toggleTheme}
+        aria-label="テーマを変更する"
+      >
         {Icon && <Icon size="1.6em" />}
       </button>
     </div>
