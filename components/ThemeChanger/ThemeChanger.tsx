@@ -13,8 +13,12 @@ export default function ThemeChanger() {
     setMounted(true);
   }, []);
 
+  if (!mounted) {
+    return null;
+  }
+
   const toggleTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   // マウントされた後にテーマの状態を取得してアイコンを表示
