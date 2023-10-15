@@ -12,11 +12,11 @@ export const metadata = {
     default: "Yamato's Portfolio",
   },
   description:
-    'Nest.jsとTailwind CSSを使用したポートフォリオWebサイトです。コンテンツ管理にmicroCMSを使用したJamstack構成で、ホスティングにはCloudflare Pagesを使用しています。',
+    'Next.jsとTailwind CSSを使用したポートフォリオWebサイトです。コンテンツ管理にmicroCMSを使用したJamstack構成で、ホスティングにはCloudflare Pagesを使用しています。',
   twitter: {
     title: "Yamato's Portfolio",
     description:
-      'Nest.jsとTailwind CSSを使用したポートフォリオWebサイトです。コンテンツ管理にmicroCMSを使用したJamstack構成で、ホスティングにはCloudflare Pagesを使用しています。',
+      'Next.jsとTailwind CSSを使用したポートフォリオWebサイトです。コンテンツ管理にmicroCMSを使用したJamstack構成で、ホスティングにはCloudflare Pagesを使用しています。',
     card: 'summary_large_image',
   },
   viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
