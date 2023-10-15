@@ -21,7 +21,7 @@
   --color-bg: #1a1e2e;
 }
 
-:root.light {
+:root {
   --color-text-primary: #27272a;
   --color-bg: #fdedd7;
 }
