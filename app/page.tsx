@@ -54,21 +54,21 @@ export default function Home() {
                   aria-label="My skill sets"
                 >
                   <Tabs.Trigger
-                    className="bg-transparent px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover-text-blue-400 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-400 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
                     value="tab1"
                   >
                     <BiSolidFileHtml size="16px" />
                     HTML
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="bg-transparent px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover-text-blue-400 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-400 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
                     value="tab2"
                   >
                     <BiSolidFileCss size="16px" />
                     CSS
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="bg-transparent px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover-text-blue-400 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-400 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
                     value="tab3"
                   >
                     <BiLogoJavascript size="16px" />
@@ -116,14 +116,14 @@ export default function Home() {
                   aria-label="My skill sets"
                 >
                   <Tabs.Trigger
-                    className="bg-transparent px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover-text-blue-400 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-400 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
                     value="tab1"
                   >
                     <SiNextdotjs size="16px" />
                     React(Next.js)
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="bg-transparent px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover-text-blue-400 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-400 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
                     value="tab2"
                   >
                     <SiAstro size="16px" />
