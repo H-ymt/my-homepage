@@ -4,14 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Sheet from '@/components/Sheet';
 import SectionTitle from '@/components/SectionTitle';
-import * as Dialog from '@radix-ui/react-dialog';
 import * as Tabs from '@radix-ui/react-tabs';
 import { BiSolidFileHtml } from 'react-icons/bi';
 import { BiSolidFileCss } from 'react-icons/bi';
 import { BiLogoJavascript } from 'react-icons/bi';
 import { SiAstro } from 'react-icons/si';
 import { SiNextdotjs } from 'react-icons/si';
-import { PiArrowSquareInLight } from 'react-icons/pi';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiOutlineMail } from 'react-icons/ai';
 
