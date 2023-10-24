@@ -18,6 +18,15 @@ export type Category = {
 } & MicroCMSContentId &
   MicroCMSDate;
 
+// メタ情報の型定義
+export type Meta = {
+  title?: string;
+  description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: MicroCMSImage;
+};
+
 // 実績の型定義
 export type Works = {
   thumbnail?: MicroCMSImage;
@@ -27,19 +36,10 @@ export type Works = {
   source: string;
   created: string;
   category: Category[];
+  meta: Meta;
 };
 
-// メタ情報の型定義
-export type Meta = {
-  title?: string;
-  description?: string;
-  ogTitle?: string;
-  ogDescription?: string;
-  ogImage?: MicroCMSImage;
-  canonical?: string;
-};
-
-export type Article = Works & MicroCMSContentId & MicroCMSDate;
+export type Article = Works & Meta & MicroCMSContentId & MicroCMSDate;
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
   throw new Error('MICROCMS_SERVICE_DOMAIN is required');

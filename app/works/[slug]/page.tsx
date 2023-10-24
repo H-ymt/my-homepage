@@ -22,7 +22,15 @@ export async function generateMetadata({
     draftKey: searchParams.dk,
   });
 
-  return {};
+  return {
+    title: data.meta.title,
+    description: data.meta.description,
+    twitter: {
+      title: data.meta.title,
+      description: data.meta.description,
+      images: [data?.meta.ogImage?.url || ''],
+    },
+  };
 }
 
 export default async function Page({ params, searchParams }: Props) {
