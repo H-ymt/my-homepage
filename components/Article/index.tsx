@@ -36,7 +36,7 @@ export default function Article({ data }: Props) {
             </span>
             <Link
               href={data.url}
-              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2 break-keep"
+              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2"
               target="blank"
             >
               {data.url}
