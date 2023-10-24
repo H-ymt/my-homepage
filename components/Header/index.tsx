@@ -35,7 +35,7 @@ export default function Header() {
         </Link>
 
         <nav role="navigation" className="hidden md:inline-block">
-          <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-1">
+          <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-1 [&>li]:tracking-wider">
             <li
               className={`rounded-md  ${
                 pathname === '/'
