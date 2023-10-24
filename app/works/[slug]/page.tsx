@@ -23,12 +23,11 @@ export async function generateMetadata({
   });
 
   return {
-    title: data.meta.title,
-    description: data.meta.description,
+    title: data.meta?.title,
+    description: data.meta?.description,
     twitter: {
-      title: data.meta.title,
-      description: data.meta.description,
-      images: [data?.meta.ogImage?.url || ''],
+      title: data.meta?.title,
+      description: data.meta?.description,
     },
   };
 }
