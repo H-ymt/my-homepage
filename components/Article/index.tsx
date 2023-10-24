@@ -10,7 +10,7 @@ type Props = {
 export default function Article({ data }: Props) {
   return (
     <main className="flex flex-col max-w-xl mx-auto">
-      <h1 className="text-2xl">{data.title}</h1>
+      <h1 className="text-2xl pb-8 text-left md:text-center">{data.title}</h1>
       {data.thumbnail && (
         <Image
           src={data.thumbnail?.url}
