@@ -1,4 +1,4 @@
-import { type Article } from '@/app/libs/microcms';
+import { Category, type Article } from '@/app/libs/microcms';
 import { formatRichText } from '@/app/utils/formatRichText';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -49,8 +49,8 @@ export default function Article({ data }: Props) {
             </span>
 
             <div className="flex flex-wrap gap-1.5 items-start">
-              {data.category.map((data: any) => (
-                <span key={data.id}>{data.name},</span>
+              {data.category.map((category: Category) => (
+                <span key={category.id}>{category.name},</span>
               ))}
             </div>
           </li>
