@@ -17,7 +17,7 @@ export default function WorksListItem({ works }: Props) {
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
-            className="min-w-[296px] h-[60%] object-cover rounded-xl shadow-lg border border-orange-50 dark:border-gray-50/10"
+            className="min-w-[296px] h-[60%] object-cover rounded-lg shadow-lg border border-orange-50 dark:border-gray-50/10"
           />
         ) : (
           <Image src="" alt="No Image" width={800} height={800} />
