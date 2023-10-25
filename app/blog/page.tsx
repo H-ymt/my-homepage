@@ -1,6 +1,8 @@
 import { Suspense } from 'react';
 import BlogList from '@/components/BlogList';
 
+export const revalidate = 120;
+
 export default function Page() {
   return (
     <>
