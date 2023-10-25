@@ -25,7 +25,7 @@ export default function WorksListItem({ works }: Props) {
         )}
 
         <dl className="inline-flex flex-col gap-2 mt-3 pl-2">
-          <dt className="sm:min-h-[56px] text-base font-semibold overflow-ellipsis line-clamp-2">
+          <dt className="sm:min-h-[48px] text-base font-semibold overflow-ellipsis line-clamp-2">
             {works.title}
           </dt>
           <dd className="flex flex-wrap gap-2.5">
