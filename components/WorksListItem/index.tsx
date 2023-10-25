@@ -1,7 +1,6 @@
 import { Article } from '@/app/libs/microcms';
 import Image from 'next/image';
 import Link from 'next/link';
-import Category from '../Category';
 
 type Props = {
   works: Article;
@@ -13,11 +12,13 @@ export default function WorksListItem({ works }: Props) {
       <Link href={`/works/${works.id}`} className="">
         {works.thumbnail ? (
           <Image
-            src={works.thumbnail?.url}
+            src={works.thumbnail?.url + '?w=1000&h=530'}
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
             className="min-w-[296px] h-[60%] object-cover rounded-lg shadow-lg border border-orange-50 dark:border-gray-50/10"
+            sizes="(min-width: 640px) 296px, 100vw"
+            loading="eager"
           />
         ) : (
           <Image src="" alt="No Image" width={800} height={800} />
