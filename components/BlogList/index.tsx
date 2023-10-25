@@ -25,7 +25,7 @@ export default async function BlogList() {
             <Link
               href={`https://zenn.dev/${post.path}`}
               target="blank"
-              className="inline-flex flex-col items-center justify-center gap-4 w-[300px] min-h-[220px] max-w-[320px] p-6 border-2 bg-orange-200 dark:bg-blue-200/30 border-none rounded-lg hover:scale-[1.02] duration-200 transition-all"
+              className="inline-flex flex-col items-center justify-center gap-4 w-[300px] min-h-[220px] max-w-[320px] p-6 border-2 border-orange-300/20 dark:border-gray-50/10 bg-orange-200 dark:bg-blue-200/30 rounded-lg hover:scale-[1.02] duration-200 transition-all"
             >
               <span className="text-6xl">{post.emoji}</span>
               <p className="text-left font-medium line-clamp-2 overflow-hidden break-all">
