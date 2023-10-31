@@ -9,6 +9,8 @@ interface Post {
   published_at: string;
 }
 
+export const revalidate = 120;
+
 export default async function BlogList() {
   const res = await fetch(
     'https://zenn.dev/api/articles?username=h_ymt&order=latest',
