@@ -22,14 +22,14 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-8">
             <Image
-              src="/icon.webp"
+              src="/hero-image.webp"
               alt=""
-              width={384}
-              height={208}
-              className="rounded-lg"
+              width={400}
+              height={260}
+              className="rounded-lg aspect-[2/1.3] object-cover"
             />
             <p className="text-md md:text-lg font-medium max-w-xl">
-              新卒で公務員として5年勤務したのち、今はコンサル会社のコーダーとしてWeb制作業務に携わっています。
+              新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。
               <br />
               最近は、Astro・Next.jsなどの技術を用いたJamstackサイトの制作が好きです。
               <br />
