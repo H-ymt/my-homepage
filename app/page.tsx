@@ -2,8 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Sheet from '@/components/Sheet';
-import SectionTitle from '@/components/SectionTitle';
+import Sheet from '@/app/_components/Sheet';
+import SectionTitle from '@/app/_components/SectionTitle';
 import * as Tabs from '@radix-ui/react-tabs';
 import { BiSolidFileHtml } from 'react-icons/bi';
 import { BiSolidFileCss } from 'react-icons/bi';
