@@ -18,7 +18,9 @@ export default function Home() {
     <>
       <div className="flex items-center h-[calc(100vh-200px)]">
         <div className="flex flex-col items-center justify-center max-w-xl mx-auto px-5">
-          <h1 className="text-4xl md:text-[40px] tracking-wider">Portfolio</h1>
+          <h1 className="text-4xl md:text-[40px] tracking-wider">
+            My Homepage
+          </h1>
 
           <div className="flex flex-col items-center gap-8">
             <Image
