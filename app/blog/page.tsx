@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import BlogList from '@/components/BlogList';
+import BlogList from '@/app/_components/BlogList';
 
 export const revalidate = 120;
 

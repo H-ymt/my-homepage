@@ -1,4 +1,4 @@
-import Sheet from '@/components/Sheet';
+import Sheet from '@/app/_components/Sheet';
 
 type Props = {
   children: React.ReactNode;

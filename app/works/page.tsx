@@ -1,4 +1,4 @@
-import WorksList from '@/components/WorksList';
+import WorksList from '@/app/_components/WorksList';
 import { getWorksList } from '../libs/microcms';
 import { WORKS_LIST_LIMIT } from '../constants';
 import { Suspense } from 'react';

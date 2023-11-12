@@ -1,6 +1,6 @@
 import { getWorksDetail } from '@/app/libs/microcms';
 import { Metadata } from 'next';
-import Article from '@/components/Article';
+import Article from '@/app/_components/Article';
 
 type Props = {
   params: {
