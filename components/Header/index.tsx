@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header
       role="banner"
-      className="sticky z-20 top-0 h-[72px] shadow-blue-20 bg-opacity-20 backdrop-blur-xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a]"
+      className="sticky z-20 top-0 h-[64px] shadow-blue-20 bg-opacity-20 backdrop-blur-3xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a]"
     >
       <div className="flex justify-between items-center max-w-[1024px] mx-auto h-full px-4 lg:px-0">
         <Link
@@ -35,40 +35,40 @@ export default function Header() {
         </Link>
 
         <nav role="navigation" className="hidden md:inline-block">
-          <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-1 [&>li]:tracking-wider">
+          <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 [&>li]:tracking-wider">
             <li
-              className={`rounded-md  ${
+              className={`rounded-md relative after:absolute after:w-12 after:h-[2px] after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 hover:after:bg-accent/50 after:scale-y-0 hover:after:scale-y-100 after:transition-transform hover:after:transition-transform after:duration-300 hover:after:duration-300 ${
                 pathname === '/'
-                  ? 'bg-orange-300 dark:bg-blue-600/60'
-                  : 'hover:bg-orange-200 dark:hover:bg-blue-300/20  duration-400'
+                  ? 'after:bg-accent after:h-[2px] after:scale-y-100'
+                  : ''
               }`}
             >
-              <Link href="/" className="py-[5px] px-[12px]">
-                <IoMdHome color="" size="1.2em" />
+              <Link href="/" className="py-[5px] px-4">
+                <IoMdHome color="" size="1.1em" />
                 Home
               </Link>
             </li>
             <li
-              className={`rounded-md ${
+              className={`rounded-md relative after:absolute after:w-12 after:h-[2px] after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 hover:after:bg-accent/50 after:scale-y-0 hover:after:scale-y-100 after:transition-transform hover:after:transition-transform after:duration-300 hover:after:duration-300 ${
                 pathname === '/works'
-                  ? 'bg-orange-300 dark:bg-blue-600/60'
-                  : 'hover:bg-orange-200 dark:hover:bg-blue-300/20  duration-400'
+                  ? 'after:bg-accent after:h-[2px] after:scale-y-100'
+                  : ''
               }`}
             >
-              <Link href="/works" className="py-[5px] px-[12px]">
+              <Link href="/works" className="py-[5px] px-4">
                 <PiCodeDuotone color="" size="1.2em" />
                 Works
               </Link>
             </li>
             <li
-              className={`rounded-md ${
+              className={`rounded-md relative after:absolute after:w-12 after:h-[2px] after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 hover:after:bg-accent/50 after:scale-y-0 hover:after:scale-y-100 after:transition-transform hover:after:transition-transform after:duration-300 hover:after:duration-300 ${
                 pathname === '/blog'
-                  ? 'bg-orange-300 dark:bg-blue-600/60'
-                  : 'hover:bg-orange-200 dark:hover:bg-blue-300/20 duration-400'
+                  ? 'after:bg-accent after:h-[2px] after:scale-y-100'
+                  : ''
               }`}
             >
-              <Link href="/blog" className="py-[5px] px-[12px]">
-                <SiZenn color="" size="1em" />
+              <Link href="/blog" className="py-[5px] px-4">
+                <SiZenn color="" size="0.9em" />
                 Blog
               </Link>
             </li>
