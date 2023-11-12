@@ -21,7 +21,7 @@ export default function Header() {
       <div className="flex justify-between items-center max-w-[1024px] mx-auto h-full px-4 lg:px-0">
         <Link
           href="/"
-          className="flex items-center text-xl font-bold stroke-[5] w-8 clip-path-perfectCircle"
+          className="flex items-center text-xl font-bold stroke-[5] w-8 clip-path-perfectCircle hover:-translate-y-0.5 duration-300 ease"
           aria-label="トップへ戻る"
         >
           <Image src="/logo.png" width={64} height={64} alt="Logo" />
