@@ -16,7 +16,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 export default function Home() {
   return (
     <>
-      <div className="flex items-center h-[calc(100vh-200px)]">
+      <div className="flex items-center pt-20 md:pt-32 pb-24">
         <div className="flex flex-col items-center justify-center max-w-xl mx-auto px-5">
           <h1 className="text-4xl md:text-[40px] tracking-wider">
             My Homepage
