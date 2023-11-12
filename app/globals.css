@@ -3,39 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --orange-50: #fff4e5;
-  --orange-100: #ffeed5;
-  --orange-200: #fed9aa;
-  --orange-300: #fdbd74;
-  --orange-400: #fb963c;
-  --orange-500: #f97816;
-  --orange-600: #ea5d0c;
-  --orange-700: #c2450c;
-  --orange-800: #9a3712;
-  --orange-900: #7c2f12;
-  --orange-950: #431507;
+  --color-background: 206, 19%, 93%;
+  --color-text-primary: 39 39 42;
+  --color-accent: 310, 74%, 71%;
+  --color-muted: 104 104 104;
+  --box-shadow-outer-xs: 10px 10px 24px 0px rgba(166, 180, 200, 0.4),
+    -12px -12px 20px 0px rgba(255, 255, 255, 0.7);
+  --box-shadow-outer-sm: 10px 10px 20px 0px rgba(166, 180, 200, 0.6),
+    -12px -12px 20px 0px rgba(255, 255, 255, 0.8);
 }
 
 :root.dark {
-  --color-text-primary: #f4f4f4;
-  --color-bg: #1a1e2e;
-}
-
-:root {
-  --color-text-primary: #27272a;
-  --color-bg: #fdedd7;
+  --color-background: 217, 10%, 16%;
+  --color-text-primary: 244 244 244;
+  --color-accent: 230, 72%, 60%;
+  --color-muted: 160 167 180;
+  --color-button-hover: 195 54 169;
+  --box-shadow-outer-xs: 2px 2px 4px 0px rgba(0, 0, 0, 0.25),
+    -2px -2px 4px 0px rgba(255, 255, 255, 0.04);
+  --box-shadow-outer-sm: 2px 2px 4px 0px rgba(0, 0, 0, 0.25),
+    -2px -2px 4px 0px rgba(255, 255, 255, 0.16);
 }
 
 html,
 body {
   width: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
   overflow-x: hidden;
   text-align: justify;
-  color: var(--color-text-primary);
-  background-color: var(--color-bg);
   height: 100%;
   width: 100%;
 }
@@ -93,4 +91,9 @@ h3 {
 
 p {
   line-height: 1.6;
+}
+
+img {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }

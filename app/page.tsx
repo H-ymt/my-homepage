@@ -16,7 +16,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 export default function Home() {
   return (
     <>
-      <div className="flex items-center h-[calc(100vh-140px)]">
+      <div className="flex items-center h-[calc(100vh-200px)]">
         <div className="flex flex-col items-center justify-center max-w-xl mx-auto px-5">
           <h1 className="text-4xl md:text-[40px] tracking-wider">Portfolio</h1>
 
@@ -26,7 +26,7 @@ export default function Home() {
               alt=""
               width={400}
               height={260}
-              className="rounded-lg aspect-[2/1.3] object-cover"
+              className="rounded-lg aspect-[2/1.3] object-cover shadow-outerSm"
             />
             <p className="text-md md:text-lg font-medium max-w-xl">
               新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。
@@ -41,32 +41,35 @@ export default function Home() {
       <Sheet>
         <div className="max-w-[800px] mx-auto">
           <section className="text-lg">
-            <SectionTitle eng="使用技術">Skills</SectionTitle>
+            <SectionTitle sub="使用技術">Stack</SectionTitle>
 
             <div className="py-8">
               <h3 className="text-center">Markup</h3>
 
-              <Tabs.Root className="flex flex-col mt-8" defaultValue="tab1">
+              <Tabs.Root
+                className="flex flex-col mt-8 p-4 rounded-3xl bg-background shadow-outerSm"
+                defaultValue="tab1"
+              >
                 <Tabs.List
-                  className="shrink-0 flex border border-gray-600 rounded-t-md"
+                  className="shrink-0 flex border-b border-gray-600 rounded-t-md"
                   aria-label="My skill sets"
                 >
                   <Tabs.Trigger
-                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
                     value="tab1"
                   >
                     <BiSolidFileHtml size="16px" />
                     HTML
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
                     value="tab2"
                   >
                     <BiSolidFileCss size="16px" />
                     CSS
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
                     value="tab3"
                   >
                     <BiLogoJavascript size="16px" />
@@ -74,7 +77,8 @@ export default function Home() {
                   </Tabs.Trigger>
                 </Tabs.List>
                 <Tabs.Content
-                  className="border border-gray-600 border-t-0 text-base grow p-5 bg-transparent rounded-b-md"
+                  tabIndex={-1}
+                  className="text-base grow p-5 bg-transparent rounded-b-md"
                   value="tab1"
                 >
                   <span className="block mt-1 pb-2 text-sm text-muted font-light">
@@ -83,7 +87,8 @@ export default function Home() {
                   Webアクセシビリティを考慮したコーディング、EJSの知識があります。
                 </Tabs.Content>
                 <Tabs.Content
-                  className="border border-gray-600 border-t-0 text-base grow p-5 bg-transparent rounded-b-md"
+                  tabIndex={-1}
+                  className="text-base grow p-5 bg-transparent rounded-b-md"
                   value="tab2"
                 >
                   <span className="block mt-1 pb-2 text-sm text-muted font-light">
@@ -94,7 +99,8 @@ export default function Home() {
                   CSSフレームワークはTailwind CSSが使えます。
                 </Tabs.Content>
                 <Tabs.Content
-                  className="border border-gray-600 border-t-0 text-base grow p-5 bg-transparent rounded-b-md"
+                  tabIndex={-1}
+                  className="text-base grow p-5 bg-transparent rounded-b-md"
                   value="tab3"
                 >
                   <span className="block mt-1 pb-2 text-sm text-muted font-light">
@@ -108,20 +114,23 @@ export default function Home() {
             <div className="py-8">
               <h3 className="text-center">Frameworks</h3>
 
-              <Tabs.Root className="flex flex-col mt-8" defaultValue="tab1">
+              <Tabs.Root
+                className="flex flex-col mt-8 p-4 rounded-3xl bg-background shadow-outerSm"
+                defaultValue="tab1"
+              >
                 <Tabs.List
-                  className="shrink-0 flex border border-gray-600 rounded-t-md"
+                  className="shrink-0 flex border-b border-gray-600 rounded-t-md"
                   aria-label="My skill sets"
                 >
                   <Tabs.Trigger
-                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
                     value="tab1"
                   >
                     <SiNextdotjs size="16px" />
                     React(Next.js)
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="bg-transparent sm:px-5 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-orange-400 dark:hover:text-blue-500 data-[state=active]:text-orange-400 dark:data-[state=active]:text-blue-500 data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_-1px_0_0,0_2px_0_0] cursor-pointer"
+                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
                     value="tab2"
                   >
                     <SiAstro size="16px" />
@@ -129,7 +138,8 @@ export default function Home() {
                   </Tabs.Trigger>
                 </Tabs.List>
                 <Tabs.Content
-                  className="border border-gray-600 border-t-0 text-base grow p-5 bg-transparent rounded-b-md"
+                  tabIndex={-1}
+                  className="text-base grow p-5 bg-transparent rounded-b-md"
                   value="tab1"
                 >
                   <span className="block mt-1 pb-2 text-sm text-muted font-light">
@@ -138,13 +148,15 @@ export default function Home() {
                   microCMSなどのヘッドレスCMSをつかったJamstackなWebサイトの制作ができます。
                 </Tabs.Content>
                 <Tabs.Content
-                  className="border border-gray-600 border-t-0 text-base grow p-5 bg-transparent rounded-b-md"
+                  tabIndex={-1}
+                  className="text-base grow p-5 bg-transparent rounded-b-md"
                   value="tab2"
                 >
                   <span className="block mt-1 pb-2 text-sm text-muted font-light">
                     実務経験:なし（独学のみ）
                   </span>
-                  microCMS、WordPressをヘッドレスCMSとして利用したWebサイトの制作ができます。
+                  microCMS、Headless
+                  WordPressを利用したWebサイトの制作ができます。
                 </Tabs.Content>
               </Tabs.Root>
             </div>
@@ -153,18 +165,20 @@ export default function Home() {
               <h3 className="text-center">Others</h3>
 
               <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 mt-8">
-                <div className="flex flex-col gap-1 p-4 border border-gray-600 rounded-lg">
-                  <h4 className="font-semibold">バージョン管理</h4>
+                <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
+                  <p className="font-semibold tracking-wider">
+                    Version Control
+                  </p>
                   <p className="text-base">Git/GitHub</p>
                 </div>
-                <div className="flex flex-col gap-1 p-4 border border-gray-600 rounded-lg">
-                  <h4 className="font-semibold">CMS</h4>
-                  <p className="text-base">
-                    microCMS,&ensp;Wordpress,&ensp;Newt,&ensp;Kuroco
-                  </p>
+                <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
+                  <p className="font-semibold tracking-wider">CMS</p>
+                  <p className="text-base">microCMS,&ensp;Newt,&ensp;Kuroco</p>
                 </div>
-                <div className="flex flex-col gap-1 p-4 border border-gray-600 rounded-lg">
-                  <h4 className="font-semibold">Cloud&ensp;Service</h4>
+                <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
+                  <p className="font-semibold tracking-wider">
+                    Cloud&ensp;Service
+                  </p>
                   <p className="text-base">
                     Vercel,&ensp;Netlify,&ensp;Cloudflare&ensp;
                   </p>
@@ -174,32 +188,27 @@ export default function Home() {
           </section>
 
           <section className="text-center">
-            <SectionTitle eng="お問い合せ">Contact</SectionTitle>
+            <SectionTitle sub="お問い合せ">Contact</SectionTitle>
             <p className="inline-block">ご用の方は以下よりご連絡ください。</p>
 
             <div className="flex items-center justify-center gap-4 pt-6">
               <Link
                 href="mailto:y.handai1272@gmail.com"
-                className="inline-flex items-center justify-center gap-1.5 w-[120px] py-1.5 bg-orange-500 hover:bg-orange-600 checked:bg-orange-600 dark:bg-blue-700 dark:hover:bg-blue-800 dark:checked:bg-blue-800 text-gray-100 rounded-md transition-all duration-300"
+                className="hover:underline inline-flex items-center justify-center gap-1.5 w-[120px] py-1.5 bg-accent/95 hover:bg-accent/100 text-gray-100 rounded-md transition-all duration-300"
               >
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-2"
-                >
+                <span className="inline-flex items-center gap-2">
                   <AiOutlineMail size="14px" />
                   Email
-                </button>
+                </span>
               </Link>
 
               <Link
                 href="https://twitter.com/Hy1272"
                 target="blank"
-                className="inline-flex items-center justify-center gap-2 w-[120px] py-1.5 bg-twitter/80 hover:bg-twitter/100 checked:bg-twitter/100 text-gray-100 rounded-md transition-all duration-300"
+                className="hover:underline inline-flex items-center justify-center gap-2 w-[120px] py-1.5 bg-twitter/80 hover:bg-twitter/100 text-gray-100 rounded-md transition-all duration-300"
               >
                 <AiOutlineTwitter size="14px" />
-                <button type="button" className="">
-                  Twitter
-                </button>
+                <span className="">Twitter</span>
               </Link>
             </div>
           </section>

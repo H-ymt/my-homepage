@@ -8,16 +8,23 @@ type Props = {
 };
 
 export default function Article({ data }: Props) {
+  const linkProps = {
+    className:
+      'flex gap-1 items-center text-twitter hover:underline underline-offset-2',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+  };
+
   return (
     <main className="flex flex-col max-w-xl mx-auto">
       <h1 className="text-2xl pb-8 text-left md:text-center">{data.title}</h1>
       {data.thumbnail && (
         <Image
           src={data.thumbnail?.url}
-          alt=""
+          alt="ポートフォリオのサムネイル画像"
           width={data.thumbnail?.width}
           height={data.thumbnail?.height}
-          className="rounded-xl shadow-lg border border-orange-50 dark:border-gray-50/10"
+          className="rounded-xl shadow-outerXs"
         />
       )}
 
@@ -29,22 +36,18 @@ export default function Article({ data }: Props) {
           className="w-full text-left break-all"
         />
 
-        <ul className="flex flex-col gap-2 text-xs">
-          <li className="flex gap-2 items-center">
-            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
+        <ul className="flex flex-col gap-4 text-xs">
+          <li className="flex gap-4 items-center">
+            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-md shadow-outerXs">
               WEBSITE
             </span>
-            <Link
-              href={data.url}
-              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2"
-              target="blank"
-            >
+            <Link href={data.url} {...linkProps}>
               {data.url}
             </Link>
           </li>
 
-          <li className="flex gap-2 items-center">
-            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
+          <li className="flex gap-4 items-center">
+            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-md shadow-outerXs">
               STACK
             </span>
 
@@ -55,15 +58,11 @@ export default function Article({ data }: Props) {
             </div>
           </li>
 
-          <li className="flex gap-2 items-center">
-            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-sm bg-orange-400 dark:bg-gray-700 bg-opacity-50 dark:text-primaryLight">
+          <li className="flex gap-4 items-center">
+            <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-md shadow-outerXs">
               SOURCE
             </span>
-            <Link
-              href={data.source}
-              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2"
-              target="blank"
-            >
+            <Link href={data.source} {...linkProps}>
               {data.source}
             </Link>
           </li>
@@ -71,7 +70,7 @@ export default function Article({ data }: Props) {
 
         <Link
           href="/works"
-          className="inline-flex items-center w-fit mt-6 ml-auto py-2 px-4 text-sm bg-orange-400/70 hover:bg-orange-400 dark:bg-slate-600 dark:hover:bg-slate-700 rounded-md transition-all duration-300"
+          className="inline-flex items-center w-fit mt-6 ml-auto py-2 px-4 text-sm bg-accent/50 hover:bg-accent/60 rounded-md transition-all duration-300"
         >
           一覧へ戻る
         </Link>

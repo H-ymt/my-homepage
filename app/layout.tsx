@@ -29,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" suppressHydrationWarning>
-      <body className={`${montserrat.className}`}>
+      <body
+        className={`${montserrat.className} text-primary bg-gradient-to-r from-background via-background to-transparent bg-background`}
+      >
         <Providers>
           <Header />
           {children}
