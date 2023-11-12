@@ -24,7 +24,7 @@ export default function Header() {
           className="flex items-center text-xl font-bold stroke-[5]"
           aria-label="トップへ戻る"
         >
-          <Image src="/logo.webp" width={32} height={32} alt="" />
+          <Image src="/logo.webp" width={32} height={32} alt="Logo" />
         </Link>
 
         <nav role="navigation" className="hidden md:inline-block">
@@ -39,6 +39,7 @@ export default function Header() {
               <Link href="/" className="py-[5px] px-4">
                 <IoMdHome color="" size="1.1em" />
                 Home
+                <span className="sr-only">ホームへ戻る</span>
               </Link>
             </li>
             <li
@@ -51,6 +52,7 @@ export default function Header() {
               <Link href="/works" className="py-[5px] px-4">
                 <PiCodeDuotone color="" size="1.2em" />
                 Works
+                <span className="sr-only">ワークスページへ移動する</span>
               </Link>
             </li>
             <li
@@ -63,6 +65,7 @@ export default function Header() {
               <Link href="/blog" className="py-[5px] px-4">
                 <SiZenn color="" size="0.9em" />
                 Blog
+                <span className="sr-only">ブログページへ移動する</span>
               </Link>
             </li>
           </ul>
@@ -74,7 +77,12 @@ export default function Header() {
             target="blank"
             className="hidden md:inline-block hover:-translate-y-0.5 duration-300 ease"
           >
-            <AiFillGithub color="" size="1.6em" />
+            <AiFillGithub
+              color=""
+              size="1.6em"
+              aria-label="GitHub"
+              aria-hidden="true"
+            />
           </Link>
           <ThemeChanger />
           <DropDownMenu />
