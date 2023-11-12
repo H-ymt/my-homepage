@@ -16,15 +16,15 @@ export default function Header() {
   return (
     <header
       role="banner"
-      className="sticky z-20 top-0 h-[64px] shadow-blue-20 bg-opacity-20 backdrop-blur-3xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a] dark:bg-[#4e4d4d30]"
+      className="sticky z-20 top-0 h-[64px] shadow-blue-20 bg-opacity-20 backdrop-blur-3xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
     >
       <div className="flex justify-between items-center max-w-[1024px] mx-auto h-full px-4 lg:px-0">
         <Link
           href="/"
-          className="flex items-center text-xl font-bold stroke-[5]"
+          className="flex items-center text-xl font-bold stroke-[5] w-8 clip-path-perfectCircle"
           aria-label="トップへ戻る"
         >
-          <Image src="/logo.webp" width={32} height={32} alt="Logo" />
+          <Image src="/logo.png" width={64} height={64} alt="Logo" />
         </Link>
 
         <nav role="navigation" className="hidden md:inline-block">
