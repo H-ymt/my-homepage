@@ -8,13 +8,19 @@ type Props = {
 };
 
 export default function Article({ data }: Props) {
+  const linkProps = {
+    className:
+      'flex gap-1 items-center text-twitter hover:underline underline-offset-2',
+    target: 'blank',
+  };
+
   return (
     <main className="flex flex-col max-w-xl mx-auto">
       <h1 className="text-2xl pb-8 text-left md:text-center">{data.title}</h1>
       {data.thumbnail && (
         <Image
           src={data.thumbnail?.url}
-          alt=""
+          alt="ポートフォリオのサムネイル画像"
           width={data.thumbnail?.width}
           height={data.thumbnail?.height}
           className="rounded-xl shadow-outerXs"
@@ -34,11 +40,7 @@ export default function Article({ data }: Props) {
             <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-md shadow-outerXs">
               WEBSITE
             </span>
-            <Link
-              href={data.url}
-              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2"
-              target="blank"
-            >
+            <Link href={data.url} {...linkProps}>
               {data.url}
             </Link>
           </li>
@@ -59,11 +61,7 @@ export default function Article({ data }: Props) {
             <span className="min-w-[80px] text-center py-2.5 px-2 font-medium rounded-md shadow-outerXs">
               SOURCE
             </span>
-            <Link
-              href={data.source}
-              className="flex gap-1 items-center text-twitter hover:underline underline-offset-2"
-              target="blank"
-            >
+            <Link href={data.source} {...linkProps}>
               {data.source}
             </Link>
           </li>
