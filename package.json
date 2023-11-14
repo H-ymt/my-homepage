@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check-types": "tsc --noEmit",
+    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
     "lint": "next lint",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' && next lint --fix"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' --plugin=prettier-plugin-tailwindcss && next lint --fix"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",

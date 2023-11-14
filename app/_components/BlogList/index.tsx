@@ -16,19 +16,19 @@ export default async function BlogList() {
 
   return (
     <>
-      <ul className="grid gap-7 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] place-items-center">
+      <ul className="grid place-items-center gap-7 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
         {posts.map((post) => (
           <li key={post.id}>
             <Link
               href={`https://zenn.dev/${post.path}`}
               target="blank"
-              className="inline-flex flex-col items-center justify-center gap-4 w-[300px] min-h-[220px] max-w-[320px] p-6 bg-background shadow-outerSm rounded-3xl hover:scale-[1.02] duration-200 transition-all"
+              className="inline-flex min-h-[220px] w-[300px] max-w-[320px] flex-col items-center justify-center gap-4 rounded-3xl bg-background p-6 shadow-outerSm transition-all duration-200 hover:scale-[1.02]"
             >
               <span className="text-6xl">{post.emoji}</span>
-              <p className="text-left font-medium line-clamp-2 overflow-hidden break-all">
+              <p className="line-clamp-2 overflow-hidden break-all text-left font-medium">
                 {post.title}
               </p>
-              <p className="mt-2 text-xs text-mutedBlack dark:text-mutedGray tracking-widest">
+              <p className="text-mutedBlack dark:text-mutedGray mt-2 text-xs tracking-widest">
                 <ConvertDate convertDate={post.published_at} />
               </p>
             </Link>

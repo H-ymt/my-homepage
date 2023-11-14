@@ -4,7 +4,7 @@ type Props = {
 
 export default function Sheet({ children }: Props) {
   return (
-    <div className="w-[calc(100%-40px)] md:w-[calc(100%-100px)] max-w-[640px] mx-auto py-16 md:py-20">
+    <div className="mx-auto w-[calc(100%-40px)] max-w-[640px] py-16 md:w-[calc(100%-100px)] md:py-20">
       {children}
     </div>
   );

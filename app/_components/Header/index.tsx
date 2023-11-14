@@ -16,12 +16,12 @@ export default function Header() {
   return (
     <header
       role="banner"
-      className="sticky z-20 top-0 h-[64px] shadow-blue-20 bg-opacity-20 backdrop-blur-3xl backdrop-filter border-b border-[#0f172a1a] dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
+      className="shadow-blue-20 sticky top-0 z-20 h-[64px] border-b border-[#0f172a1a] bg-opacity-20 backdrop-blur-3xl backdrop-filter dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
     >
-      <div className="flex justify-between items-center max-w-[1024px] mx-auto h-full px-4 lg:px-0">
+      <div className="mx-auto flex h-full max-w-[1024px] items-center justify-between px-4 lg:px-0">
         <Link
           href="/"
-          className="flex items-center text-xl font-bold stroke-[5] w-8 clip-path-perfectCircle hover:-translate-y-0.5 duration-300 ease"
+          className="ease flex w-8 items-center stroke-[5] text-xl font-bold duration-300 clip-path-perfectCircle hover:-translate-y-0.5"
           aria-label="トップへ戻る"
         >
           <Image src="/logo.png" width={64} height={64} alt="Logo" />
@@ -30,37 +30,37 @@ export default function Header() {
         <nav role="navigation" className="hidden md:inline-block">
           <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 [&>li]:tracking-wider">
             <li
-              className={`rounded-md relative after:absolute after:w-12 after:h-[2px] after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 hover:after:bg-accent/50 after:scale-y-0 hover:after:scale-y-100 after:transition-transform hover:after:transition-transform after:duration-300 hover:after:duration-300 ${
-                pathname === '/' ? 'after:bg-accent after:h-[2px] after:scale-y-100' : ''
+              className={`relative rounded-md after:absolute after:bottom-[-16px] after:left-1/2 after:h-[2px] after:w-12 after:-translate-x-1/2 after:scale-y-0 after:transition-transform after:duration-300 hover:after:scale-y-100 hover:after:bg-accent/50 hover:after:transition-transform hover:after:duration-300 ${
+                pathname === '/' ? 'after:h-[2px] after:scale-y-100 after:bg-accent' : ''
               }`}
             >
-              <Link href="/" className="py-[5px] px-4">
+              <Link href="/" className="px-4 py-[5px]">
                 <IoMdHome color="" size="1.1em" />
                 Home
                 <span className="sr-only">ホームへ戻る</span>
               </Link>
             </li>
             <li
-              className={`rounded-md relative after:absolute after:w-12 after:h-[2px] after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 hover:after:bg-accent/50 after:scale-y-0 hover:after:scale-y-100 after:transition-transform hover:after:transition-transform after:duration-300 hover:after:duration-300 ${
+              className={`relative rounded-md after:absolute after:bottom-[-16px] after:left-1/2 after:h-[2px] after:w-12 after:-translate-x-1/2 after:scale-y-0 after:transition-transform after:duration-300 hover:after:scale-y-100 hover:after:bg-accent/50 hover:after:transition-transform hover:after:duration-300 ${
                 pathname === '/works'
-                  ? 'after:bg-accent after:h-[2px] after:scale-y-100'
+                  ? 'after:h-[2px] after:scale-y-100 after:bg-accent'
                   : ''
               }`}
             >
-              <Link href="/works" className="py-[5px] px-4">
+              <Link href="/works" className="px-4 py-[5px]">
                 <PiCodeDuotone color="" size="1.2em" />
                 Works
                 <span className="sr-only">ワークスページへ移動する</span>
               </Link>
             </li>
             <li
-              className={`rounded-md relative after:absolute after:w-12 after:h-[2px] after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 hover:after:bg-accent/50 after:scale-y-0 hover:after:scale-y-100 after:transition-transform hover:after:transition-transform after:duration-300 hover:after:duration-300 ${
+              className={`relative rounded-md after:absolute after:bottom-[-16px] after:left-1/2 after:h-[2px] after:w-12 after:-translate-x-1/2 after:scale-y-0 after:transition-transform after:duration-300 hover:after:scale-y-100 hover:after:bg-accent/50 hover:after:transition-transform hover:after:duration-300 ${
                 pathname === '/blog'
-                  ? 'after:bg-accent after:h-[2px] after:scale-y-100'
+                  ? 'after:h-[2px] after:scale-y-100 after:bg-accent'
                   : ''
               }`}
             >
-              <Link href="/blog" className="py-[5px] px-4">
+              <Link href="/blog" className="px-4 py-[5px]">
                 <SiZenn color="" size="0.9em" />
                 Blog
                 <span className="sr-only">ブログページへ移動する</span>
@@ -73,7 +73,7 @@ export default function Header() {
           <Link
             href="https://github.com/H-ymt/my-portfolio"
             target="blank"
-            className="hidden md:inline-block hover:-translate-y-0.5 duration-300 ease"
+            className="ease hidden duration-300 hover:-translate-y-0.5 md:inline-block"
           >
             <AiFillGithub color="" size="1.6em" aria-label="GitHub" aria-hidden="true" />
           </Link>

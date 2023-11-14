@@ -12,19 +12,19 @@ import { SiAstro, SiNextdotjs } from 'react-icons/si';
 export default function Home() {
   return (
     <>
-      <div className="flex items-center pt-20 md:pt-32 pb-24">
-        <div className="flex flex-col items-center justify-center max-w-xl mx-auto px-5">
-          <h1 className="text-4xl md:text-[40px] tracking-wider">My Homepage</h1>
+      <div className="items-center pb-24 pt-20 md:pt-32 flex">
+        <div className="mx-auto flex max-w-xl flex-col items-center justify-center px-5">
+          <h1 className="text-4xl tracking-wider md:text-[40px]">My Homepage</h1>
 
-          <div className="flex-col items-center gap-8 flex">
+          <div className="flex flex-col items-center gap-8">
             <Image
               src="/hero-image.webp"
               alt=""
               width={400}
               height={260}
-              className="rounded-lg aspect-[2/1.3] object-cover shadow-outerSm"
+              className="aspect-[2/1.3] rounded-lg object-cover shadow-outerSm"
             />
-            <p className="text-md md:text-lg font-medium max-w-xl">
+            <p className="text-md max-w-xl font-medium md:text-lg">
               新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。
               <br />
               最近は、Astro・Next.jsなどの技術を用いたJamstackサイトの制作が好きです。
@@ -35,7 +35,7 @@ export default function Home() {
       </div>
 
       <Sheet>
-        <div className="max-w-[800px] mx-auto">
+        <div className="mx-auto max-w-[800px]">
           <section className="text-lg">
             <SectionTitle sub="使用技術">Stack</SectionTitle>
 
@@ -43,29 +43,29 @@ export default function Home() {
               <h3 className="text-center">Markup</h3>
 
               <Tabs.Root
-                className="flex flex-col mt-8 p-4 rounded-3xl bg-background shadow-outerSm"
+                className="mt-8 flex flex-col rounded-3xl bg-background p-4 shadow-outerSm"
                 defaultValue="tab1"
               >
                 <Tabs.List
-                  className="shrink-0 flex border-b border-gray-600 rounded-t-md"
+                  className="flex shrink-0 rounded-t-md border-b border-gray-600"
                   aria-label="My skill sets"
                 >
                   <Tabs.Trigger
-                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
+                    className="flex h-[45px] flex-1 cursor-pointer select-none items-center justify-center gap-2 bg-transparent pb-2 text-sm leading-none tracking-widest first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:font-medium data-[state=active]:text-accent data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] sm:px-5 sm:text-base"
                     value="tab1"
                   >
                     <BiSolidFileHtml size="16px" />
                     HTML
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
+                    className="flex h-[45px] flex-1 cursor-pointer select-none items-center justify-center gap-2 bg-transparent pb-2 text-sm leading-none tracking-widest first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:font-medium data-[state=active]:text-accent data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] sm:px-5 sm:text-base"
                     value="tab2"
                   >
                     <BiSolidFileCss size="16px" />
                     CSS
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
+                    className="flex h-[45px] flex-1 cursor-pointer select-none items-center justify-center gap-2 bg-transparent pb-2 text-sm leading-none tracking-widest first:rounded-tl-md last:rounded-tr-md hover:text-accent/50 data-[state=active]:font-medium data-[state=active]:text-accent data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] sm:px-5 sm:text-base"
                     value="tab3"
                   >
                     <BiLogoJavascript size="16px" />
@@ -74,20 +74,20 @@ export default function Home() {
                 </Tabs.List>
                 <Tabs.Content
                   tabIndex={-1}
-                  className="text-base grow p-5 bg-transparent rounded-b-md"
+                  className="grow rounded-b-md bg-transparent p-5 text-base"
                   value="tab1"
                 >
-                  <span className="block mt-1 pb-2 text-sm text-muted font-light">
+                  <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:2年
                   </span>
                   Webアクセシビリティを考慮したコーディング、EJSの知識があります。
                 </Tabs.Content>
                 <Tabs.Content
                   tabIndex={-1}
-                  className="text-base grow p-5 bg-transparent rounded-b-md"
+                  className="grow rounded-b-md bg-transparent p-5 text-base"
                   value="tab2"
                 >
-                  <span className="block mt-1 pb-2 text-sm text-muted font-light">
+                  <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:2年
                   </span>
                   Sass（SCSS）を利用したスタイリング、BEMやFLOCSSなどを用いた保守性・拡張性の高いCSS設計の知識があります。
@@ -96,10 +96,10 @@ export default function Home() {
                 </Tabs.Content>
                 <Tabs.Content
                   tabIndex={-1}
-                  className="text-base grow p-5 bg-transparent rounded-b-md"
+                  className="grow rounded-b-md bg-transparent p-5 text-base"
                   value="tab3"
                 >
-                  <span className="block mt-1 pb-2 text-sm text-muted font-light">
+                  <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:2年
                   </span>
                   ES6以降のJavaScriptを利用したWebサイト制作の経験、また、レガシーなWebサイトの保守・運用業務でjQueryを利用した経験もあります。
@@ -111,22 +111,22 @@ export default function Home() {
               <h3 className="text-center">Frameworks</h3>
 
               <Tabs.Root
-                className="flex flex-col mt-8 p-4 rounded-3xl bg-background shadow-outerSm"
+                className="mt-8 flex flex-col rounded-3xl bg-background p-4 shadow-outerSm"
                 defaultValue="tab1"
               >
                 <Tabs.List
-                  className="shrink-0 flex border-b border-gray-600 rounded-t-md"
+                  className="flex shrink-0 rounded-t-md border-b border-gray-600"
                   aria-label="My skill sets"
                 >
                   <Tabs.Trigger
-                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
+                    className="flex h-[45px] flex-1 cursor-pointer select-none items-center justify-center gap-2 bg-transparent pb-2 text-sm leading-none tracking-widest first:rounded-tl-md last:rounded-tr-md hover:text-accent data-[state=active]:font-medium data-[state=active]:text-accent data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] sm:px-5 sm:text-base"
                     value="tab1"
                   >
                     <SiNextdotjs size="16px" />
                     React(Next.js)
                   </Tabs.Trigger>
                   <Tabs.Trigger
-                    className="tracking-widest bg-transparent sm:px-5 pb-2 h-[45px] flex-1 flex items-center justify-center gap-2 text-sm sm:text-base leading-none select-none first:rounded-tl-md last:rounded-tr-md hover:text-accent data-[state=active]:text-accent data-[state=active]:font-medium data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] cursor-pointer"
+                    className="flex h-[45px] flex-1 cursor-pointer select-none items-center justify-center gap-2 bg-transparent pb-2 text-sm leading-none tracking-widest first:rounded-tl-md last:rounded-tr-md hover:text-accent data-[state=active]:font-medium data-[state=active]:text-accent data-[state=active]:shadow-[inset_0_0_0_0,0_1px_0_0] sm:px-5 sm:text-base"
                     value="tab2"
                   >
                     <SiAstro size="16px" />
@@ -135,20 +135,20 @@ export default function Home() {
                 </Tabs.List>
                 <Tabs.Content
                   tabIndex={-1}
-                  className="text-base grow p-5 bg-transparent rounded-b-md"
+                  className="grow rounded-b-md bg-transparent p-5 text-base"
                   value="tab1"
                 >
-                  <span className="block mt-1 pb-2 text-sm text-muted font-light">
+                  <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:なし（独学のみ）
                   </span>
                   microCMSなどのヘッドレスCMSをつかったJamstackなWebサイトの制作ができます。
                 </Tabs.Content>
                 <Tabs.Content
                   tabIndex={-1}
-                  className="text-base grow p-5 bg-transparent rounded-b-md"
+                  className="grow rounded-b-md bg-transparent p-5 text-base"
                   value="tab2"
                 >
-                  <span className="block mt-1 pb-2 text-sm text-muted font-light">
+                  <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:なし（独学のみ）
                   </span>
                   microCMS、Headless WordPressを利用したWebサイトの制作ができます。
@@ -159,16 +159,16 @@ export default function Home() {
             <div className="py-8">
               <h3 className="text-center">Others</h3>
 
-              <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 mt-8">
-                <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
+              <div className="mt-8 grid gap-6 sm:grid-cols-2 sm:grid-rows-2">
+                <div className="flex flex-col gap-1 rounded-3xl bg-background px-5 py-6 shadow-outerSm">
                   <p className="font-semibold tracking-wider">Version Control</p>
                   <p className="text-base">Git/GitHub</p>
                 </div>
-                <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
+                <div className="flex flex-col gap-1 rounded-3xl bg-background px-5 py-6 shadow-outerSm">
                   <p className="font-semibold tracking-wider">CMS</p>
                   <p className="text-base">microCMS,&ensp;Newt,&ensp;Kuroco</p>
                 </div>
-                <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
+                <div className="flex flex-col gap-1 rounded-3xl bg-background px-5 py-6 shadow-outerSm">
                   <p className="font-semibold tracking-wider">Cloud&ensp;Service</p>
                   <p className="text-base">Vercel,&ensp;Netlify,&ensp;Cloudflare&ensp;</p>
                 </div>
@@ -183,7 +183,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-4 pt-6">
               <Link
                 href="mailto:y.handai1272@gmail.com"
-                className="hover:underline inline-flex items-center justify-center gap-1.5 w-[120px] py-1.5 bg-accent/95 hover:bg-accent/100 text-gray-100 rounded-md transition-all duration-300"
+                className="inline-flex w-[120px] items-center justify-center gap-1.5 rounded-md bg-accent/95 py-1.5 text-gray-100 transition-all duration-300 hover:bg-accent/100 hover:underline"
               >
                 <span className="inline-flex items-center gap-2">
                   <AiOutlineMail size="14px" />
@@ -194,7 +194,7 @@ export default function Home() {
               <Link
                 href="https://twitter.com/Hy1272"
                 target="blank"
-                className="hover:underline inline-flex items-center justify-center gap-2 w-[120px] py-1.5 bg-twitter/80 hover:bg-twitter/100 text-gray-100 rounded-md transition-all duration-300"
+                className="inline-flex w-[120px] items-center justify-center gap-2 rounded-md bg-twitter/80 py-1.5 text-gray-100 transition-all duration-300 hover:bg-twitter/100 hover:underline"
               >
                 <AiOutlineTwitter size="14px" />
                 <span className="">Twitter</span>

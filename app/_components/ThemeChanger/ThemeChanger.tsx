@@ -31,7 +31,7 @@ export default function ThemeChanger() {
   return (
     <div className="inline-block h-[1.6em]">
       <button
-        className="hover:-translate-y-0.5 duration-300 ease"
+        className="ease duration-300 hover:-translate-y-0.5"
         type="button"
         onClick={toggleTheme}
         aria-label="テーマを変更する"
