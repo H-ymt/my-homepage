@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className="items-center pb-24 pt-20 md:pt-32 flex">
-        <div className="mx-auto  max-w-xl flex-col items-center justify-center px-5 flex">
+        <div className="mx-auto  max-w-xl flex-col items-center justify-center flex px-5">
           <h1 className="text-4xl tracking-wider md:text-[40px]">My Homepage</h1>
 
           <div className="flex-col items-center gap-8 flex">
