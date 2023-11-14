@@ -49,7 +49,7 @@
     "@cloudflare/next-on-pages": "^1.6.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{js,jsx,ts,tsx,json,css}": [
       "bun format",
       "bun lint",
       "bun lint:fix"
