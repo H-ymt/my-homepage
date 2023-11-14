@@ -6,8 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "check-types": "tsc --noEmit",
     "lint": "next lint",
-    "format": "prettier --write '**/*.{js,jsx,ts,tsx}' 'components/**/*.{js,jsx,ts,tsx}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' && next lint --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
@@ -27,6 +29,8 @@
     "framer-motion": "^10.16.4",
     "highlight.js": "^11.8.0",
     "hljs": "^6.2.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "microcms-js-sdk": "^2.6.1",
     "next": "^13.5.2",
     "next-themes": "^0.2.1",
@@ -43,5 +47,11 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.6.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "bun lint",
+      "bun format"
+    ]
   }
 }

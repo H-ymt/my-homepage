@@ -10,9 +10,7 @@ interface Post {
 }
 
 export default async function BlogList() {
-  const res = await fetch(
-    'https://zenn.dev/api/articles?username=h_ymt&order=latest',
-  );
+  const res = await fetch('https://zenn.dev/api/articles?username=h_ymt&order=latest');
   const data = await res.json();
   const posts: Post[] = data.articles.slice(0, 10);
 

@@ -9,8 +9,7 @@ type Props = {
 
 export default function Article({ data }: Props) {
   const linkProps = {
-    className:
-      'flex gap-1 items-center text-twitter hover:underline underline-offset-2',
+    className: 'flex gap-1 items-center text-twitter hover:underline underline-offset-2',
     target: '_blank',
     rel: 'noopener noreferrer',
   };

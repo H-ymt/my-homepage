@@ -31,9 +31,7 @@ export default function Header() {
           <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 [&>li]:tracking-wider">
             <li
               className={`rounded-md relative after:absolute after:w-12 after:h-[2px] after:bottom-[-16px] after:left-1/2 after:-translate-x-1/2 hover:after:bg-accent/50 after:scale-y-0 hover:after:scale-y-100 after:transition-transform hover:after:transition-transform after:duration-300 hover:after:duration-300 ${
-                pathname === '/'
-                  ? 'after:bg-accent after:h-[2px] after:scale-y-100'
-                  : ''
+                pathname === '/' ? 'after:bg-accent after:h-[2px] after:scale-y-100' : ''
               }`}
             >
               <Link href="/" className="py-[5px] px-4">
@@ -77,12 +75,7 @@ export default function Header() {
             target="blank"
             className="hidden md:inline-block hover:-translate-y-0.5 duration-300 ease"
           >
-            <AiFillGithub
-              color=""
-              size="1.6em"
-              aria-label="GitHub"
-              aria-hidden="true"
-            />
+            <AiFillGithub color="" size="1.6em" aria-label="GitHub" aria-hidden="true" />
           </Link>
           <ThemeChanger />
           <DropDownMenu />

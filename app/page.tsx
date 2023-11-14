@@ -18,9 +18,7 @@ export default function Home() {
     <>
       <div className="flex items-center pt-20 md:pt-32 pb-24">
         <div className="flex flex-col items-center justify-center max-w-xl mx-auto px-5">
-          <h1 className="text-4xl md:text-[40px] tracking-wider">
-            My Homepage
-          </h1>
+          <h1 className="text-4xl md:text-[40px] tracking-wider">My Homepage</h1>
 
           <div className="flex flex-col items-center gap-8">
             <Image
@@ -157,8 +155,7 @@ export default function Home() {
                   <span className="block mt-1 pb-2 text-sm text-muted font-light">
                     実務経験:なし（独学のみ）
                   </span>
-                  microCMS、Headless
-                  WordPressを利用したWebサイトの制作ができます。
+                  microCMS、Headless WordPressを利用したWebサイトの制作ができます。
                 </Tabs.Content>
               </Tabs.Root>
             </div>
@@ -168,9 +165,7 @@ export default function Home() {
 
               <div className="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 mt-8">
                 <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
-                  <p className="font-semibold tracking-wider">
-                    Version Control
-                  </p>
+                  <p className="font-semibold tracking-wider">Version Control</p>
                   <p className="text-base">Git/GitHub</p>
                 </div>
                 <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
@@ -178,12 +173,8 @@ export default function Home() {
                   <p className="text-base">microCMS,&ensp;Newt,&ensp;Kuroco</p>
                 </div>
                 <div className="flex flex-col gap-1 px-5 py-6 bg-background shadow-outerSm rounded-3xl">
-                  <p className="font-semibold tracking-wider">
-                    Cloud&ensp;Service
-                  </p>
-                  <p className="text-base">
-                    Vercel,&ensp;Netlify,&ensp;Cloudflare&ensp;
-                  </p>
+                  <p className="font-semibold tracking-wider">Cloud&ensp;Service</p>
+                  <p className="text-base">Vercel,&ensp;Netlify,&ensp;Cloudflare&ensp;</p>
                 </div>
               </div>
             </div>
