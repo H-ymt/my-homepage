@@ -6,9 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc --project tsconfig.json --pretty --noEmit",
+    "check-types": "tsc --noEmit",
     "lint": "next lint",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' --plugin=prettier-plugin-tailwindcss && next lint --fix"
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' --plugin=prettier-plugin-tailwindcss"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
@@ -50,6 +51,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "bun lint",
+      "bun lint:fix",
       "bun format"
     ]
   }
