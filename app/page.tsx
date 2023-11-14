@@ -1,17 +1,13 @@
 'use client';
 
+import SectionTitle from '@/app/_components/SectionTitle';
+import Sheet from '@/app/_components/Sheet';
+import * as Tabs from '@radix-ui/react-tabs';
 import Image from 'next/image';
 import Link from 'next/link';
-import Sheet from '@/app/_components/Sheet';
-import SectionTitle from '@/app/_components/SectionTitle';
-import * as Tabs from '@radix-ui/react-tabs';
-import { BiSolidFileHtml } from 'react-icons/bi';
-import { BiSolidFileCss } from 'react-icons/bi';
-import { BiLogoJavascript } from 'react-icons/bi';
-import { SiAstro } from 'react-icons/si';
-import { SiNextdotjs } from 'react-icons/si';
-import { AiOutlineTwitter } from 'react-icons/ai';
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail, AiOutlineTwitter } from 'react-icons/ai';
+import { BiLogoJavascript, BiSolidFileCss, BiSolidFileHtml } from 'react-icons/bi';
+import { SiAstro, SiNextdotjs } from 'react-icons/si';
 
 export default function Home() {
   return (
@@ -20,7 +16,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center max-w-xl mx-auto px-5">
           <h1 className="text-4xl md:text-[40px] tracking-wider">My Homepage</h1>
 
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex-col items-center gap-8 flex">
             <Image
               src="/hero-image.webp"
               alt=""
