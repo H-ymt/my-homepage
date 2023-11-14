@@ -50,8 +50,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json,css}": [
-      "bun format",
       "bun lint",
+      "bun format",
       "bun lint:fix"
     ]
   }
