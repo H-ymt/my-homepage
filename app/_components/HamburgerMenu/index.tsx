@@ -1,11 +1,10 @@
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import NextLink from 'next/link';
 import { AiFillGithub } from 'react-icons/ai';
-import { SiZenn } from 'react-icons/si';
-import { IoMdHome } from 'react-icons/io';
 import { FiMenu } from 'react-icons/fi';
+import { IoMdHome } from 'react-icons/io';
 import { PiCodeDuotone } from 'react-icons/pi';
-import { useRouter } from 'next/navigation';
+import { SiZenn } from 'react-icons/si';
 
 type Props = {
   href: string;
@@ -13,8 +12,6 @@ type Props = {
 };
 
 const Link = ({ href, children, ...props }: Props) => {
-  const router = useRouter();
-
   return (
     <NextLink href={href} passHref legacyBehavior>
       <NavigationMenu.Link {...props}>{children}</NavigationMenu.Link>
