@@ -50,9 +50,9 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "bun lint",
-      "bun format",
-      "bun lint:fix"
+      "pnpm lint",
+      "pnpm format",
+      "pnpm lint:fix"
     ]
   }
 }
