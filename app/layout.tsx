@@ -22,15 +22,11 @@ export const metadata = {
   viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja" suppressHydrationWarning>
       <body
-        className={`${montserrat.className} text-primary bg-gradient-to-r from-background via-background to-transparent bg-background`}
+        className={`${montserrat.className} bg-background bg-gradient-to-r from-background via-background to-transparent text-primary`}
       >
         <Providers>
           <Header />

@@ -8,7 +8,7 @@ type Props = {
 
 export default function WorksListItem({ works }: Props) {
   return (
-    <li className="grid grid-rows-[subgrid] w-full border-none rounded-3xl group hover:scale-[1.02] transition-[transform] duration-300">
+    <li className="group grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
       <Link href={`/works/${works.id}`} className="">
         {works.thumbnail ? (
           <Image
@@ -16,7 +16,7 @@ export default function WorksListItem({ works }: Props) {
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
-            className="min-w-[296px] h-[60%] object-cover rounded-lg shadow-outerXs group-hover:shadow-outerSm"
+            className="h-[60%] min-w-[296px] rounded-lg object-cover shadow-outerXs group-hover:shadow-outerSm"
             sizes="(min-width: 640px) 296px, 100vw"
             loading="eager"
           />
@@ -24,15 +24,15 @@ export default function WorksListItem({ works }: Props) {
           <Image src="" alt="No Image" width={800} height={800} />
         )}
 
-        <dl className="inline-flex flex-col gap-2 mt-3 pl-2">
-          <dt className="text-base font-semibold overflow-ellipsis line-clamp-2">
+        <dl className="mt-3 inline-flex flex-col gap-2 pl-2">
+          <dt className="line-clamp-2 overflow-ellipsis text-base font-semibold">
             {works.title}
           </dt>
           <dd className="flex flex-wrap gap-2.5">
             {works.category.map((data: { id: string; name: string }) => (
               <div
                 key={data.id}
-                className="py-1.5 px-2 text-xs font-medium rounded-sm bg-accent/50"
+                className="rounded-sm bg-accent/50 px-2 py-1.5 text-xs font-medium"
               >
                 {data.name}
               </div>

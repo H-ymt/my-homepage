@@ -21,18 +21,15 @@ const Link = ({ href, children, ...props }: Props) => {
 
 export default function HamburgerMenu() {
   return (
-    <div className="md:hidden h-[32px]">
+    <div className="h-[32px] md:hidden">
       <NavigationMenu.Root orientation="vertical">
         <NavigationMenu.List>
           <NavigationMenu.Item className="relative">
-            <NavigationMenu.Trigger
-              className="outline-none"
-              aria-label="メニューを開く"
-            >
+            <NavigationMenu.Trigger className="outline-none" aria-label="メニューを開く">
               <FiMenu size="32px" />
             </NavigationMenu.Trigger>
 
-            <NavigationMenu.Content className="flex flex-col gap-2 absolute top-10 left-[-9rem] w-[11rem] py-3 px-4 rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none [&>a]:flex [&>a]:items-center [&>a]:gap-2 bg-background shadow-outerXs">
+            <NavigationMenu.Content className="absolute left-[-9rem] top-10 flex w-[11rem] flex-col gap-2 rounded-md bg-background px-4 py-3 shadow-outerXs ring-1 ring-black ring-opacity-5 focus:outline-none [&>a]:flex [&>a]:items-center [&>a]:gap-2">
               <Link href="/">
                 <IoMdHome size="1.2em" />
                 Home

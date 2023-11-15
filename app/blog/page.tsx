@@ -8,7 +8,7 @@ export default function Page() {
       <Suspense
         fallback={
           <div className="flex h-[50vh] items-center justify-center">
-            <p className="animate-spin rounded-full h-10 w-10 border-t-[1.3px] border-b-[1.3px] border border-accent"></p>
+            <p className="h-10 w-10 animate-spin rounded-full border border-b-[1.3px] border-t-[1.3px] border-accent"></p>
           </div>
         }
       >
