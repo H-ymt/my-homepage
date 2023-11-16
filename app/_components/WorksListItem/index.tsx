@@ -29,7 +29,7 @@ export default function WorksListItem({ works }: Props) {
             {works.title}
           </dt>
           <dd className="flex flex-wrap gap-2.5">
-            {works.category.map((data: any) => (
+            {works.category.map((data: { id: string; name: string }) => (
               <div
                 key={data.id}
                 className="rounded-sm bg-accent/50 px-2 py-1.5 text-xs font-medium"
