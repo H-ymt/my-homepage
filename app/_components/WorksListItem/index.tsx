@@ -16,7 +16,7 @@ export default function WorksListItem({ works }: Props) {
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
-            className="h-[60%] min-w-[296px] rounded-lg object-cover shadow-outerXs group-hover:shadow-outerSm"
+            className="aspect-[1/0.8] h-[60%] min-w-[296px] rounded-lg object-cover shadow-outerXs group-hover:shadow-outerSm"
             sizes="(min-width: 640px) 296px, 100vw"
             loading="eager"
           />
