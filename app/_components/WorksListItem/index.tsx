@@ -32,7 +32,7 @@ export default function WorksListItem({ works }: Props) {
             {works.category.map((data: { id: string; name: string }) => (
               <div
                 key={data.id}
-                className="rounded-sm bg-accent/50 px-2 py-1.5 text-xs font-medium"
+                className="rounded-sm bg-accent/50 px-2 py-1 text-xs font-medium"
               >
                 {data.name}
               </div>
