@@ -1,14 +1,14 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { AiFillGithub } from 'react-icons/ai';
-import { SiZenn } from 'react-icons/si';
 import { IoMdHome } from 'react-icons/io';
 import { PiCodeDuotone } from 'react-icons/pi';
+import { SiZenn } from 'react-icons/si';
 import DropDownMenu from '../HamburgerMenu';
 import ThemeChanger from '../ThemeChanger/ThemeChanger';
-import Image from 'next/image';
 
 export default function Header() {
   const pathname = usePathname();
@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header
       role="banner"
-      className="shadow-blue-20 sticky top-0 z-20 h-[64px] border-b border-[#0f172a1a] bg-opacity-20 backdrop-blur-3xl backdrop-filter dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
+      className="shadow-blue-20 sticky top-0 z-20 h-[64px] border-b border-[#0f172a1a] bg-background/90 bg-opacity-20 backdrop-blur-3xl backdrop-filter dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
     >
       <div className="mx-auto flex h-full max-w-[1024px] items-center justify-between px-4 lg:px-0">
         <Link
