@@ -80,7 +80,7 @@ export default function Home() {
                   <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:2年
                   </span>
-                  Webアクセシビリティを考慮したコーディング、EJSの知識があります。
+                  Webアクセシビリティを意識したコーディングを心がけています。EJSの知識もあります。
                 </Tabs.Content>
                 <Tabs.Content
                   tabIndex={-1}
@@ -139,7 +139,7 @@ export default function Home() {
                   value="tab1"
                 >
                   <span className="mt-1 block pb-2 text-sm font-light text-muted">
-                    実務経験:なし（独学のみ）
+                    実務経験:なし（独学）
                   </span>
                   microCMSなどのヘッドレスCMSをつかったJamstackなWebサイトの制作ができます。
                 </Tabs.Content>
@@ -149,7 +149,7 @@ export default function Home() {
                   value="tab2"
                 >
                   <span className="mt-1 block pb-2 text-sm font-light text-muted">
-                    実務経験:なし（独学のみ）
+                    実務経験:なし（独学）
                   </span>
                   microCMS、Headless WordPressを利用したWebサイトの制作ができます。
                 </Tabs.Content>

@@ -23,7 +23,7 @@ export default function Article({ data }: Props) {
           alt="ポートフォリオのサムネイル画像"
           width={data.thumbnail?.width}
           height={data.thumbnail?.height}
-          className="aspect-[1/0.8] rounded-xl object-cover shadow-outerXs"
+          className="aspect-[1/0.7] rounded-xl object-cover shadow-outerXs"
         />
       )}
 
