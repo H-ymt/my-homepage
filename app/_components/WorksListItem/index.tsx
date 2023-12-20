@@ -8,7 +8,7 @@ type Props = {
 
 export default function WorksListItem({ works }: Props) {
   return (
-    <li className="group row-span-3 grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
+    <li className="group grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
       <Link href={`/works/${works.id}`} className="">
         {works.thumbnail ? (
           <Image
