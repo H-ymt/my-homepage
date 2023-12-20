@@ -8,7 +8,7 @@ type Props = {
 
 export default function WorksListItem({ works }: Props) {
   return (
-    <li className="group grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
+    <li className="group row-span-3 grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
       <Link href={`/works/${works.id}`} className="">
         {works.thumbnail ? (
           <Image
@@ -25,7 +25,7 @@ export default function WorksListItem({ works }: Props) {
         )}
 
         <dl className="mt-3 inline-flex flex-col gap-2 pl-2">
-          <dt className="line-clamp-2 overflow-ellipsis text-base font-semibold">
+          <dt className="line-clamp-2 overflow-ellipsis break-all text-base font-semibold">
             {works.title}
           </dt>
           <dd className="flex flex-wrap gap-2.5">
