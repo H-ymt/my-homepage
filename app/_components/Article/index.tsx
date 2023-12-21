@@ -24,6 +24,9 @@ export default function Article({ data }: Props) {
           width={data.thumbnail?.width}
           height={data.thumbnail?.height}
           className="aspect-[1/0.7] rounded-xl object-cover shadow-outerXs"
+          loading="eager"
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP09/FvAgADSgFu6dMdIgAAAABJRU5ErkJggg=="
         />
       )}
 

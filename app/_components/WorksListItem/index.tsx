@@ -19,6 +19,8 @@ export default function WorksListItem({ works }: Props) {
             className="aspect-[1/0.8] h-[60%] min-w-[296px] rounded-lg object-cover shadow-outerXs group-hover:shadow-outerSm"
             sizes="(min-width: 640px) 296px, 100vw"
             loading="eager"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP09/FvAgADSgFu6dMdIgAAAABJRU5ErkJggg=="
           />
         ) : (
           <Image src="" alt="No Image" width={800} height={800} />
