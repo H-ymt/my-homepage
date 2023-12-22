@@ -1,18 +1,26 @@
 import { Article } from '@/app/libs/microcms';
 import Image from 'next/image';
 import Link from 'next/link';
+import { getPlaiceholder } from 'plaiceholder';
 
 type Props = {
   works: Article;
 };
 
-export default function WorksListItem({ works }: Props) {
+export default async function WorksListItem({ works }: Props) {
+  const src = works.thumbnail?.url + '?w=800&h=640';
+  const buffer = await fetch(src).then(async (res) => {
+    return Buffer.from(await res.arrayBuffer());
+  });
+
+  const { base64 } = await getPlaiceholder(buffer);
+
   return (
     <li className="group grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
       <Link href={`/works/${works.id}`} className="">
         {works.thumbnail ? (
           <Image
-            src={works.thumbnail?.url + '?w=1000&h=530'}
+            src={src}
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
@@ -20,7 +28,7 @@ export default function WorksListItem({ works }: Props) {
             sizes="(min-width: 640px) 296px, 100vw"
             loading="eager"
             placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP09/FvAgADSgFu6dMdIgAAAABJRU5ErkJggg=="
+            blurDataURL={base64}
           />
         ) : (
           <Image src="" alt="No Image" width={800} height={800} />
