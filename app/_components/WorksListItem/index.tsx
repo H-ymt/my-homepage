@@ -1,34 +1,30 @@
+import getBase64 from '@/app/libs/getLocalBase64';
 import { Article } from '@/app/libs/microcms';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getPlaiceholder } from 'plaiceholder';
 
 type Props = {
   works: Article;
 };
 
 export default async function WorksListItem({ works }: Props) {
-  const src = works.thumbnail?.url + '?w=800&h=640';
-  const buffer = await fetch(src).then(async (res) => {
-    return Buffer.from(await res.arrayBuffer());
-  });
-
-  const { base64 } = await getPlaiceholder(buffer);
+  const blurDataUrl = await getBase64(works.thumbnail?.url + '?w=800&h=640');
 
   return (
     <li className="group grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
       <Link href={`/works/${works.id}`} className="">
         {works.thumbnail ? (
           <Image
-            src={src}
+            src={works.thumbnail?.url + '?w=800&h=640'}
+            // src={src}
+            placeholder="blur"
+            blurDataURL={blurDataUrl}
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
             className="aspect-[1/0.8] h-[60%] min-w-[296px] rounded-lg object-cover shadow-outerXs group-hover:shadow-outerSm"
             sizes="(min-width: 640px) 296px, 100vw"
             loading="eager"
-            placeholder="blur"
-            blurDataURL={base64}
           />
         ) : (
           <Image src="" alt="No Image" width={800} height={800} />

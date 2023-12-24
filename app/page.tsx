@@ -2,6 +2,7 @@
 
 import SectionTitle from '@/app/_components/SectionTitle';
 import Sheet from '@/app/_components/Sheet';
+import heroImage from '@/public/hero-image.webp';
 import * as Tabs from '@radix-ui/react-tabs';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -18,11 +19,12 @@ export default function Home() {
 
           <div className="flex flex-col items-center gap-8">
             <Image
-              src="/hero-image.webp"
+              src={heroImage}
               alt=""
               width={400}
               height={260}
               className="aspect-[2/1.3] rounded-lg object-cover shadow-outerSm"
+              placeholder="blur"
             />
             <p className="text-md max-w-xl font-medium md:text-lg">
               新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。
