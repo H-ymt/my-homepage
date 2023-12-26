@@ -1,4 +1,3 @@
-import getBase64 from '@/app/libs/getLocalBase64';
 import { Article } from '@/app/libs/microcms';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,7 +7,7 @@ type Props = {
 };
 
 export default async function WorksListItem({ works }: Props) {
-  const blurDataUrl = await getBase64(works.thumbnail?.url + '?w=800&h=640');
+  // const blurDataUrl = await getBase64(works.thumbnail?.url + '?w=800&h=640');
 
   return (
     <li className="group grid w-full grid-rows-[subgrid] rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
@@ -16,9 +15,8 @@ export default async function WorksListItem({ works }: Props) {
         {works.thumbnail ? (
           <Image
             src={works.thumbnail?.url + '?w=800&h=640'}
-            // src={src}
-            placeholder="blur"
-            blurDataURL={blurDataUrl}
+            // placeholder="blur"
+            // blurDataURL={blurDataUrl}
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
