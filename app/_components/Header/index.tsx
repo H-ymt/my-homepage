@@ -18,7 +18,7 @@ export default function Header() {
       role="banner"
       className="shadow-blue-20 sticky top-0 z-20 h-[64px] border-b border-[#0f172a1a] bg-background/90 bg-opacity-20 backdrop-blur-3xl backdrop-filter dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
     >
-      <div className="mx-auto flex h-full max-w-[1024px] items-center justify-between px-4 lg:px-0">
+      <div className="mx-auto flex h-full max-w-[1024px] items-center justify-between px-4">
         <Link
           href="/"
           className="ease flex w-8 items-center stroke-[5] text-xl font-bold duration-300 clip-path-perfectCircle hover:-translate-y-0.5"

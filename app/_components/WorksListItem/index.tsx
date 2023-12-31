@@ -15,8 +15,8 @@ export default async function WorksListItem({ works }: Props) {
         {works.thumbnail ? (
           <Image
             src={works.thumbnail?.url + '?w=800&h=640'}
-            // placeholder="blur"
-            // blurDataURL={blurDataUrl}
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAUAADsANzmZGssAAAAASUVORK5CYII="
             alt=""
             width={works.thumbnail?.width}
             height={works.thumbnail?.height}
