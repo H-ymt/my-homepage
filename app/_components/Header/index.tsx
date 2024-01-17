@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header
       role="banner"
-      className="shadow-blue-20 sticky top-0 z-20 h-[64px] border-b border-[#0f172a1a] bg-background/90 bg-opacity-20 backdrop-blur-3xl backdrop-filter dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
+      className="shadow-blue-20 sticky top-0 z-20 h-[64px] border-b border-[#0f172a1a] bg-background/90 bg-opacity-20 backdrop-blur-sm backdrop-filter dark:border-[#cbd5e11a] dark:bg-[#4f4e4e10]"
     >
       <div className="mx-auto flex h-full max-w-[1024px] items-center justify-between px-4">
         <Link
