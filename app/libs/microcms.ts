@@ -1,59 +1,59 @@
-import { createClient } from 'microcms-js-sdk';
+import { createClient } from 'microcms-js-sdk'
 import type {
-  MicroCMSQueries,
-  MicroCMSImage,
-  MicroCMSDate,
   MicroCMSContentId,
-} from 'microcms-js-sdk';
-import { notFound } from 'next/navigation';
+  MicroCMSDate,
+  MicroCMSImage,
+  MicroCMSQueries,
+} from 'microcms-js-sdk'
+import { notFound } from 'next/navigation'
 
 // カテゴリーの型定義
 export type Category = {
-  id: string;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  revisedAt: string;
-  name: string;
+  id: string
+  createdAt: string
+  updatedAt: string
+  publishedAt: string
+  revisedAt: string
+  name: string
 } & MicroCMSContentId &
-  MicroCMSDate;
+  MicroCMSDate
 
 // メタ情報の型定義
 export type Meta = {
-  title?: string;
-  description?: string;
-  ogTitle?: string;
-  ogDescription?: string;
-  ogImage?: MicroCMSImage;
-};
+  title?: string
+  description?: string
+  ogTitle?: string
+  ogDescription?: string
+  ogImage?: MicroCMSImage
+}
 
 // 実績の型定義
 export type Works = {
-  thumbnail?: MicroCMSImage;
-  title: string;
-  content: string;
-  url: string;
-  source: string;
-  created: string;
-  category: Category[];
-  meta: Meta;
-};
+  thumbnail?: MicroCMSImage
+  title: string
+  content: string
+  url: string
+  source: string
+  created: string
+  category: Category[]
+  meta: Meta
+}
 
-export type Article = Works & Meta & MicroCMSContentId & MicroCMSDate;
+export type Article = Works & Meta & MicroCMSContentId & MicroCMSDate
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
-  throw new Error('MICROCMS_SERVICE_DOMAIN is required');
+  throw new Error('MICROCMS_SERVICE_DOMAIN is required')
 }
 
 if (!process.env.MICROCMS_API_KEY) {
-  throw new Error('MICROCMS_API_KEY is required');
+  throw new Error('MICROCMS_API_KEY is required')
 }
 
 // Initialize Client SDK.
 export const client = createClient({
   serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN,
   apiKey: process.env.MICROCMS_API_KEY,
-});
+})
 
 // 実績一覧を取得
 export const getWorksList = async (queries?: MicroCMSQueries) => {
@@ -62,9 +62,9 @@ export const getWorksList = async (queries?: MicroCMSQueries) => {
       endpoint: 'works',
       queries,
     })
-    .catch(notFound);
-  return listData;
-};
+    .catch(notFound)
+  return listData
+}
 
 // カテゴリーの一覧を取得
 export const getCategoryList = async (queries?: MicroCMSQueries) => {
@@ -73,10 +73,10 @@ export const getCategoryList = async (queries?: MicroCMSQueries) => {
       endpoint: 'categories',
       queries,
     })
-    .catch(notFound);
+    .catch(notFound)
 
-  return listData;
-};
+  return listData
+}
 
 // 実績の詳細を取得
 export const getWorksDetail = async (contentId: string, queries?: MicroCMSQueries) => {
@@ -84,10 +84,10 @@ export const getWorksDetail = async (contentId: string, queries?: MicroCMSQuerie
     endpoint: 'works',
     contentId,
     queries,
-  });
+  })
 
-  return detailData;
-};
+  return detailData
+}
 
 // カテゴリーの詳細を取得
 export const getCategoryDetail = async (contentId: string, queries?: MicroCMSQueries) => {
@@ -97,10 +97,10 @@ export const getCategoryDetail = async (contentId: string, queries?: MicroCMSQue
       contentId,
       queries,
     })
-    .catch(notFound);
+    .catch(notFound)
 
-  return detailData;
-};
+  return detailData
+}
 
 // メタ情報を取得
 export const getMeta = async (queries?: MicroCMSQueries) => {
@@ -109,7 +109,7 @@ export const getMeta = async (queries?: MicroCMSQueries) => {
       endpoint: 'meta',
       queries,
     })
-    .catch(() => null);
+    .catch(() => null)
 
-  return data;
-};
+  return data
+}

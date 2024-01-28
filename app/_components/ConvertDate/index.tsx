@@ -1,11 +1,11 @@
-import dayjs from 'dayjs';
+import dayjs from 'dayjs'
 
 type Props = {
-  convertDate: string | number | Date;
-};
+  convertDate: string | number | Date
+}
 
 export default function ConvertDate({ convertDate }: Props) {
-  const publishedAt = dayjs(convertDate).format('YYYY/MM/DD');
+  const publishedAt = dayjs(convertDate).format('YYYY/MM/DD')
 
-  return <time dateTime={convertDate.toString()}>{publishedAt}</time>;
+  return <time dateTime={convertDate.toString()}>{publishedAt}</time>
 }
