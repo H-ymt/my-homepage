@@ -50,7 +50,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "pnpm check"
+      "pnpm lint",
+      "pnpm format"
     ]
   }
 }
