@@ -1,18 +1,19 @@
-import { Category, type Article } from '@/app/libs/microcms';
-import { formatRichText } from '@/app/utils/formatRichText';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Category, type Article } from "@/app/libs/microcms"
+import { formatRichText } from "@/app/utils/formatRichText"
+import Image from "next/image"
+import Link from "next/link"
+import parse from "html-react-parser"
 
 type Props = {
-  data: Article;
-};
+  data: Article
+}
 
-export default function Article({ data }: Props) {
+export default function ArticleComponent({ data }: Props) {
   const linkProps = {
-    className: 'flex gap-1 items-center text-twitter hover:underline underline-offset-2',
-    target: '_blank',
-    rel: 'noopener noreferrer',
-  };
+    className: "flex gap-1 items-center text-twitter hover:underline underline-offset-2",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  }
 
   return (
     <main className="mx-auto flex max-w-xl flex-col">
@@ -20,23 +21,18 @@ export default function Article({ data }: Props) {
       {data.thumbnail && (
         <Image
           src={data.thumbnail?.url}
-          alt="ポートフォリオのサムネイル画像"
+          alt="サムネイル画像"
           width={data.thumbnail?.width}
           height={data.thumbnail?.height}
           className="aspect-[1/0.7] rounded-xl object-cover shadow-outerXs"
           loading="eager"
-          placeholder="blur"
-          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP09/FvAgADSgFu6dMdIgAAAABJRU5ErkJggg=="
         />
       )}
 
       <div className="flex flex-col gap-3 p-3">
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `${formatRichText(data.content)}`,
-          }}
-          className="w-full break-all text-left"
-        />
+        <div className="w-full break-all text-left">
+          {parse(formatRichText(data.content))}
+        </div>
 
         <ul className="flex flex-col gap-4 text-xs">
           <li className="flex items-center gap-4">
@@ -78,5 +74,5 @@ export default function Article({ data }: Props) {
         </Link>
       </div>
     </main>
-  );
+  )
 }

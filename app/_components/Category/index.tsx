@@ -1,12 +1,12 @@
-import { Category } from '@/app/libs/microcms';
+import { Category } from '@/app/libs/microcms'
 
 type Props = {
-  category?: Category;
-};
+  category?: Category
+}
 
 export default function Category({ category }: Props) {
   if (!category) {
-    return null;
+    return null
   }
-  return <span>{category.name}</span>;
+  return <span>{category.name}</span>
 }

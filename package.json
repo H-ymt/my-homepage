@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "check-types": "tsc --noEmit",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}' --plugin=prettier-plugin-tailwindcss"
+    "lint": "biome lint --apply ./",
+    "format": "biome format ./ --write",
+    "check": "biome check --apply ./"
   },
   "dependencies": {
     "@plaiceholder/next": "^3.0.0",
@@ -19,15 +19,12 @@
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.11.0",
     "autoprefixer": "10.4.15",
     "cheerio": "^1.0.0-rc.12",
     "dayjs": "^1.11.9",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.19",
-    "eslint-config-prettier": "^9.0.0",
     "highlight.js": "^11.8.0",
     "hljs": "^6.2.3",
+    "html-react-parser": "^5.1.1",
     "husky": "^8.0.3",
     "install": "^0.13.0",
     "lint-staged": "^15.1.0",
@@ -38,8 +35,6 @@
     "plaiceholder": "^3.0.0",
     "pnpm": "^8.12.1",
     "postcss": "8.4.28",
-    "prettier": "^3.1.0",
-    "prettier-plugin-tailwindcss": "^0.5.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
@@ -50,13 +45,12 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.5.3",
     "@cloudflare/next-on-pages": "^1.6.0"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "pnpm lint",
-      "pnpm format",
-      "pnpm lint:fix"
+      "pnpm check"
     ]
   }
 }

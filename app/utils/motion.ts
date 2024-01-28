@@ -13,4 +13,4 @@ export const fadeUp = {
       duration: 0.7,
     },
   },
-};
+}
