@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "check-types": "tsc --noEmit",
-    "lint": "biome lint --apply ./",
-    "format": "biome format ./ --write",
-    "check": "biome check --apply ./"
+    "lint": "biome lint ./",
+    "format": "biome format --write .",
+    "check": "biome check --apply ."
   },
   "dependencies": {
     "@plaiceholder/next": "^3.0.0",

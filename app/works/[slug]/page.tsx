@@ -1,6 +1,6 @@
-import Article from "@/app/_components/Article"
-import { getWorksDetail } from "@/app/libs/microcms"
-import { Metadata } from "next"
+import Article from '@/app/_components/Article'
+import { getWorksDetail } from '@/app/libs/microcms'
+import { Metadata } from 'next'
 
 type Props = {
   params: {
@@ -11,7 +11,7 @@ type Props = {
   }
 }
 
-export const runtime = "edge"
+export const runtime = 'edge'
 
 export async function generateMetadata({
   params,

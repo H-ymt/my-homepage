@@ -1,9 +1,9 @@
 import { createClient } from 'microcms-js-sdk'
 import type {
-  MicroCMSQueries,
-  MicroCMSImage,
-  MicroCMSDate,
   MicroCMSContentId,
+  MicroCMSDate,
+  MicroCMSImage,
+  MicroCMSQueries,
 } from 'microcms-js-sdk'
 import { notFound } from 'next/navigation'
 

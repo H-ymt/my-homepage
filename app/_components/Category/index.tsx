@@ -4,7 +4,7 @@ type Props = {
   category?: Category
 }
 
-export default function Category({ category }: Props) {
+export default function CategoryComponent({ category }: Props) {
   if (!category) {
     return null
   }

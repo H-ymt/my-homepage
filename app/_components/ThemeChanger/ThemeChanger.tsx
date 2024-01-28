@@ -35,9 +35,8 @@ export default function ThemeChanger() {
         type='button'
         onClick={toggleTheme}
         aria-label='テーマを変更する'
-        aria-hidden='true'
       >
-        {Icon && <Icon size='1.6em' />}
+        {Icon && <Icon size='1.6em' aria-hidden='true' />}
       </button>
     </div>
   )
