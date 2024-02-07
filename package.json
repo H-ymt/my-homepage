@@ -24,7 +24,6 @@
     "dayjs": "^1.11.9",
     "highlight.js": "^11.8.0",
     "hljs": "^6.2.3",
-    "html-react-parser": "^5.1.1",
     "husky": "^8.0.3",
     "install": "^0.13.0",
     "lint-staged": "^15.1.0",
