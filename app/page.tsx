@@ -10,6 +10,8 @@ import { AiOutlineMail, AiOutlineTwitter } from "react-icons/ai"
 import { BiLogoJavascript, BiSolidFileCss, BiSolidFileHtml } from "react-icons/bi"
 import { SiAstro, SiNextdotjs } from "react-icons/si"
 
+export const runtime = "edge"
+
 export default function Home() {
   return (
     <>
