@@ -1,8 +1,6 @@
 import BlogList from "@/app/_components/BlogList"
 import { Suspense } from "react"
 
-export const runtime = "edge"
-
 export default function Page() {
   return (
     <>
