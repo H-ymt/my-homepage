@@ -194,15 +194,6 @@ export default function Home() {
                   Email
                 </span>
               </Link>
-
-              <Link
-                href="https://twitter.com/Hy1272"
-                target="blank"
-                className="inline-flex w-[120px] items-center justify-center gap-2 rounded-md bg-twitter/80 py-1.5 text-gray-100 transition-all duration-300 hover:bg-twitter/100 hover:underline"
-              >
-                <AiOutlineTwitter size="14px" />
-                <span className="">Twitter</span>
-              </Link>
             </div>
           </section>
         </div>
