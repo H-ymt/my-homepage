@@ -11,6 +11,9 @@ export default async function Page() {
   return (
     <>
       <h1>Works</h1>
+      <p className="pb-10">
+        気になった技術のキャッチアップ・UI・表現などを織り交ぜて自主制作したWebサイトを掲載するページです。
+      </p>
       <Suspense
         fallback={
           <div className="flex h-[50vh] items-center justify-center">

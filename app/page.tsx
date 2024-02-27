@@ -6,7 +6,7 @@ import heroImage from "@/public/hero-image.webp"
 import * as Tabs from "@radix-ui/react-tabs"
 import Image from "next/image"
 import Link from "next/link"
-import { AiOutlineMail, AiOutlineTwitter } from "react-icons/ai"
+import { AiOutlineMail } from "react-icons/ai"
 import { BiLogoJavascript, BiSolidFileCss, BiSolidFileHtml } from "react-icons/bi"
 import { SiAstro, SiNextdotjs } from "react-icons/si"
 
@@ -18,18 +18,39 @@ export default function Home() {
           <h1 className="text-4xl tracking-wider md:text-[40px]">My Homepage</h1>
 
           <div className="flex flex-col items-center gap-8">
-            <Image
+            {/* <Image
               src={heroImage}
               alt=""
-              width={400}
+              width={300}
               height={260}
               className="aspect-[2/1.3] rounded-lg object-cover shadow-outerSm"
               placeholder="blur"
-            />
+            /> */}
             <p className="text-md max-w-xl font-medium md:text-lg">
-              新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。
+              新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。主にLPやECサイトのページ制作、WordPressで作られたサイトの保守・改修などを行っています。
               <br />
-              最近は、Astro・Next.jsなどの技術を用いたJamstackサイトの制作が好きです。
+              最近は
+              <a
+                href="https://astro.build/"
+                className="inline-flex gap-1 items-center text-accent px-1"
+              >
+                Astro
+              </a>
+              や
+              <a
+                href="https://nextjs.org/"
+                className="inline-flex gap-1 items-center text-accent px-1"
+              >
+                Next.js
+              </a>
+              などのJavaScriptフレームワークと
+              <a
+                href="https://nextjs.org/"
+                className="inline-flex gap-1 items-center text-accent px-1"
+              >
+                microCMS
+              </a>
+              などのヘッドレスCMSを用いたWebサイト制作の学習に力を入れています。
               <br />
             </p>
           </div>
@@ -82,7 +103,7 @@ export default function Home() {
                   <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:2年
                   </span>
-                  Webアクセシビリティを意識したコーディングを心がけています。EJSの知識もあります。
+                  適切なタグや機能を使用すること、また、Webアクセシビリティを意識したコーディングを心がけています。EJSの知識もあります。
                 </Tabs.Content>
                 <Tabs.Content
                   tabIndex={-1}
@@ -153,7 +174,7 @@ export default function Home() {
                   <span className="mt-1 block pb-2 text-sm font-light text-muted">
                     実務経験:なし（独学）
                   </span>
-                  microCMS、Headless WordPressを利用したWebサイトの制作ができます。
+                  microCMS、WordPressをヘッドレスCMSとして利用したWebサイトの制作ができます。
                 </Tabs.Content>
               </Tabs.Root>
             </div>
