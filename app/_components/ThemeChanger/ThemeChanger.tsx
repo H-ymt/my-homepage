@@ -14,7 +14,11 @@ export default function ThemeChanger() {
   }, [])
 
   if (!mounted) {
-    return null
+    return (
+      <div className="h-[26px] w-[26px] inline-flex items-center justify-center">
+        <div className="h-[18px] w-[18px] animate-spin rounded-full border-[1.6px] border-y-accent border-x-accent/70" />
+      </div>
+    )
   }
 
   const toggleTheme = () => {
