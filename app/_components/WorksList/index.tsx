@@ -1,5 +1,5 @@
-import { Article } from "@/app/libs/microcms"
-import WorksListItem from "../WorksListItem"
+import { Article } from '@/app/libs/microcms'
+import WorksListItem from '../WorksListItem'
 
 type Props = {
   articles?: Article[]
@@ -15,7 +15,7 @@ export default function WorksList({ articles }: Props) {
   }
   return (
     <ul className="mx-auto grid sm:grid-cols-2 gap-20 sm:gap-12">
-      {articles.map((article) => (
+      {articles.map(article => (
         <WorksListItem key={article.id} works={article} />
       ))}
     </ul>

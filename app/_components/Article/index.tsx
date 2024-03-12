@@ -1,7 +1,7 @@
-import { type Article, Category } from "@/app/libs/microcms"
-import { formatRichText } from "@/app/utils/formatRichText"
-import Image from "next/image"
-import Link from "next/link"
+import { type Article, Category } from '@/app/libs/microcms'
+import { formatRichText } from '@/app/utils/formatRichText'
+import Image from 'next/image'
+import Link from 'next/link'
 
 type Props = {
   data: Article
@@ -9,9 +9,9 @@ type Props = {
 
 export default function ArticleComponent({ data }: Props) {
   const linkProps = {
-    className: "flex gap-1 items-center text-twitter hover:underline underline-offset-2",
-    target: "_blank",
-    rel: "noopener noreferrer",
+    className: 'flex gap-1 items-center text-twitter hover:underline underline-offset-2',
+    target: '_blank',
+    rel: 'noopener noreferrer',
   }
 
   return (

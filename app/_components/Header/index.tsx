@@ -1,14 +1,14 @@
-"use client"
+'use client'
 
-import Image from "next/image"
-import Link from "next/link"
-import { usePathname } from "next/navigation"
-import { AiFillGithub } from "react-icons/ai"
-import { IoMdHome } from "react-icons/io"
-import { PiCodeDuotone } from "react-icons/pi"
-import { SiZenn } from "react-icons/si"
-import MenuMobile from "../MenuMobile"
-import ThemeChanger from "../ThemeChanger/ThemeChanger"
+import Image from 'next/image'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { AiFillGithub } from 'react-icons/ai'
+import { IoMdHome } from 'react-icons/io'
+import { PiCodeDuotone } from 'react-icons/pi'
+import { SiZenn } from 'react-icons/si'
+import MenuMobile from '../MenuMobile'
+import ThemeChanger from '../ThemeChanger/ThemeChanger'
 
 export default function Header() {
   const pathname = usePathname()
@@ -34,9 +34,9 @@ export default function Header() {
           <ul className="flex items-center gap-3.5 text-base [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 [&>li]:tracking-wider">
             <li
               className={`relative rounded-md after:absolute after:bottom-[0px] after:left-1/2 after:h-[2px] after:w-12 after:-translate-x-1/2 after:scale-y-0 after:transition-transform after:duration-300 hover:after:scale-y-100 hover:after:bg-accent-foreground/50 hover:after:transition-transform hover:after:duration-300 ${
-                pathname === "/"
-                  ? "after:h-[2px] after:scale-y-100 after:bg-accent-foreground hover:after:bg-accent-foreground"
-                  : ""
+                pathname === '/'
+                  ? 'after:h-[2px] after:scale-y-100 after:bg-accent-foreground hover:after:bg-accent-foreground'
+                  : ''
               }`}
             >
               <Link href="/" className="px-4 py-[5px] h-[64px]">
@@ -47,9 +47,9 @@ export default function Header() {
             </li>
             <li
               className={`relative rounded-md after:absolute after:bottom-[0px] after:left-1/2 after:h-[2px] after:w-12 after:-translate-x-1/2 after:scale-y-0 after:transition-transform after:duration-300 hover:after:scale-y-100 hover:after:bg-accent-foreground/50 hover:after:transition-transform hover:after:duration-300 ${
-                pathname === "/works"
-                  ? "after:h-[2px] after:scale-y-100 after:bg-accent-foreground hover:after:bg-accent-foreground"
-                  : ""
+                pathname === '/works'
+                  ? 'after:h-[2px] after:scale-y-100 after:bg-accent-foreground hover:after:bg-accent-foreground'
+                  : ''
               }`}
             >
               <Link href="/work" className="px-4 py-[5px] h-[64px]">
@@ -60,9 +60,9 @@ export default function Header() {
             </li>
             <li
               className={`relative rounded-md after:absolute after:bottom-[0px] after:left-1/2 after:h-[2px] after:w-12 after:-translate-x-1/2 after:scale-y-0 after:transition-transform after:duration-300 hover:after:scale-y-100 hover:after:bg-accent-foreground/50 hover:after:transition-transform hover:after:duration-300 ${
-                pathname === "/blog"
-                  ? "after:h-[2px] after:scale-y-100 after:bg-accent-foreground hover:after:bg-accent-foreground"
-                  : ""
+                pathname === '/blog'
+                  ? 'after:h-[2px] after:scale-y-100 after:bg-accent-foreground hover:after:bg-accent-foreground'
+                  : ''
               }`}
             >
               <Link href="/blog" className="px-4 py-[5px] h-[64px]">

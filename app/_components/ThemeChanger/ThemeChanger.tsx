@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
-import { useTheme } from "next-themes"
-import { useEffect, useState } from "react"
-import { MdOutlineLightMode } from "react-icons/md"
-import { MdOutlineDarkMode } from "react-icons/md"
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
+import { MdOutlineLightMode } from 'react-icons/md'
+import { MdOutlineDarkMode } from 'react-icons/md'
 
 export default function ThemeChanger() {
   const { resolvedTheme, setTheme } = useTheme()
@@ -40,16 +40,16 @@ export default function ThemeChanger() {
   }
 
   const toggleTheme = () => {
-    if (resolvedTheme === "dark") {
-      setTheme("light")
+    if (resolvedTheme === 'dark') {
+      setTheme('light')
     } else {
-      setTheme("dark")
+      setTheme('dark')
     }
   }
 
   // マウントされた後にテーマの状態を取得してアイコンを表示
   const Icon = mounted
-    ? resolvedTheme === "light"
+    ? resolvedTheme === 'light'
       ? MdOutlineDarkMode
       : MdOutlineLightMode
     : null
@@ -59,7 +59,7 @@ export default function ThemeChanger() {
       <button
         type="button"
         onClick={toggleTheme}
-        aria-label={resolvedTheme === "dark" ? "Light Mode" : "Dark Mode"}
+        aria-label={resolvedTheme === 'dark' ? 'Light Mode' : 'Dark Mode'}
       >
         {Icon && <Icon size="1.6em" aria-hidden="true" />}
       </button>

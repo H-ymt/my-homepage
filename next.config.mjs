@@ -3,7 +3,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["images.microcms-assets.io"],
+    domains: ['images.microcms-assets.io'],
   },
   reactStrictMode: true,
 }

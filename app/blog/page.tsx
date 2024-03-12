@@ -1,6 +1,6 @@
-import BlogList from "@/app/_components/BlogList"
-import { Suspense } from "react"
-import { FaExternalLinkAlt } from "react-icons/fa"
+import BlogList from '@/app/_components/BlogList'
+import { Suspense } from 'react'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 export default function Page() {
   return (

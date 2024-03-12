@@ -1,17 +1,18 @@
-"use client"
+'use client'
 
-import { BiSolidFileHtml, BiSolidFileCss, BiLogoJavascript } from "react-icons/bi"
-import { SiAstro, SiNextdotjs } from "react-icons/si"
-import { FaExternalLinkAlt } from "react-icons/fa"
-import SectionTitle from "@/app/_components/SectionTitle"
-import Link from "next/link"
-import { AiOutlineMail } from "react-icons/ai"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./_components/ui/tabs"
-import Container from "./_components/Container"
-import { Suspense } from "react"
-import Loading from "./loading"
-import { Button } from "./_components/ui/button"
-import { IoLogoGithub } from "react-icons/io"
+import SectionTitle from '@/app/_components/SectionTitle'
+import Link from 'next/link'
+import { Suspense } from 'react'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BiLogoJavascript, BiSolidFileCss, BiSolidFileHtml } from 'react-icons/bi'
+import { FaExternalLinkAlt } from 'react-icons/fa'
+import { IoLogoGithub } from 'react-icons/io'
+import { SiAstro, SiNextdotjs } from 'react-icons/si'
+import Container from './_components/Container'
+import { Button } from './_components/ui/button'
+import { Skeleton } from './_components/ui/skeleton'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from './_components/ui/tabs'
+import Loading from './loading'
 
 export default function Home() {
   return (
@@ -21,39 +22,42 @@ export default function Home() {
           <div className="flex items-center pb-28">
             <div className="mx-auto flex max-w-3xl flex-col items-center justify-center px-5">
               <h1>My Homepage</h1>
-              <div className="flex flex-col items-center gap-8">
-                <Suspense fallback="loading.." />
-                <p className="text-base max-w-xl font-medium">
-                  新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。主にLPやECサイトのページ制作、WordPressで作られたサイトの保守・改修などを行っています。
-                  <br />
-                  最近は
-                  <a
-                    href="https://astro.build/"
-                    className="inline-flex gap-1 items-center text-primary px-1"
-                  >
-                    Astro
-                    <FaExternalLinkAlt size="12" />
-                  </a>
-                  や
-                  <a
-                    href="https://nextjs.org/"
-                    className="inline-flex gap-1 items-center text-primary px-1"
-                  >
-                    Next.js
-                    <FaExternalLinkAlt size="12" />
-                  </a>
-                  などのJavaScriptフレームワークと
-                  <a
-                    href="https://nextjs.org/"
-                    className="inline-flex gap-1 items-center text-primary px-1"
-                  >
-                    microCMS
-                    <FaExternalLinkAlt size="12" />
-                  </a>
-                  などのヘッドレスCMSを用いたWebサイト制作の学習に力を入れています。
-                  <br />
-                </p>
-              </div>
+
+              <Suspense fallback={<Skeleton />}>
+                <div className="flex flex-col items-center gap-8">
+                  <Suspense fallback="loading.." />
+                  <p className="text-base max-w-xl font-medium">
+                    新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。主にLPやECサイトのページ制作、WordPressで作られたサイトの保守・改修などを行っています。
+                    <br />
+                    最近は
+                    <a
+                      href="https://astro.build/"
+                      className="inline-flex gap-1 items-center text-primary px-1"
+                    >
+                      Astro
+                      <FaExternalLinkAlt size="12" />
+                    </a>
+                    や
+                    <a
+                      href="https://nextjs.org/"
+                      className="inline-flex gap-1 items-center text-primary px-1"
+                    >
+                      Next.js
+                      <FaExternalLinkAlt size="12" />
+                    </a>
+                    などのJavaScriptフレームワークと
+                    <a
+                      href="https://nextjs.org/"
+                      className="inline-flex gap-1 items-center text-primary px-1"
+                    >
+                      microCMS
+                      <FaExternalLinkAlt size="12" />
+                    </a>
+                    などのヘッドレスCMSを用いたWebサイト制作の学習に力を入れています。
+                    <br />
+                  </p>
+                </div>
+              </Suspense>
             </div>
           </div>
 

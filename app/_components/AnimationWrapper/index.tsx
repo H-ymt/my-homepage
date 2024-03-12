@@ -3,5 +3,5 @@ type Props = {
 }
 
 export default function AnimationWrapper({ children }: Props) {
-  return <div className='animate-fade-in-bottom'>{children}</div>
+  return <div className="animate-fade-in-bottom">{children}</div>
 }

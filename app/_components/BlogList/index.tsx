@@ -1,5 +1,5 @@
-import Link from "next/link"
-import ConvertDate from "../ConvertDate"
+import Link from 'next/link'
+import ConvertDate from '../ConvertDate'
 
 interface Post {
   id: number
@@ -10,14 +10,14 @@ interface Post {
 }
 
 export default async function BlogList() {
-  const res = await fetch("https://zenn.dev/api/articles?username=h_ymt&order=latest")
+  const res = await fetch('https://zenn.dev/api/articles?username=h_ymt&order=latest')
   const data = await res.json()
   const posts: Post[] = data.articles.slice(0, 10)
 
   return (
     <>
       <ul className="grid place-items-center gap-7 items-stretch grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
-        {posts.map((post) => (
+        {posts.map(post => (
           <li key={post.id} className="w-full">
             <Link
               href={`https://zenn.dev/${post.path}`}
