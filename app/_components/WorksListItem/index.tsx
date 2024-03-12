@@ -1,8 +1,6 @@
 import { Article } from '@/app/libs/microcms'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Suspense } from 'react'
-import { Skeleton } from '../ui/skeleton'
 
 type Props = {
   works: Article
@@ -14,19 +12,17 @@ export default async function WorksListItem({ works }: Props) {
       <li className="group grid rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
         <Link href={`/work/${works.id}`}>
           {works.thumbnail ? (
-            <Suspense fallback={<Skeleton className="h-[125px] w-[250px] rounded-xl" />}>
-              <Image
-                src={`${works.thumbnail?.url}?w=800&h=640&format=webp`}
-                placeholder="blur"
-                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAUAADsANzmZGssAAAAASUVORK5CYII="
-                alt=""
-                width={works.thumbnail.width}
-                height={works.thumbnail?.height}
-                className="aspect-[4/3] w-full rounded-xl object-cover"
-                sizes="(min-width: 640px) 296px, 100vw"
-                loading="eager"
-              />
-            </Suspense>
+            <Image
+              src={`${works.thumbnail?.url}?w=800&h=640&format=webp`}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkMAUAADsANzmZGssAAAAASUVORK5CYII="
+              alt=""
+              width={works.thumbnail.width}
+              height={works.thumbnail?.height}
+              className="aspect-[4/3] w-full rounded-xl object-cover"
+              sizes="(min-width: 640px) 296px, 100vw"
+              loading="eager"
+            />
           ) : (
             <Image src="" alt="No Image" width={800} height={800} />
           )}
