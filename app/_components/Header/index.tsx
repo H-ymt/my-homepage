@@ -27,6 +27,7 @@ export default function Header() {
             height={64}
             alt="Logo"
             className="rounded-full"
+            loading="eager"
           />
         </Link>
 
