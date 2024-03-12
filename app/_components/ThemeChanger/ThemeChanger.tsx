@@ -15,8 +15,8 @@ export default function ThemeChanger() {
 
   if (!mounted) {
     return (
-      <div className="h-[26px] w-[26px] inline-flex items-center justify-center">
-        <div className="h-[18px] w-[18px] animate-spin rounded-full border-[1.6px] border-y-accent border-x-accent/70" />
+      <div className="h-[1.6em] w-[1.6em] inline-flex items-center justify-center">
+        <div className="h-[18px] w-[18px] animate-spin rounded-full border-[1.6px] border-y-muted-foreground border-x-muted-foreground/80" />
       </div>
     )
   }
@@ -33,13 +33,8 @@ export default function ThemeChanger() {
     : null
 
   return (
-    <div className="inline-block h-[1.6em]">
-      <button
-        className="ease duration-300 hover:-translate-y-0.5"
-        type="button"
-        onClick={toggleTheme}
-        aria-label="テーマを変更する"
-      >
+    <div className="inline-flex items-center justify-center md:hover:bg-muted rounded-md p-1.5">
+      <button type="button" onClick={toggleTheme} aria-label="テーマを変更する">
         {Icon && <Icon size="1.6em" aria-hidden="true" />}
       </button>
     </div>

@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import ConvertDate from '../ConvertDate'
+import Link from "next/link"
+import ConvertDate from "../ConvertDate"
 
 interface Post {
   id: number
@@ -10,25 +10,25 @@ interface Post {
 }
 
 export default async function BlogList() {
-  const res = await fetch('https://zenn.dev/api/articles?username=h_ymt&order=latest')
+  const res = await fetch("https://zenn.dev/api/articles?username=h_ymt&order=latest")
   const data = await res.json()
   const posts: Post[] = data.articles.slice(0, 10)
 
   return (
     <>
-      <ul className='grid place-items-center gap-7 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]'>
-        {posts.map(post => (
-          <li key={post.id}>
+      <ul className="grid place-items-center gap-7 items-stretch grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
+        {posts.map((post) => (
+          <li key={post.id} className="w-full">
             <Link
               href={`https://zenn.dev/${post.path}`}
-              target='blank'
-              className='inline-flex min-h-[220px] w-[300px] max-w-[320px] flex-col items-center justify-center gap-4 rounded-3xl bg-background p-6 shadow-outerSm transition-all duration-200 hover:scale-[1.02]'
+              target="blank"
+              className="flex aspect-[4/3] w-full h-full flex-col items-center justify-center gap-4 bg-background p-6 border rounded-3xl hover:outline-primary hover:outline-2 hover:outline-double hover:bg-muted/60"
             >
-              <span className='text-6xl'>{post.emoji}</span>
-              <p className='line-clamp-2 overflow-hidden break-all text-left font-medium'>
+              <span className="text-6xl">{post.emoji}</span>
+              <p className="line-clamp-2 overflow-hidden break-all text-left font-medium">
                 {post.title}
               </p>
-              <p className='text-mutedBlack dark:text-mutedGray mt-2 text-xs tracking-widest'>
+              <p className="text-muted-foreground text-xs tracking-widest">
                 <ConvertDate convertDate={post.published_at} />
               </p>
             </Link>

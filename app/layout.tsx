@@ -1,9 +1,9 @@
 import Header from "@/app/_components/Header"
-import { Montserrat } from "next/font/google"
+import { Inter } from "next/font/google"
 import "./globals.css"
 import { Providers } from "./providers"
 
-const montserrat = Montserrat({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   metadataBase: new URL("https://h-ymt.com/"),
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja" suppressHydrationWarning>
       <body
-        className={`${montserrat.className} bg-background bg-gradient-to-r from-background via-background to-transparent text-primary`}
+        className={`${inter.className} bg-background bg-gradient-to-r from-background via-background to-transparent text-foreground`}
       >
         <Providers>
           <Header />

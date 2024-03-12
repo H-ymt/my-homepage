@@ -1,9 +1,9 @@
-import Sheet from '@/app/_components/Sheet'
+import Container from "../_components/Container"
 
 type Props = {
   children: React.ReactNode
 }
 
 export default function RootLayout({ children }: Props) {
-  return <Sheet>{children}</Sheet>
+  return <Container>{children}</Container>
 }

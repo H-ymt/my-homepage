@@ -10,7 +10,7 @@ export default function Page() {
         遭遇したエラーやバグの解決方法、使用した技術の振り返りなど、学んだ知見をより深めるため
         <a
           href="https://zenn.dev/"
-          className="inline-flex gap-1 items-center text-accent px-1"
+          className="inline-flex gap-1 items-center text-primary px-1"
         >
           Zenn
           <FaExternalLinkAlt size="12" />

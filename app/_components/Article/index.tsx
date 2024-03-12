@@ -23,7 +23,7 @@ export default function ArticleComponent({ data }: Props) {
           alt="サムネイル画像"
           width={data.thumbnail?.width}
           height={data.thumbnail?.height}
-          className="aspect-[1/0.7] rounded-xl object-cover shadow-outerXs"
+          className="aspect-[1/0.7] rounded-xl object-cover"
           loading="eager"
         />
       )}
@@ -31,16 +31,17 @@ export default function ArticleComponent({ data }: Props) {
       <div className="flex flex-col gap-3 p-3">
         <div className="w-full break-all text-left">
           <div
+            // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
             dangerouslySetInnerHTML={{
               __html: `${formatRichText(data.content)}`,
             }}
-            className="w-full break-all text-left"
+            className="w-full break-all text-left text-sm [&>h4]:font-semibold [&>h4]:pt-3 [&>h4]:pb-1"
           />
         </div>
 
-        <ul className="flex flex-col gap-4 text-xs">
+        <ul className="flex flex-col gap-4 text-xs py-4">
           <li className="flex items-center gap-4">
-            <span className="min-w-[80px] rounded-md px-2 py-2.5 text-center font-medium shadow-outerXs">
+            <span className="bg-muted min-w-[80px] rounded-md px-2 py-2.5 text-center font-medium">
               WEBSITE
             </span>
             <Link href={data.url} {...linkProps}>
@@ -49,7 +50,7 @@ export default function ArticleComponent({ data }: Props) {
           </li>
 
           <li className="flex items-center gap-4">
-            <span className="min-w-[80px] rounded-md px-2 py-2.5 text-center font-medium shadow-outerXs">
+            <span className="bg-muted min-w-[80px] rounded-md px-2 py-2.5 text-center font-medium">
               STACK
             </span>
 
@@ -61,7 +62,7 @@ export default function ArticleComponent({ data }: Props) {
           </li>
 
           <li className="flex items-center gap-4">
-            <span className="min-w-[80px] rounded-md px-2 py-2.5 text-center font-medium shadow-outerXs">
+            <span className="bg-muted min-w-[80px] rounded-md px-2 py-2.5 text-center font-medium">
               SOURCE
             </span>
             <Link href={data.source} {...linkProps}>

@@ -5,10 +5,10 @@ type Props = {
 
 export default function SectionTitle({ children, sub }: Props) {
   return (
-    <div className='text-center'>
-      <h2 className='inline-flex flex-col pb-6 text-3xl lg:pb-14 lg:text-4xl'>
+    <div className="text-center">
+      <h2 className="inline-flex flex-col pb-6 tracking-wider lg:pb-8">
         {children}
-        <span className='text-center text-xs font-medium text-muted lg:text-sm'>
+        <span className="text-center text-[12px] leading-5 tracking-normal text-muted-foreground">
           {sub}
         </span>
       </h2>
