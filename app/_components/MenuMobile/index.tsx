@@ -14,7 +14,7 @@ import {
 export default function HamburgerMenu() {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="md:hidden">
+      <DropdownMenuTrigger className="md:hidden p-1">
         <FiMenu size="28px" />
       </DropdownMenuTrigger>
 
