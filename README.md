@@ -7,8 +7,8 @@ https://h-ymt.com/
 
 ## Stack
 
-- Next.js - フロントエンド
-- Tailwind - CSSフレームワーク
-- Radix UI - ヘッドレスUIライブラリ
+- React(Next.js) - フロントエンド
+- Tailwind CSS - CSSフレームワーク
+- shadcn/ui - UIライブラリ
 - microCMS - ヘッドレスCMS
-- Cloudflare Pages - SSGホスティングサービス
+- Cloudflare Pages - ホスティング
