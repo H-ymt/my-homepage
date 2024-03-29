@@ -48,7 +48,7 @@ export default function Header() {
             </li>
             <li
               className={`relative rounded-md after:absolute after:bottom-[0px] after:left-1/2 after:h-[2px] after:w-12 after:-translate-x-1/2 after:scale-y-0 after:transition-transform after:duration-300 hover:after:scale-y-100 hover:after:bg-accent-foreground/50 hover:after:transition-transform hover:after:duration-300 ${
-                pathname === '/works'
+                pathname === '/work'
                   ? 'after:h-[2px] after:scale-y-100 after:bg-accent-foreground hover:after:bg-accent-foreground'
                   : ''
               }`}
