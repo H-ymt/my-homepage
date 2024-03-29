@@ -14,7 +14,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="shadow-blue-20 backdrop-blur-sm sticky top-0 z-20 h-[64px] border-b bg-background/90 bg-opacity-20 backdrop-filter">
+    <header className="shadow-blue-20 backdrop-blur-sm sticky top-0 z-20 h-[64px] border-b bg-background/20 bg-opacity-20 backdrop-filter">
       <div className="mx-auto flex h-full max-w-[1024px] items-center justify-between px-4">
         <Link
           href="/"

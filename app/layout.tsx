@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ja" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-background bg-gradient-to-r from-background via-background to-transparent text-foreground`}
+        className={`${inter.className} bg-background/20 text-foreground`}
       >
         <Providers>
           <Header />
