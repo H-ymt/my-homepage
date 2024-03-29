@@ -72,7 +72,7 @@ export default function ArticleComponent({ data }: Props) {
         </ul>
 
         <Link
-          href="/works"
+          href="/work"
           className="ml-auto mt-6 inline-flex w-fit items-center rounded-md bg-accent/50 px-4 py-2 text-sm transition-all duration-300 hover:bg-accent/60"
         >
           一覧へ戻る
