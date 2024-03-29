@@ -21,7 +21,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center gap-8">
               <p className="text-base max-w-xl font-medium">
-                新卒で公務員として5年勤務したのち、現在はコンサル会社のコーダーとしてWeb制作業務に携わっています。主にLPやECサイトのページ制作、WordPressで作られたサイトの保守・改修などを行っています。
+                コンサル会社のコーダーとしてWeb制作業務に携わっており、主にLPやECサイトのページ制作、WordPressで作られたサイトの保守・改修などを行っています。
                 <br />
                 最近は
                 <a
