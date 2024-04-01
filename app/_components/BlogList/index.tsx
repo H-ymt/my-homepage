@@ -22,7 +22,7 @@ export default async function BlogList() {
             <Link
               href={`https://zenn.dev/${post.path}`}
               target="blank"
-              className="flex aspect-[4/3] w-full h-full flex-col items-center justify-center gap-4 bg-background p-6 border rounded-3xl hover:outline-primary hover:outline-2 hover:outline-double hover:bg-muted/60"
+              className="flex aspect-[4/3] w-full h-full flex-col items-center justify-center gap-4 bg-background p-6 border rounded-3xl hover:outline-primary hover:outline-2 hover:outline-double hover:bg-muted/90"
             >
               <span className="text-6xl">{post.emoji}</span>
               <p className="line-clamp-2 overflow-hidden break-all text-left font-medium">

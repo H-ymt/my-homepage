@@ -68,7 +68,7 @@ export default function Header() {
             >
               <Link href="/blog" className="px-4 py-[5px] h-[64px]">
                 <SiZenn color="" size="0.9em" />
-                Blog
+                Zenn
                 <span className="sr-only">ブログページへ移動する</span>
               </Link>
             </li>
