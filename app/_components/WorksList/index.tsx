@@ -14,7 +14,7 @@ export default function WorksList({ articles }: Props) {
     return <p>準備中です</p>
   }
   return (
-    <ul className="mx-auto grid sm:grid-cols-2 gap-20 sm:gap-12">
+    <ul className="mx-auto grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-8">
       {articles.map(article => (
         <WorksListItem key={article.id} works={article} />
       ))}
