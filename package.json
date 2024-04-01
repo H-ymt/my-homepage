@@ -23,6 +23,7 @@
     "cheerio": "^1.0.0-rc.12",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "date-fns": "^3.6.0",
     "dayjs": "^1.11.9",
     "highlight.js": "^11.8.0",
     "hljs": "^6.2.3",

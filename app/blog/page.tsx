@@ -1,5 +1,6 @@
 import BlogList from '@/app/_components/BlogList'
 import { FaExternalLinkAlt } from 'react-icons/fa'
+import ScrapList from '../_components/ScrapList'
 
 export default function Page() {
   return (
@@ -18,6 +19,11 @@ export default function Page() {
       </p>
 
       <BlogList />
+
+      <section className="py-10">
+        <h2 className="font-bold pb-4">スクラップ</h2>
+        <ScrapList />
+      </section>
     </>
   )
 }
