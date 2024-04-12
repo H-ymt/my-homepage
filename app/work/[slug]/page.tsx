@@ -11,8 +11,6 @@ type Props = {
   }
 }
 
-export const runtime = 'edge'
-
 export async function generateMetadata({
   params,
   searchParams,
