@@ -2,6 +2,8 @@ import BlogList from '@/app/_components/BlogList'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import ScrapList from '../_components/ScrapList'
 
+export const runtime = 'edge'
+
 export default function Page() {
   return (
     <>
