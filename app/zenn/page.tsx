@@ -4,7 +4,7 @@ import ScrapList from '../components/ScrapList'
 
 export const runtime = 'edge'
 
-export default function ZennPage() {
+export default async function ZennPage() {
   return (
     <div>
       <h1>Develop log</h1>
