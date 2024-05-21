@@ -2,7 +2,9 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 import BlogList from '../components/BlogList'
 import ScrapList from '../components/ScrapList'
 
-export default function ZennPage() {
+export const runtime = 'edge'
+
+export default async function ZennPage() {
   return (
     <div>
       <h1>Develop log</h1>
