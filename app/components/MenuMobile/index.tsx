@@ -26,17 +26,17 @@ export default function MenuMobile() {
           </DropdownMenuItem>
         </Link>
 
-        <Link className="items-center py-1 w-full" href="/work">
+        <Link className="items-center py-1 w-full" href="/projects">
           <DropdownMenuItem className="flex gap-2 w-full py-2">
             <PiCodeDuotone size="1.2em" />
-            Work
+            Projects
           </DropdownMenuItem>
         </Link>
 
-        <Link className="items-center py-1 w-full" href="/blog">
+        <Link className="items-center py-1 w-full" href="/zenn">
           <DropdownMenuItem className="flex gap-2 w-full py-2">
             <SiZenn size="1.2em" />
-            Blog
+            Zenn
           </DropdownMenuItem>
         </Link>
 
