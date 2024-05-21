@@ -2,8 +2,6 @@ import { FaExternalLinkAlt } from 'react-icons/fa'
 import BlogList from '../components/BlogList'
 import ScrapList from '../components/ScrapList'
 
-export const runtime = 'edge'
-
 export default function ZennPage() {
   return (
     <div>
