@@ -1,9 +1,16 @@
-import AnimationWrapper from './_components/AnimationWrapper'
+'use client'
+
+import { fadeUpStaggerAnimation } from '@/lib/motion'
+import { motion } from 'framer-motion'
 
 type Props = {
   children: React.ReactNode
 }
 
 export default function RootTemplate({ children }: Props) {
-  return <AnimationWrapper>{children}</AnimationWrapper>
+  return (
+    <motion.div variants={fadeUpStaggerAnimation()} initial="hidden" animate="visible">
+      {children}
+    </motion.div>
+  )
 }

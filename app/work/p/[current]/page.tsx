@@ -1,6 +1,6 @@
-import WorksList from '@/app/_components/WorksList'
+import WorksList from '@/app/components/WorksList'
 import { WORKS_LIST_LIMIT } from '@/app/constants'
-import { getWorksList } from '@/app/libs/microcms'
+import { getWorksList } from '@/lib/microcms'
 
 type Props = {
   params: {
