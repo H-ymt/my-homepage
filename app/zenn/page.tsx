@@ -1,3 +1,4 @@
+import { getZennArticles } from '@/lib/zenn'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import BlogList from '../components/BlogList'
 import ScrapList from '../components/ScrapList'
@@ -5,6 +6,8 @@ import ScrapList from '../components/ScrapList'
 export const runtime = 'edge'
 
 export default async function ZennPage() {
+  const data = await getZennArticles()
+
   return (
     <div>
       <h1>Develop log</h1>
@@ -22,7 +25,7 @@ export default async function ZennPage() {
 
       <section>
         <h2>Articles</h2>
-        <BlogList />
+        <BlogList posts={data} />
       </section>
 
       <section>
