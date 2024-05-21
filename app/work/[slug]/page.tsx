@@ -1,5 +1,5 @@
-import Article from '@/app/_components/Article'
-import { getWorksDetail } from '@/app/libs/microcms'
+import Article from '@/app/components/Article'
+import { getWorksDetail } from '@/lib/microcms'
 import { Metadata } from 'next'
 
 type Props = {

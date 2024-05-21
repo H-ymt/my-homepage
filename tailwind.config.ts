@@ -21,6 +21,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)'],
+        notoSans: ['var(--font-noto-sans)'],
+        base: ['var(--font-inter), var(--font-noto-sans)'],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

@@ -1,6 +1,6 @@
-import WorksList from '@/app/_components/WorksList'
+import WorksList from '@/app/components/WorksList'
+import { getWorksList } from '../../lib/microcms'
 import { WORKS_LIST_LIMIT } from '../constants'
-import { getWorksList } from '../libs/microcms'
 
 export default async function Page() {
   const data = await getWorksList({
