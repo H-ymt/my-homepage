@@ -20,7 +20,7 @@ export default function Menu() {
           <GoArrowUpRight
             size="0.6em"
             strokeWidth={1}
-            className="absolute right-[5px] border-0 top-[28px]"
+            className="absolute right-[5px] border-0 top-[26px]"
           />
         </Link>
       </div>
