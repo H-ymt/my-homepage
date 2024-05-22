@@ -6,6 +6,7 @@ export default async function ProjectsPage() {
   const data = await getWorksList({
     limit: WORKS_LIST_LIMIT,
   })
+
   return (
     <>
       <h1>Projects</h1>
