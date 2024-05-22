@@ -10,7 +10,7 @@ export default function WorksListItem({ works }: Props) {
   return (
     <>
       <li className="group grid rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
-        <Link href={`/work/${works.id}`}>
+        <Link href={`/projects/${works.id}`}>
           {works.thumbnail ? (
             <Image
               src={`${works.thumbnail?.url}?w=800&h=640&format=webp`}
