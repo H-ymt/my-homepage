@@ -11,14 +11,14 @@ export const metadata = {
   metadataBase: new URL('https://h-ymt.com/'),
   title: {
     template: '%s - Homepage',
-    default: 'YH - Homepage',
+    default: 'Homepage',
   },
   description:
-    'Next.jsとTailwind CSSを使用したホームページです。コンテンツ管理にmicroCMSを使用したJamstack構成で、ホスティングはCloudflare Pagesを使用しています。',
+    'Next.jsとTailwind CSSを使用したホームページです。趣味で制作したWebサイトなどを本サイトに掲載しています。',
   twitter: {
-    title: 'YH - Homepage',
+    title: 'Homepage',
     description:
-      'Next.jsとTailwind CSSを使用したホームページです。コンテンツ管理にmicroCMSを使用したJamstack構成で、ホスティングはCloudflare Pagesを使用しています。',
+      'Next.jsとTailwind CSSを使用した個人用のホームページです。趣味で制作したWebサイトなどを本サイトに掲載しています。',
     card: 'summary',
   },
 }
