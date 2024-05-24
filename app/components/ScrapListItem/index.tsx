@@ -21,7 +21,7 @@ export default function ScrapListItem({ scraps }: ScrapListItemProps) {
         <motion.a
           key={scrap.id}
           variants={fadeUpStaggerAnimation(0, 0, 0, 1, 0.5, 0.1)}
-          className="py-4 shadow-border w-full shadow-[0_1px_0_0] duration-300 focus-visible:outline-offset-2 group hover:bg-muted focus-visible:bg-muted"
+          className="pt-4 pb-2 shadow-border w-full shadow-[0_1px_0_0] duration-300 focus-visible:outline-offset-2 group hover:bg-muted focus-visible:bg-muted"
           target="_blank"
           href={`https://zenn.dev/${scrap.path}`}
           rel="noreferrer"
