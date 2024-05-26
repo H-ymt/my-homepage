@@ -1,4 +1,4 @@
-import { ZennArticle } from '@/app/types'
+import { ZennArticle } from '@/lib/zenn'
 import BlogListItem from '../BlogListItem'
 
 type Props = {
@@ -8,9 +8,15 @@ type Props = {
 export const runtime = 'edge'
 
 export default function BlogList({ posts }: Props) {
+  if (!posts) {
+    return null
+  }
+
   return (
     <>
-      <BlogListItem posts={posts} />
+      {posts.map(post => (
+        <BlogListItem key={post.id} posts={post} />
+      ))}
     </>
   )
 }
