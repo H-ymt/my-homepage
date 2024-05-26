@@ -1,4 +1,5 @@
-import { ZennScraps } from '@/app/types'
+
+import { ZennScraps } from '@/lib/zenn'
 import ScrapListItem from '../ScrapListItem'
 
 export default async function ScrapList() {

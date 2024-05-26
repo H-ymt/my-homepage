@@ -12,7 +12,7 @@ import { BIO } from './constants'
 export default function Home() {
   return (
     <>
-      <motion.div variants={fadeUpStaggerAnimation()} className="flex items-center pb-28">
+      <div className="flex items-center pb-28">
         <div className="mx-auto flex flex-col items-center justify-center px-5">
           <motion.button
             type="button"
@@ -21,6 +21,7 @@ export default function Home() {
             animate="visible"
             whileHover="hover"
             whileTap="tap"
+            tabIndex={-1}
             drag
             dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
             dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
@@ -66,9 +67,9 @@ export default function Home() {
             </p>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.section variants={fadeUpStaggerAnimation()}>
+      <section>
         <h2>Biography</h2>
         <motion.div
           variants={fadeUpStaggerAnimation()}
@@ -87,9 +88,9 @@ export default function Home() {
             </motion.div>
           ))}
         </motion.div>
-      </motion.section>
+      </section>
 
-      <motion.div variants={fadeUpStaggerAnimation()} className="text-center py-12">
+      <div className="text-center py-12">
         <p>ご用の方は以下よりご連絡ください。</p>
 
         <div className="flex items-center justify-center mt-6 gap-4">
@@ -111,7 +112,7 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-      </motion.div>
+      </div>
     </>
   )
 }

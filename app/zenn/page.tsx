@@ -1,10 +1,17 @@
+import { ZennArticle } from '@/lib/zenn'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import BlogList from '../components/BlogList'
 import ScrapList from '../components/ScrapList'
 
+type Props = {
+  posts: ZennArticle
+}
+
 export const runtime = 'edge'
 
-export default async function ZennPage() {
+export default async function ZennPage({ posts }: Props) {
+
+
   return (
     <div>
       <h1>Develop log</h1>
@@ -22,7 +29,8 @@ export default async function ZennPage() {
 
       <section>
         <h2>Articles</h2>
-        <BlogList />
+        <p>準備中です</p>
+        <BlogList posts={posts} />
       </section>
 
       <section>

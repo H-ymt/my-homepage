@@ -1,4 +1,8 @@
+'use client'
+
 import { Article } from '@/lib/microcms'
+import { fadeUpStaggerAnimation } from '@/lib/motion'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -9,8 +13,11 @@ type Props = {
 export default function WorksListItem({ works }: Props) {
   return (
     <>
-      <li className="group grid rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]">
-        <Link href={`/work/${works.id}`}>
+      <motion.li
+         variants={fadeUpStaggerAnimation(0, 0, 0, 1, 0.5, 0.1)}
+        className="group grid rounded-3xl border-none transition-[transform] duration-300 hover:scale-[1.02]"
+      >
+        <Link href={`/projects/${works.id}`}>
           {works.thumbnail ? (
             <Image
               src={`${works.thumbnail?.url}?w=800&h=640&format=webp`}
@@ -38,7 +45,7 @@ export default function WorksListItem({ works }: Props) {
             </dd>
           </dl>
         </Link>
-      </li>
+      </motion.li>
     </>
   )
 }
