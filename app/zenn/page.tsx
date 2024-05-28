@@ -1,10 +1,19 @@
-export const runtime = 'edge'
+import { ZennArticle } from '@/lib/zenn'
+import { FaExternalLinkAlt } from 'react-icons/fa'
+import BlogList from '../components/BlogList'
+import ScrapList from '../components/ScrapList'
 
-export default async function ZennPage() {
+type Props = {
+  posts: ZennArticle
+}
+
+// export const runtime = 'edge'
+
+export default async function ZennPage({ posts }: Props) {
   return (
     <div>
-      <h1>準備中です</h1>
-      {/* <p className="pb-10">
+      <h1>Develop log</h1>
+      <p className="pb-10">
         Webの技術・開発についての知見を
         <a
           href="https://zenn.dev/"
@@ -25,7 +34,7 @@ export default async function ZennPage() {
       <section>
         <h2>Scraps</h2>
         <ScrapList />
-      </section> */}
+      </section>
     </div>
   )
 }
