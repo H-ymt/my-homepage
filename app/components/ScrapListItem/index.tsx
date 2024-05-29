@@ -1,7 +1,7 @@
 'use client'
 
-import { ZennScraps } from '@/app/types'
 import { fadeUpStaggerAnimation } from '@/lib/motion'
+import { ZennScraps } from '@/lib/zenn'
 import { motion } from 'framer-motion'
 import ConvertDate from '../ConvertDate'
 
