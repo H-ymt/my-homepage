@@ -8,7 +8,7 @@ type Props = {
 
 // export const runtime = 'edge'
 
-export default async function ZennPage({ posts }: Props) {
+export default function ZennPage({ posts }: Props) {
   return (
     <div>
       <h1>Develop log</h1>
