@@ -1,6 +1,5 @@
 import { ZennArticle } from '@/lib/zenn'
 import { FaExternalLinkAlt } from 'react-icons/fa'
-import BlogList from '../components/BlogList'
 import ScrapList from '../components/ScrapList'
 
 type Props = {
@@ -28,7 +27,7 @@ export default async function ZennPage({ posts }: Props) {
       <section>
         <h2>Articles</h2>
         <p>準備中です</p>
-        <BlogList posts={posts} />
+        {/* <BlogList posts={posts} /> */}
       </section>
 
       <section>
