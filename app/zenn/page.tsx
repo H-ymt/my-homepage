@@ -1,14 +1,9 @@
-import { ZennArticle } from '@/lib/zenn'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import ScrapList from '../components/ScrapList'
 
-type Props = {
-  posts: ZennArticle
-}
-
 export const runtime = 'edge'
 
-export default function ZennPage({ posts }: Props) {
+export default function ZennPage() {
   return (
     <div>
       <h1>Develop log</h1>
