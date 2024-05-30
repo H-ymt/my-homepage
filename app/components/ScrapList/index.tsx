@@ -1,4 +1,3 @@
-
 import { ZennScraps } from '@/lib/zenn'
 import ScrapListItem from '../ScrapListItem'
 
