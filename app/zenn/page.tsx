@@ -23,7 +23,7 @@ export default async function ZennPage() {
 
       <section>
         <h2>Articles</h2>
-        <BlogList posts={data.articles} />
+        {/* <BlogList posts={data.articles} /> */}
       </section>
 
       <section>
