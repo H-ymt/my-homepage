@@ -25,7 +25,7 @@ export default function BlogListItem({ posts }: BlogListItemProps) {
         <h2 className="text-base line-clamp-2">{posts?.title}</h2>
         <ConvertDate
           convertDate={posts?.published_at ?? ''}
-          className="text-muted-foreground/85 text-xs"
+          className="text-muted-foreground text-xs"
         />
       </div>
     </motion.a>
