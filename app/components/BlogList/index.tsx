@@ -9,8 +9,6 @@ type Props = {
   posts: ZennArticle
 }
 
-export const runtime = 'edge'
-
 export default function BlogList({ posts }: Props) {
   if (!posts) {
     return null
