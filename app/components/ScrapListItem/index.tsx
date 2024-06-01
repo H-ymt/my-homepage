@@ -26,7 +26,7 @@ export default function ScrapListItem({ scraps }: ScrapListItemProps) {
           href={`https://zenn.dev/${scrap.path}`}
           rel="noreferrer"
         >
-          <li className="grid gap-1 pl-2">
+          <li className="grid gap-1 pl-1.5">
             <h3 className="line-clamp-1 overflow-hidden break-all pb-0">{scrap.title}</h3>
             <div className="text-[10px] text-muted-foreground flex items-center flex-wrap gap-3">
               <span className="flex items-center gap-1 text-muted-foreground/85 text-xs">
