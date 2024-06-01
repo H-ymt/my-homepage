@@ -15,7 +15,7 @@ export default async function ZennPage() {
         Webの技術・開発についての知見を
         <a
           href="https://zenn.dev/"
-          className="inline-flex gap-1 items-center text-primary px-1"
+          className="inline-flex gap-1 items-center text-primary px-1 hover:underline"
         >
           Zenn
           <FaExternalLinkAlt size="12" />
@@ -25,7 +25,7 @@ export default async function ZennPage() {
 
       <section>
         <h2>Articles</h2>
-        {/* <BlogList posts={data.articles} /> */}
+        <BlogList posts={data.articles} />
       </section>
 
       <section>
