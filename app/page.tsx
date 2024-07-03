@@ -36,9 +36,8 @@ export default function Home() {
             className="flex flex-col items-center gap-8"
           >
             <p className="max-w-xl text-muted-foreground hover:[&>a]:underline">
-              コンサル会社のコーダーとしてWeb制作業務に携わっており、主にLPやECサイトのページ制作、WordPressで作られたサイトの保守・改修などを行っています。
+              現在、フロントエンドエンジニアとしてWebサイト制作に携わっています。
               <br />
-              最近は
               <a
                 href="https://astro.build/"
                 className="inline-flex gap-1 items-center text-primary px-1"
@@ -62,7 +61,7 @@ export default function Home() {
                 microCMS
                 <FaExternalLinkAlt size="12" />
               </a>
-              などのヘッドレスCMSを用いたWebサイト制作の学習に力を入れています。
+              などのヘッドレスCMSを用いたアーキテクチャに興味があります。
               <br />
             </p>
           </motion.div>
